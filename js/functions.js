@@ -528,6 +528,7 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 });
 
 // *** Form Lleida *** //
+
 	function getUrlVars() {
 		var vars = {};
 		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -535,6 +536,22 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 		});
 		return vars;
 	}
+
+	$(function(){
+		// First register any plugins
+		$.fn.filepond.registerPlugin(FilePondPluginImagePreview);
+		$.fn.filepond.registerPlugin(FilePondPluginFileValidateType);
+
+
+		// Turn input element into a pond with configuration options
+		$('.filepond').filepond({
+			allowMultiple: false,
+			labelIdle: "Clicka aquí y añade una imagen",
+			acceptedFileTypes: ['image/*'],
+
+		});
+
+	});
 
 	var csNotifications = $( ".cs-notifications" );
 
@@ -579,14 +596,16 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 		var reader = new FileReader();
 		// Initiate Variables With Form Content
 		var email = getUrlVars()["email"],
-			dniFront = $("#dniFront").val(),
+			dniFront = $("#dniFront").files[0],
 			dniBack = $("#dniBack").val(),
 			selfie = $("#selfie").val();
 		console.log(email);
 		console.log(dniBack);
 		console.log(dniFront);
 		console.log(selfie);
-		lleidaSuccess();
+		let form = new FormData();
+		form.append('dniFrontal', dniFront);
+
 		// $.ajax({
 		// 	type: "POST",
 		// 	url: "https://backendtabacos.sevisl.com/api/users/validate",
