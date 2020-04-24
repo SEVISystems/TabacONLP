@@ -528,7 +528,6 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 });
 
 // *** Form Lleida *** //
-
 	function getUrlVars() {
 		var vars = {};
 		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -544,11 +543,11 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 
 
 		// Turn input element into a pond with configuration options
-		$('.filepond').filepond({
+
+		 $('.filepond').filepond({
 			allowMultiple: false,
 			labelIdle: "Clicka aquí y añade una imagen",
 			acceptedFileTypes: ['image/*'],
-
 		});
 
 	});
@@ -563,10 +562,10 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 					required: true,
 				},
 				dniBack: {
-					required: true,
+					// required: true,
 				},
 				selfie: {
-					required: true,
+					// required: true,
 				},
 			}
 		});
@@ -593,23 +592,29 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 	}
 
 	function lleidaSubmitForm() {
-		var reader = new FileReader();
+
 		// Initiate Variables With Form Content
-		var email = getUrlVars()["email"],
-			dniFront = $("#dniFront").files[0],
-			dniBack = $("#dniBack").val(),
-			selfie = $("#selfie").val();
-		console.log(email);
-		console.log(dniBack);
-		console.log(dniFront);
+		 var email = getUrlVars()["email"],
+		 	dniFront =  $("#dniFront").filepond('getFile').file,
+			dniBack = $("#dniFront").filepond('getFile').file,
+			selfie = $("#dniFront").filepond('getFile').file;
+
+		console.log($("#dniFront").filepond('getFile').file);
+		console.log($("#dniBack").filepond('getFile').file);
+		console.log($("#selfie").filepond('getFile').file);
 		console.log(selfie);
+
 		let form = new FormData();
-		form.append('dniFrontal', dniFront);
+
+		form.append('dniFront', dniFront);
+		form.append('dniBack', dniBack);
+		form.append('selfie', selfie);
+		form.append('email', email);
 
 		// $.ajax({
 		// 	type: "POST",
 		// 	url: "https://backendtabacos.sevisl.com/api/users/validate",
-		// 	data: "dniFront=" + name + "&email=" + email + "&dniBack=" + dniBack + "&selfie=" + selfie,
+		// 	data: form,
 		// 	success: function (response) {
 		// 		var res = JSON.parse(response);
 		// 		console.log(res.error);
