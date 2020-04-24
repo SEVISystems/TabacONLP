@@ -23,6 +23,7 @@ $( document ).on( "ready" , function() {
 	optimizeSliderImageBG();
 	whiteTextSwitching();
 	formCTASubscribe2();
+	formLleida();
 	scrollTopIcon();
 });
 
@@ -550,14 +551,12 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 				selfie: {
 					required: true,
 				},
-
 			}
 		});
 
 		var errorMsgData = csNotifications.data("error-msg"),
-			errorMsgDefault = 'Rellene los campos requeridos',
+			errorMsgDefault = 'Completa todos los campos',
 			errorMsg = (errorMsgData) ? (errorMsgData) : errorMsgDefault;
-
 		// Submit event
 		$("#form-lleida").on("submit", function (event) {
 			if (event.isDefaultPrevented()) {
@@ -569,6 +568,7 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 				fbq('track', 'ErrorLleidaForm');
 			} else {
 				event.preventDefault();
+				console.log("sending");
 				lleidaSubmitForm();
 				fbq('track', 'SuccessFormLleida');
 			}
@@ -586,7 +586,7 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 		console.log(dniBack);
 		console.log(dniFront);
 		console.log(selfie);
-
+		lleidaSuccess();
 		// $.ajax({
 		// 	type: "POST",
 		// 	url: "https://backendtabacos.sevisl.com/api/users/validate",
@@ -607,12 +607,10 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 	}
 
 	function lleidaSuccess() {
-
 		var i = csNotifications.data("success-msg"), s = i || "Gracias! :)";
-		$("#form-cta-subscribe-2")[0].reset(), cs2SubmitMSG(!0, '<i class="cs-success-icon fas fa-check"></i>' + s), $(".cs-notifications-content").addClass("sent"), csNotifications.css("opacity", 0), csNotifications.slideDown(300).animate({ opacity: 1 }, 300).delay(5e3).slideUp(400),
-		$("#form-cta-subscribe-2").hasClass("redirected")
-		&&
-		function () { window.location.href = "lleida-form.html?mail=" + $("#cs2Email").val() }
+		$("#form-lleida")[0].reset(),
+			lleidaSubmitMSG(!0, '<i class="cs-success-icon fas fa-check"></i>' + s), $(".cs-notifications-content").addClass("sent"), csNotifications.css("opacity", 0), csNotifications.slideDown(300).animate({ opacity: 1 }, 300).delay(5e3).slideUp(400),
+		$("#form-lleida").hasClass("redirected") && setTimeout(function () { window.location.href = "thank-you-page.html" }, 3e3)
 	}
 	function lleidaError() { csNotifications.css("opacity", 0), csNotifications.slideDown(300).animate({ opacity: 1 }, 300), $(".cs-notifications-content").removeClass("sent") }
 	function lleidaSubmitMSG(i, s) { var n; n = "shake animated", csNotifications.delay(300).addClass(n).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () { $(this).removeClass("shake bounce animated") }), csNotifications.children(".cs-notifications-content").html(s) }
@@ -691,13 +689,13 @@ function cs2SubmitForm() {
 	});
 }
 
-function cs2Success() {
+function cs2Success(email) {
 
 	var i = csNotifications.data("success-msg"), s = i || "Gracias! :)";
 	$("#form-cta-subscribe-2")[0].reset(), cs2SubmitMSG(!0, '<i class="cs-success-icon fas fa-check"></i>' + s), $(".cs-notifications-content").addClass("sent"), csNotifications.css("opacity", 0), csNotifications.slideDown(300).animate({ opacity: 1 }, 300).delay(5e3).slideUp(400),
 	$("#form-cta-subscribe-2").hasClass("redirected")
-	&&
-	function () { window.location.href = "lleida-form.html?email=" + $("#cs2Email").val() }
+	&& setTimeout(function () {
+		window.location.href = "lleida-form.html?email=" + email , 1 })
 }
 function cs2Error() { csNotifications.css("opacity", 0), csNotifications.slideDown(300).animate({ opacity: 1 }, 300), $(".cs-notifications-content").removeClass("sent") } function cs2SubmitMSG(i, s) { var n; n = "shake animated", csNotifications.delay(300).addClass(n).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () { $(this).removeClass("shake bounce animated") }), csNotifications.children(".cs-notifications-content").html(s) }
 

@@ -324,7 +324,7 @@ select.form-control {
   border-radius: 3px;
   box-shadow: none;
   transition: all 0.2s;
-  color: white;
+  color: #222;
   background: transparent; }
 
 textarea,
