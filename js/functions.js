@@ -527,6 +527,26 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
     } , 1200 , "easeInOutExpo" );
 });
 
+// *** Share *** ///
+	const shareData = {
+		title: 'Compra tabaco desde tu móvil',
+		text: 'Descubre como puedes comprar tabaco desde tu móvil',
+		url: 'http://tabacos.sevisl.com/',
+	};
+
+	const btn = document.querySelector('#share');
+	const resultPara = document.querySelector('.result');
+
+// Must be triggered some kind of "user activation"
+	btn.addEventListener('click', async () => {
+		try {
+			await navigator.share(shareData)
+			// resultPara.textContent = 'MDN shared successfully'
+		} catch(err) {
+			// resultPara.textContent = 'Error: ' + err
+		}
+	});
+
 // *** Form Lleida *** //
 	function getUrlVars() {
 		var vars = {};
