@@ -2712,7 +2712,7 @@ html.scroll-lock {
     top: 2px; }
 
 .list.arrow-right li::before {
-  content: "\f061";
+  content: ">";
   top: 1px;
   margin-right: 12px;
   width: 18px;

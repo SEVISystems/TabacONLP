@@ -535,17 +535,16 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 	};
 
 	const btn = document.querySelector('#share');
-	const resultPara = document.querySelector('.result');
-
+	console.log(btn);
 // Must be triggered some kind of "user activation"
-	btn.addEventListener('click', async () => {
-		try {
-			await navigator.share(shareData)
-			// resultPara.textContent = 'MDN shared successfully'
-		} catch(err) {
-			// resultPara.textContent = 'Error: ' + err
-		}
-	});
+	if(btn){
+		btn.addEventListener('click', async () => {
+			try {
+				await navigator.share(shareData)
+			} catch(err) {
+			}
+		});
+	}
 
 // *** Form Lleida *** //
 	function getUrlVars() {
