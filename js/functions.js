@@ -594,7 +594,7 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 	function lleidaSubmitForm() {
 
 		// Initiate Variables With Form Content
-		 let email = getUrlVars()["email"],
+	 let email = getUrlVars()["email"],
 		 	dniFront =  $("#dniFront").filepond('getFile').file,
 			dniBack = $("#dniBack").filepond('getFile').file,
 			selfie = $("#selfie").filepond('getFile').file;
@@ -602,6 +602,8 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 		console.log($("#dniFront").filepond('getFile').file);
 		console.log($("#dniBack").filepond('getFile').file);
 		console.log($("#selfie").filepond('getFile').file);
+
+		console.log(selfie);
 
 
 		let form = new FormData();
@@ -642,6 +644,7 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 				}
 			}
 		});
+
 	}
 
 	function lleidaSuccess() {
