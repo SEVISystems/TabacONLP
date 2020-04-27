@@ -306,6 +306,14 @@ form .form-group {
 form.form-inline .form-group + .form-group {
   margin-top: 0; }
 
+.checkbox-center {
+  display: flex !important;
+  align-items: center;
+}
+.checkbox-center > input {
+  margin-right: 10px;
+}
+
 input,
 input.form-control,
 button,

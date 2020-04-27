@@ -537,18 +537,19 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 	}
 
 	$(function(){
-		// First register any plugins
-		$.fn.filepond.registerPlugin(FilePondPluginImagePreview);
-		$.fn.filepond.registerPlugin(FilePondPluginFileValidateType);
+		if ( $('.filepond').length > 0) {
+			// First register any plugins
+			$.fn.filepond.registerPlugin(FilePondPluginImagePreview);
+			$.fn.filepond.registerPlugin(FilePondPluginFileValidateType);
 
+			// Turn input element into a pond with configuration options
 
-		// Turn input element into a pond with configuration options
-
-		 $('.filepond').filepond({
-			allowMultiple: false,
-			labelIdle: "Clicka aquí y añade una imagen",
-			acceptedFileTypes: ['image/*'],
-		});
+			$('.filepond').filepond({
+				allowMultiple: false,
+				labelIdle: "Clicka aquí y añade una imagen",
+				acceptedFileTypes: ['image/*'],
+			});
+		}
 
 	});
 
@@ -562,10 +563,10 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 					required: true,
 				},
 				dniBack: {
-					// required: true,
+					required: true,
 				},
 				selfie: {
-					// required: true,
+					required: true,
 				},
 			}
 		});
@@ -599,11 +600,11 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 			dniBack = $("#dniBack").filepond('getFile').file,
 			selfie = $("#selfie").filepond('getFile').file;
 
-		console.log($("#dniFront").filepond('getFile').file);
-		console.log($("#dniBack").filepond('getFile').file);
-		console.log($("#selfie").filepond('getFile').file);
+		// console.log($("#dniFront").filepond('getFile').file);
+		// console.log($("#dniBack").filepond('getFile').file);
+		// console.log($("#selfie").filepond('getFile').file);
 
-		console.log(selfie);
+		// console.log(selfie);
 
 
 		let form = new FormData();
@@ -615,8 +616,8 @@ $(  ".scroll-to" ).on(  "click", function( e ) {
 
 		$.ajax({
 			type: "POST",
-			//url: "https://backendtabacos.sevisl.com/api/users/validate",
-			url: "http://localhost:8000/api/users/validate",
+			url: "https://backendtabacos.sevisl.com/api/users/validate",
+			// url: "http://localhost:8000/api/users/validate",
 			data: form,
 			processData: false,
 			contentType: false,
