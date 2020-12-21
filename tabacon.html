@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabacon</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional :) -->
+
+</head>
+<body class="">
+
+
+<!--NAVBAR-->
+<nav class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full z-10 top-0">
+    <div style="width: 10rem; height: 3rem;">
+        <a href="#">
+            <!-- <span class="text-7xl pl-5"></i>TABACON</span> -->
+            <img class="object-cover" style="margin-top: -50px;" width="100%" height="100%" class="object-contain"
+                 src="img/TabacOn color.png" alt="Tabacon">
+
+        </a>
+    </div>
+
+    <div class="block lg:hidden">
+        <button id="nav-toggle"
+                class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline" href="#hero">¿Qué es?</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="#steps">Funcionamiento</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="#partners">Patrocinadores</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<!--END NAVBAR-->
+
+
+<!--Container-->
+<div class="container shadow-lg mx-auto w-full min-w-full bg-white  md:mt-18">
+    <div id="fullpage">
+
+        <div class="section">
+            <section id="hero">
+                <div class="container flex w-full min-w-full">
+<!--                    HOME PC-->
+                    <div class=" min-h-screen min-w-full bg-green-50  flex flex-col justify-center lg:p-10 ">
+                        <div class="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto mt-20 ">
+                            <div class="absolute hidden md:block inset-0 -mr-3.5 bg-gradient-to-r from-green-500 to-red-100 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl"></div>
+                            <div class="relative hidden md:block bg-white shadow-lg sm:rounded-3xl">
+                                <div class="px-10 py-10 grid md:grid-flow-col">
+                                    <div class="my-auto lg:ml-16 text-left lg:p-10 s:p-2 ">
+                                        <div class="lg:text-6xl  text-5xl font-semibold text-gray-900 leading-none text-center">
+                                            Tu aplicación para comprar tabaco desde tu teléfono móvil
+                                        </div>
+                                        <div class="mt-6 text-2xl font-light text-true-gray-500 antialiased text-center">
+                                            ¿Estás preparado?
+                                        </div>
+                                        <div class="flex-row">
+                                            <button class="mt-6 px-8 py-4 mx-auto rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-200 from-blue-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                                Download for Android
+                                            </button>
+                                            <button class="mt-6 px-8 py-4 mx-auto  rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-200 from-blue-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                                Download for iOS
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="my-auto mx-auto lg:ml-16 px-10">
+                                        <img style="width: 27rem; height: 40rem; min-height: 40rem ; min-width: 27rem" class="object-contain"
+                                             src="img/smartphone.png" alt="Tabacon">
+                                    </div>
+
+                                </div>
+                            </div>
+<!--HOME MOVIL-->
+                            <div class="relative visible md:hidden bg-white shadow-lg ">
+                                <div class="px-10 py-10 grid md:grid-flow-col">
+                                    <div class="my-auto lg:ml-16 text-left lg:p-10 s:p-2 ">
+                                        <div class="lg:text-6xl  text-5xl font-semibold text-gray-900 leading-none text-center">
+                                            Tu aplicación para comprar tabaco desde tu teléfono móvil
+                                        </div>
+                                        <div class="mt-6 text-2xl font-light text-true-gray-500 antialiased text-center">
+                                            ¿Estás preparado?
+                                        </div>
+                                        <div class="flex-row">
+                                            <button class="mt-6 px-8 py-4 mx-auto rounded-full font-normal tracking-wide bg-gradient-to-b from-yellow-200 to-yellow-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                                Download for Android
+                                            </button>
+                                            <button class="mt-6 px-8 py-4 mx-auto  rounded-full font-normal tracking-wide bg-gradient-to-b from-yellow-200 to-yellow-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                                Download for iOS
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="my-auto mx-auto lg:ml-16 px-10">
+                                        <img style="width: 27rem; height: 40rem; min-height: 40rem ; min-width: 27rem" class="object-contain"
+                                             src="img/smartphone.png" alt="Tabacon">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    //Javascript to toggle the menu
+    document.getElementById('nav-toggle').onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+    }
+</script>
+
+</body>
+</html>
