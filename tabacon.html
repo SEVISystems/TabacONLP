@@ -13,12 +13,35 @@
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <!--Replace with your tailwind.css once created-->
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional :) -->
+    <!--
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> &lt;!&ndash;Totally optional :) &ndash;&gt;
+    -->
 
 
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.css">
+    <script src="vendor/owlcarousel/owl.carousel.js"></script>
     <script type="text/javascript" src="js/carouselControl.js"></script>
+    <link href="css/carouselControl.css" rel="stylesheet">
+
+    <script>
+        let owl = $('.owl-carousel');
+        owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 
 
 </head>
@@ -56,7 +79,7 @@
             </li>
             <li class="mr-3">
                 <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
-                   href="#partners">Patrocinadores45</a>
+                   href="#partners">Patrocinadores</a>
             </li>
 
         </ul>
@@ -67,116 +90,195 @@
 
 <!--Container-->
 <div class="container shadow-lg mx-auto w-full min-w-full bg-white  md:mt-18">
-    <div id="fullpage">
 
-        <div class="section">
-            <section id="hero">
-                <div class="container flex w-full min-w-full">
-                    <!--                    HOME PC-->
-                    <div class=" min-h-screen min-w-full bg-green-50  flex flex-col justify-center lg:p-10 ">
-                        <div class="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto mt-20 ">
-                            <div class="absolute hidden md:block inset-0 -mr-3.5 bg-gradient-to-r from-green-500 to-red-100 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl"></div>
-                            <div class="relative hidden md:block bg-white shadow-lg sm:rounded-3xl">
-                                <div class="px-10 py-10 grid md:grid-flow-col">
-                                    <div class="my-auto lg:ml-16 text-left lg:p-10 s:p-2 ">
-                                        <div class="lg:text-6xl  text-5xl font-semibold text-gray-900 leading-none text-center">
-                                            Tu aplicación para comprar tabaco desde tu teléfono móvil
-                                        </div>
-                                        <div class="mt-6 text-2xl font-light text-true-gray-500 antialiased text-center">
-                                            ¿Estás preparado?
-                                        </div>
-                                        <div class="flex-row">
-                                            <button class="mt-6 px-8 py-4 mx-auto rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-200 from-blue-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
-                                                Download for Android
-                                            </button>
-                                            <button class="mt-6 px-8 py-4 mx-auto  rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-200 from-blue-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
-                                                Download for iOS
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="my-auto mx-auto lg:ml-16 px-10">
-                                        <img style="width: 27rem; height: 40rem; min-height: 40rem ; min-width: 27rem"
-                                             class="object-contain"
-                                             src="img/smartphone.png" alt="Tabacon">
-                                    </div>
 
+    <!--<div class="section">
+        <section id="hero">
+            <div class="container flex w-full min-w-full">
+                &lt;!&ndash;                    HOME PC&ndash;&gt;
+                <div class=" min-h-screen min-w-full bg-green-50  flex flex-col justify-center lg:p-10 ">
+                    <div class="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto mt-20 ">
+                        <div class="absolute hidden md:block inset-0 -mr-3.5 bg-gradient-to-r from-green-500 to-red-100 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl"></div>
+                        <div class="relative hidden md:block bg-white shadow-lg sm:rounded-3xl">
+                            <div class="px-10 py-10 grid md:grid-flow-col">
+                                <div class="my-auto lg:ml-16 text-left lg:p-10 s:p-2 ">
+                                    <div class="lg:text-6xl  text-5xl font-semibold text-gray-900 leading-none text-center">
+                                        Tu aplicación para comprar tabaco desde tu teléfono móvil
+                                    </div>
+                                    <div class="mt-6 text-2xl font-light text-true-gray-500 antialiased text-center">
+                                        ¿Estás preparado?
+                                    </div>
+                                    <div class="flex-row">
+                                        <button class="mt-6 px-8 py-4 mx-auto rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-200 from-blue-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                            Download for Android
+                                        </button>
+                                        <button class="mt-6 px-8 py-4 mx-auto  rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-200 from-blue-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                            Download for iOS
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <!--HOME MOVIL-->
-
-                            <div class="relative visible md:hidden bg-white shadow-lg ">
-                                <div class="px-10 py-10 grid md:grid-flow-col">
-                                    <div class="my-auto lg:ml-16 text-left lg:p-10 s:p-2 ">
-                                        <div class="lg:text-6xl  text-5xl font-semibold text-gray-900 leading-none text-center">
-                                            Tu aplicación para comprar tabaco desde tu teléfono móvil
-                                        </div>
-                                        <div class="mt-6 text-2xl font-light text-true-gray-500 antialiased text-center">
-                                            ¿Estás preparado?
-                                        </div>
-                                        <div class="flex-row">
-                                            <button class="mt-6 px-8 py-4 mx-auto rounded-full font-normal tracking-wide bg-gradient-to-b from-yellow-200 to-yellow-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
-                                                Download for Android
-                                            </button>
-                                            <button class="mt-6 px-8 py-4 mx-auto  rounded-full font-normal tracking-wide bg-gradient-to-b from-yellow-200 to-yellow-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
-                                                Download for iOS
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="my-auto mx-auto lg:ml-16 px-10">
-                                        <img style="width: 27rem; height: 40rem; min-height: 40rem ; min-width: 27rem"
-                                             class="object-contain"
-                                             src="img/smartphone.png" alt="Tabacon">
-                                    </div>
-
+                                <div class="my-auto mx-auto lg:ml-16 px-10">
+                                    <img style="width: 27rem; height: 40rem; min-height: 40rem ; min-width: 27rem"
+                                         class="object-contain"
+                                         src="img/smartphone.png" alt="Tabacon">
                                 </div>
+
+                            </div>
+                        </div>
+                        &lt;!&ndash;HOME MOVIL&ndash;&gt;
+
+                        <div class="relative visible md:hidden bg-white shadow-lg ">
+                            <div class="px-10 py-10 grid md:grid-flow-col">
+                                <div class="my-auto lg:ml-16 text-left lg:p-10 s:p-2 ">
+                                    <div class="lg:text-6xl  text-5xl font-semibold text-gray-900 leading-none text-center">
+                                        Tu aplicación para comprar tabaco desde tu teléfono móvil
+                                    </div>
+                                    <div class="mt-6 text-2xl font-light text-true-gray-500 antialiased text-center">
+                                        ¿Estás preparado?
+                                    </div>
+                                    <div class="flex-row">
+                                        <button class="mt-6 px-8 py-4 mx-auto rounded-full font-normal tracking-wide bg-gradient-to-b from-yellow-200 to-yellow-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                            Download for Android
+                                        </button>
+                                        <button class="mt-6 px-8 py-4 mx-auto  rounded-full font-normal tracking-wide bg-gradient-to-b from-yellow-200 to-yellow-300 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                                            Download for iOS
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="my-auto mx-auto lg:ml-16 px-10">
+                                    <img style="width: 27rem; height: 40rem; min-height: 40rem ; min-width: 27rem"
+                                         class="object-contain"
+                                         src="img/smartphone.png" alt="Tabacon">
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-
-        <!-- Funcionamiento Section -->
-
-        <section id="section-funcionamiento">
-            <div class="sm:mt-0 p-14 py-36 bg-indigo-200">
-                <div class="md:grid md:grid-cols-3 md:gap-6">
-                    <div class="main-carousel">
-                        <div class="carousel-cell">
-                            <div class="shadow-2xl mt-5 md:mt-0 md:col-span-3 bg-white rounded h-48">
-                                Pepe
-                            </div>
-                        </div>
-                        <div class="carousel-cell">
-
-                            <div class="shadow-2xl mt-5 md:mt-0 md:col-span-3 bg-white rounded h-48">
-                                Jhon Doe
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-carousel">
-                <div class="carousel-cell">
-
-                    <div class="mt-5 md:mt-0 md:col-span-2 bg-blue-400 h-20">
-                        <div class="shadow overflow-hidden sm:rounded-md">
-                            Pepe
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="carousel-cell">...</div>
-                <div class="carousel-cell">...</div>
-                ...
             </div>
         </section>
+    </div>-->
 
-        <!-- ---------------------- -->
+    <!-- Funcionamiento Section -->
 
-    </div>
+    <section id="section-funcionamiento">
+        <div class="sm:mt-0 py-36 bg-indigo-200">
+            <div class="owl-carousel owl-theme owl-loaded ">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+<!--                        -->
+                        <div class="owl-item p-4">
+                            <div class="flex p-4 shadow-2xl bg-white rounded h-58">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                             class="feature-icon">
+                                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <dt class="text-lg leading-6 font-medium text-gray-900">
+                                        Competitive exchange rates
+                                    </dt>
+                                    <dd class="mt-2 text-base text-gray-500">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                        perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item p-4">
+                            <div class="flex p-4 shadow-2xl bg-white rounded h-58">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                             class="feature-icon">
+                                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <dt class="text-lg leading-6 font-medium text-gray-900">
+                                        Competitive exchange rates
+                                    </dt>
+                                    <dd class="mt-2 text-base text-gray-500">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                        perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item p-4">
+                            <div class="flex p-4 shadow-2xl bg-white rounded h-58">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                             class="feature-icon">
+                                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <dt class="text-lg leading-6 font-medium text-gray-900">
+                                        Competitive exchange rates
+                                    </dt>
+                                    <dd class="mt-2 text-base text-gray-500">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                        perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item p-4">
+                            <div class="flex p-4 shadow-2xl bg-white rounded h-58">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                             class="feature-icon">
+                                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <dt class="text-lg leading-6 font-medium text-gray-900">
+                                        Competitive exchange rates
+                                    </dt>
+                                    <dd class="mt-2 text-base text-gray-500">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                        perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+
+
+<!--                       -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="features-carousel p-8 pb-16">
+                 <div class="carousel-cell mx-8 p-4 w-full shadow-2xl w-100 bg-white rounded h-48">
+                     Pepe Lotin
+                 </div>
+                 <div class="carousel-cell mx-8 p-4 w-full shadow-2xl w-100 bg-white rounded h-48">
+                     Jhon Doe
+                 </div>
+                 <div class="carousel-cell mx-8 p-4 w-full shadow-2xl w-100 bg-white rounded h-48">
+                     Jhon Doe
+                 </div>
+                 <div class="carousel-cell mx-8 p-4 w-full shadow-2xl w-100 bg-white rounded h-48">
+                     Jhon Doe
+                 </div>
+             </div>-->
+        </div>
+
+    </section>
+
+
+    <!-- ---------------------- -->
+
+
 </div>
 <script>
     //Javascript to toggle the menu
