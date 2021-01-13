@@ -65,5 +65,10 @@
 }
 
 .owl-stage-outer{
-    overflow: visible !important;
+    overflow-x: visible !important;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.owl-stage-outer::-webkit-scrollbar {
+    display: none;
 }
