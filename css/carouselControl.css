@@ -1,5 +1,12 @@
 .feature-icon{
-    color: #1f32ac;
-    height: 2rem;
-    width: 2rem;
+    color: #26B7B8;
+    height: 5rem;
+    width: 5rem;
+}
+
+.feature-icon-mobile{
+    color: #26B7B8;
+
+    height: 5rem;
+    width: 5rem;
 }
