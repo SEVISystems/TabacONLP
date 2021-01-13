@@ -303,7 +303,8 @@ th:last-child, td:last-child {
 
 html {
     font-size: 20px;
-    line-height: 30px
+    line-height: 30px;
+    scroll-behavior: smooth;
 }
 
 body {
