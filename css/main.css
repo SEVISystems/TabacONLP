@@ -1,3 +1,10 @@
 #navbar{
     transition: top ease 0.5s;
 }
+#install-stepper-desktop svg{
+    color: #ffffff;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-left: auto;
+}
