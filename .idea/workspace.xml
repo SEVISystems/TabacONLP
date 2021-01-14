@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b527194-25e7-44fb-b4c5-6b763f922997" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/img/Paycomet-300x140.png" afterDir="false" />
+=======
+>>>>>>> 12e2086ce3c1132e739b1d3243c2ad61e309c230
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/paycomet.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/paycomet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tabacon.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabacon.html" afterDir="false" />
@@ -43,6 +46,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/alexgas/TabacONLP" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1lyIYQ75BAUIscsvFgCUAPimNWF" />
   <component name="ProjectLevelVcsManager">

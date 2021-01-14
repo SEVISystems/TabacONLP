@@ -1,3 +1,25 @@
+.bg-palette-primary{
+    background: #26B7B8;
+}
+.bg-palette-primary-dark{
+    background: #1b7f80;
+}
+
 #navbar{
     transition: top ease 0.5s;
 }
+#install-stepper-desktop svg{
+    color: #ffffff;
+    height: 7rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-counter{
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
