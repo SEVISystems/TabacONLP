@@ -26,13 +26,12 @@
 
     <link rel="icon" type="image/png" href="img/icon.png">
 
-
 </head>
-<body>
 
+<body class="bg-green-50">
 
 <!--NAVBAR-->
-<nav class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-screen z-10 top-0 shadow-xl" id="navbar">
+<nav class="flex items-center justify-between flex-wrap bg-white p-4 fixed w-screen z-10 top-0 shadow-xl" id="navbar">
     <div style="width: 10rem; height: 3rem;">
         <a href="#">
             <!-- <span class="text-7xl pl-5"></i>TABACON</span> -->
@@ -74,21 +73,19 @@
 
 
 <!--Container-->
-<div class="container shadow-lg mx-auto w-full min-w-full bg-green-50  md:mt-18">
+<div class="container shadow-lg mx-auto w-full min-w-full bg-green-50">
     <div id="fullpage">
-
         <div class="section">
-
             <section id="hero">
-                <div class="container flex w-full min-w-full">
+                <div class="container flex w-full min-w-full justify-center">
                     <!--                    HOME PC-->
-                    <div class=" min-h-screen min-w-full bg-green-50  flex flex-col justify-center md:p-10 ">
-                        <div class="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto mt-20 ">
-                            <div class="absolute hidden md:block inset-0 -mr-3.5 bg-gradient-to-r from-green-500 to-red-100 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl"></div>
+                    <div id="home-desktop" class=" bg-green-50 pt-40 flex flex-col justify-center  ">
+                        <div class="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto ">
+                            <div class="absolute hidden md:block inset-0 -mr-3.5 bg-gradient-to-r from-yellow-500 to-yellow-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl"></div>
                             <div class="relative hidden md:block bg-white shadow-lg sm:rounded-3xl">
-                                <div class="px-10 py-10 grid md:grid-flow-col">
-                                    <div class="my-auto text-left lg:p-10 s:p-2 ">
-                                        <div class="lg:text-6xl  text-5xl font-semibold text-gray-600 leading-none text-center">
+                                <div class="lg:px-12 px-8 py-10 grid md:grid-flow-col">
+                                    <div class="my-auto text-left s:p-2 ">
+                                        <div class="lg:text-4xl xl:text-5xl text-3xl font-semibold text-gray-600 leading-none text-center">
                                             Tu aplicación para comprar tabaco desde tu teléfono móvil
                                         </div>
                                         <div class="mt-6 text-2xl font-light text-gray-500 antialiased text-center">
@@ -102,7 +99,7 @@
                                                     <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
                                                           fill="#ffffff"/>
                                                 </svg>
-                                                <span class="ml-8">Download for Android</span>
+                                                <span class="ml-8">Descargar APP</span>
                                             </button>
                                             <!--                                            <button style="background-color: #26B7B8;"-->
                                             <!--                                                    class="mt-6 px-8 py-4 mx-4 w-full  font-bold py-2 rounded-lg px-4 rounded text-white inline-flex items-center shadow-xl ">-->
@@ -122,68 +119,66 @@
                                             <!--                                            </button>-->
                                         </div>
                                     </div>
-                                    <div class="my-auto mx-auto lg:ml-16 px-10">
-                                        <img style="width: 27rem; height: 40rem; min-height: 40rem ; min-width: 27rem"
-                                             class="object-contain"
-                                             src="img/smartphone.png" alt="Tabacon">
+                                    <div class="my-auto mx-auto">
+                                        <img class="object-contain hero-mobile-mockup" src="img/smartphone.png" alt="Tabacon">
                                     </div>
 
                                 </div>
                             </div>
-                            <!--HOME MOVIL-->
-                            <div class="relative visible md:hidden bg-white ">
-                                <div class="relative visible md:hidden bg-green-50 font-helvetica">
-                                    <div class="px-10 py-10 grid md:grid-flow-col">
-                                        <div class="my-auto  lg:ml-16 text-left lg:p-10 s:p-2 h-full">
-                                            <div
-                                                    class="lg:text-6xl  text-4xl font-semibold text-gray-600  text-center">
-                                                TU APLICACIÓN PARA COMPRAR TABACO ESTÉS DONDE ESTÉS
+                        </div>
+                    </div>
+                    <!--HOME MOVIL-->
+                    <div id="home-mobile" class="bg-green-50 pt-20 flex flex-col justify-center  ">
+                        <div class="relative visible md:hidden bg-green-50 font-helvetica">
+                            <div class="px-10 py-10 grid md:grid-flow-col">
+                                <div class="my-auto  lg:ml-16 text-left lg:p-10 s:p-2 h-full">
+                                    <div
+                                            class="lg:text-6xl  text-4xl font-semibold text-gray-600  text-center">
+                                        TU APLICACIÓN PARA COMPRAR TABACO ESTÉS DONDE ESTÉS
+                                    </div>
+                                    <div
+                                            class="mt-6 text-2xl font-light text-gray-500 antialiased text-center">
+                                        ¿Estás preparado?
+                                    </div>
+                                    <div class="flex flex-col ">
+                                        <button style="background-color: #26B7B8;"
+                                                class="mt-6 px-3 w-full font-bold py-2 rounded-lg px-4 rounded inline-flex text-white items-center shadow-xl">
+                                            <div class="mx-auto inline-flex items-center">
+                                                <svg class="mx-3" height="40" viewBox="2.993 .918 26.014 30.687"
+                                                     width="40" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
+                                                          fill="#ffffff"/>
+                                                </svg>
+                                                <span>Download for Android</span>
                                             </div>
-                                            <div
-                                                    class="mt-6 text-2xl font-light text-gray-500 antialiased text-center">
-                                                ¿Estás preparado?
+
+
+                                        </button>
+                                        <button style="background-color: #26B7B8;"
+                                                class="mt-6 px-3 w-full  font-bold py-2 rounded-lg px-4 rounded text-white inline-flex items-center shadow-xl">
+                                            <div class="mx-auto inline-flex items-center">
+                                                <svg class="mx-3"
+                                                     width="40" height="40" viewBox="0 0 256 315" version="1.1"
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     preserveAspectRatio="xMidYMid">
+                                                    <g>
+                                                        <path d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249"
+                                                              fill="#fff"></path>
+                                                    </g>
+                                                </svg>
+                                                <span>Download for iOS</span>
                                             </div>
-                                            <div class="flex flex-col ">
-                                                <button style="background-color: #26B7B8;"
-                                                        class="mt-6 px-3 w-full font-bold py-2 rounded-lg px-4 rounded inline-flex text-white items-center shadow-xl">
-                                                    <div class="mx-auto inline-flex items-center">
-                                                        <svg class="mx-3" height="40" viewBox="2.993 .918 26.014 30.687"
-                                                             width="40" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
-                                                                  fill="#ffffff"/>
-                                                        </svg>
-                                                        <span>Download for Android</span>
-                                                    </div>
 
-
-                                                </button>
-                                                <button style="background-color: #26B7B8;"
-                                                        class="mt-6 px-3 w-full  font-bold py-2 rounded-lg px-4 rounded text-white inline-flex items-center shadow-xl">
-                                                    <div class="mx-auto inline-flex items-center">
-                                                        <svg class="mx-3"
-                                                             width="40" height="40" viewBox="0 0 256 315" version="1.1"
-                                                             xmlns="http://www.w3.org/2000/svg"
-                                                             preserveAspectRatio="xMidYMid">
-                                                            <g>
-                                                                <path d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249"
-                                                                      fill="#fff"></path>
-                                                            </g>
-                                                        </svg>
-                                                        <span>Download for iOS</span>
-                                                    </div>
-
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="my-auto mx-auto lg:ml-16 px-10">
-                                            <img
-
-                                                    class="object-contain pt-6 w-screen"
-                                                    src="img/smartphone.png" alt="Tabacon">
-                                        </div>
-
+                                        </button>
                                     </div>
                                 </div>
+                                <div class="my-auto mx-auto lg:ml-16 px-10">
+                                    <img
+
+                                            class="object-contain pt-6 w-screen"
+                                            src="img/smartphone.png" alt="Tabacon">
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -191,11 +186,12 @@
         </div>
         <!--        HOW-->
         <section id="how">
-            <div class="sm:mt-0 md:mx-50 md:py-36 bg-green-50 font-helvetica ">
-                <h1 class="text-6xl font-semibold text-gray-600  text-center font-helvetica py-10">¿Cómo funciona
-                    tabacON?</h1>
-                <div class="flex flex-col md:flex-row mt-20 mx-12 ">
-                    <div class="flex-1 flex-col mx-2 pt-8">
+            <div class="sm:mt-0 md:py-20 md:mx-50  bg-green-50 font-helvetica ">
+                <h1 class="text-4xl md:text-6xl font-semibold text-gray-600  text-center font-helvetica py-10">
+                    ¿Cómo funciona TabacON?
+                </h1>
+                <div class="grid grid-cols-2 md:grid-cols-3 px-8 gap-4 gap-y-16 mt-10 md:mt-12 md:mx-20 ">
+                    <div class="flex-1 flex-col ">
                         <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                              xmlns="http://www.w3.org/2000/svg"
                              fill="currentColor"
@@ -224,7 +220,7 @@
                         </h1>
                     </div>
 
-                    <div class="flex-1 flex-col mx-2 pt-8">
+                    <div class="flex-1 flex-col">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
                              fill="currentColor"
@@ -252,12 +248,12 @@
                             </g>
                         </svg>
                         <h1 class="text-xl font-semibold text-gray-600  text-center pt-4">
-                            2. Recarga<br>tu<br>monedero
+                            2. Recarga tu monedero
 
                         </h1>
                     </div>
 
-                    <div class="flex-1 flex-col mx-2 pt-8">
+                    <div class="flex-1 flex-col">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"
                              fill="currentColor"
                              class="feature-icon-steps mx-auto">
@@ -273,11 +269,11 @@
                         </svg>
 
                         <h1 class="text-xl font-semibold text-gray-600  text-center pt-4">
-                            3. Conecta<br>una<br>máquina
+                            3. Selecciona la máquina
 
                         </h1>
                     </div>
-                    <div class="flex-1 flex-col mx-2 pt-8">
+                    <div class="flex-1 flex-col">
                         <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                              xmlns="http://www.w3.org/2000/svg"
                              fill="currentColor"
@@ -302,11 +298,11 @@
                             </g>
                         </svg>
                         <h1 class="text-xl font-semibold text-gray-600  text-center pt-4">
-                            4. Selecciona<br>producto
+                            4. Selecciona producto
 
                         </h1>
                     </div>
-                    <div class="flex-1 flex-col mx-2 pt-8">
+                    <div class="flex-1 flex-col">
                         <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                              xmlns="http://www.w3.org/2000/svg"
                              fill="currentColor"
@@ -326,7 +322,7 @@
                         </h1>
                     </div>
 
-                    <div class="flex-1 flex-col mx-2 pt-8">
+                    <div class="flex-1 flex-col">
                         <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                              xmlns="http://www.w3.org/2000/svg"
                              fill="currentColor"
@@ -376,7 +372,7 @@
 
         <section id="features">
             <!--            FEATURES PC-->
-            <div class="sm:mt-0  md:mx-50 md:py-36 bg-green-50 font-helvetica">
+            <div class="mt-0  md:mx-50 md:py-8 bg-green-50 font-helvetica">
                 <h1 class="text-6xl font-semibold text-gray-600  text-center font-helvetica py-10">Ventajas</h1>
 
 
@@ -385,7 +381,7 @@
                 <div class="flex flex-col md:flex-row  mx-12 lg:mx-20">
 
 
-                    <div class="w-full md:w-1/3 py-5 mx-4 ">
+                    <div class="w-full md:w-1/3 py-5 md:mx-4 ">
 
                         <div class="flex p-8 lg:p-10 shadow-2xl bg-white rounded-2xl min-h-full items-center justify-center"
                         >
@@ -421,7 +417,7 @@
                         </div>
                     </div>
 
-                    <div class="w-full md:w-1/3 py-5 mx-4 ">
+                    <div class="w-full md:w-1/3 py-5 md:mx-4 ">
 
                         <div class="flex p-8 lg:p-10 shadow-2xl bg-white rounded-2xl min-h-full items-center justify-center"
                         >
@@ -450,7 +446,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/3 py-5 mx-4">
+                    <div class="w-full md:w-1/3 py-5 md:mx-4">
 
                         <div class="flex p-8 lg:p-10 shadow-2xl bg-white rounded-2xl min-h-full items-center justify-center"
                         >
@@ -486,138 +482,6 @@
         <!-- ---------------------- -->
         <!--    INSTALACIÓN-->
         <section id="install" class="lg:flex lg:justify-center mb-32">
-            <!--            INSTALACIÓN PC-->
-            <!--    <div class="sm:mt-0 md:mx-50  hidden sm:block md:py-36 bg-green-50 font-helvetica">
-                    <h1 class="text-6xl font-semibold text-gray-600  text-center font-helvetica py-10">Instalación</h1>
-
-
-                    &lt;!&ndash;                        &ndash;&gt;
-
-                    <div class="flex flex-col md:flex-row  mx-12 lg:mx-20">
-
-
-                        <div class="w-full lg:w-1/3 py-5 lg:mx-4 py-5 mx-4">
-
-                            <div class="flex p-8 lg:p-10 shadow-2xl bg-white rounded-2xl min-h-full items-center justify-center">
-
-                                <div class="">
-
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                         viewBox="-53 1 511 511.99906"
-                                         fill="currentColor"
-                                         class="feature-icon-mobile mx-auto">
-                                        <g id="surface1">
-                                            <path d="M 276.410156 3.957031 C 274.0625 1.484375 270.84375 0 267.507812 0 L 67.777344 0 C 30.921875 0 0.5 30.300781 0.5 67.152344 L 0.5 444.84375 C 0.5 481.699219 30.921875 512 67.777344 512 L 338.863281 512 C 375.71875 512 406.140625 481.699219 406.140625 444.84375 L 406.140625 144.941406 C 406.140625 141.726562 404.65625 138.636719 402.554688 136.285156 Z M 279.996094 43.65625 L 364.464844 132.328125 L 309.554688 132.328125 C 293.230469 132.328125 279.996094 119.21875 279.996094 102.894531 Z M 338.863281 487.265625 L 67.777344 487.265625 C 44.652344 487.265625 25.234375 468.097656 25.234375 444.84375 L 25.234375 67.152344 C 25.234375 44.027344 44.527344 24.734375 67.777344 24.734375 L 255.261719 24.734375 L 255.261719 102.894531 C 255.261719 132.945312 279.503906 157.0625 309.554688 157.0625 L 381.40625 157.0625 L 381.40625 444.84375 C 381.40625 468.097656 362.113281 487.265625 338.863281 487.265625 Z M 338.863281 487.265625 "
-                                            />
-                                            <path d="M 305.101562 401.933594 L 101.539062 401.933594 C 94.738281 401.933594 89.171875 407.496094 89.171875 414.300781 C 89.171875 421.101562 94.738281 426.667969 101.539062 426.667969 L 305.226562 426.667969 C 312.027344 426.667969 317.59375 421.101562 317.59375 414.300781 C 317.59375 407.496094 312.027344 401.933594 305.101562 401.933594 Z M 305.101562 401.933594 "
-                                            />
-                                            <path d="M 194.292969 357.535156 C 196.644531 360.007812 199.859375 361.492188 203.320312 361.492188 C 206.785156 361.492188 210 360.007812 212.347656 357.535156 L 284.820312 279.746094 C 289.519531 274.796875 289.148438 266.882812 284.203125 262.308594 C 279.253906 257.609375 271.339844 257.976562 266.765625 262.925781 L 215.6875 317.710938 L 215.6875 182.664062 C 215.6875 175.859375 210.121094 170.296875 203.320312 170.296875 C 196.519531 170.296875 190.953125 175.859375 190.953125 182.664062 L 190.953125 317.710938 L 140 262.925781 C 135.300781 257.980469 127.507812 257.609375 122.5625 262.308594 C 117.617188 267.007812 117.246094 274.800781 121.945312 279.746094 Z M 194.292969 357.535156 "
-                                            />
-                                        </g>
-                                    </svg>
-                                    <dt class="text-lg leading-6 font-medium text-gray-900 mt-10 text-center">
-                                        Descarga la apk
-                                    </dt>
-                                    <dd class="mt-2 text-base text-gray-500 text-justify">
-                                        Paga tu tabaco desde tu móvil. Es fácil, rápido y sin comisiones de venta.
-                                    </dd>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="w-full lg:w-1/3 py-5 lg:mx-4 py-5 mx-4">
-
-                            <div class="flex p-8 lg:p-10 shadow-2xl bg-white rounded-2xl min-h-full items-center justify-center"
-                            >
-
-                                <div class="">
-                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         fill="currentColor"
-                                         class="feature-icon-mobile mx-auto"
-                                         viewBox="0 0 26 26"
-                                         xml:space="preserve">
-                                                <g>
-                                                    <g>
-                                                        <path d="M22.934,11.19V8.705l-2.955-0.482c-0.176-0.699-0.45-1.357-0.813-1.961l1.723-2.456l-1.756-1.755
-                                                            l-2.424,1.743c-0.604-0.366-1.267-0.646-1.971-0.82l-0.516-2.941h-2.484L11.26,2.965c-0.706,0.173-1.371,0.448-1.977,0.812
-                                                            L6.866,2.051L5.11,3.806l1.7,2.431C6.442,6.846,6.163,7.51,5.985,8.22L3.066,8.705v2.484l2.916,0.516
-                                                            c0.176,0.71,0.456,1.375,0.824,1.985l-1.723,2.409l1.756,1.757l2.434-1.704c0.608,0.365,1.271,0.642,1.977,0.815l0.488,2.934
-                                                            h2.484l0.521-2.941c0.701-0.178,1.363-0.457,1.967-0.824l2.451,1.721l1.755-1.757l-1.749-2.429
-                                                            c0.362-0.604,0.637-1.263,0.811-1.964L22.934,11.19z M13,13.431c-1.913,0-3.464-1.55-3.464-3.464c0-1.912,1.551-3.463,3.464-3.463
-                                                            s3.463,1.551,3.463,3.463C16.464,11.881,14.913,13.431,13,13.431z"/>
-                                                    </g>
-                                                    <path d="M24,18.967v4c0,0.551-0.448,1-1,1H3c-0.552,0-1-0.449-1-1v-4H0v4c0,1.656,1.344,3,3,3h20
-                                                        c1.656,0,3-1.344,3-3v-4H24z"/>
-                                                </g>
-                                            </svg>
-                                    <dt class="text-lg leading-6 font-medium text-gray-900 mt-10 text-center">
-                                        Instala tabacON
-                                    </dt>
-                                    <dd class="mt-2 text-base text-gray-500 text-justify">
-                                        Tendrás un registro detallado de tus compras. La aplicación te ofrece datos
-                                        en base a tu consumo. Podrás marcarte objetivos y evitar consumir más de lo
-                                        que deseas.
-                                    </dd>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full lg:w-1/3 py-5 lg:mx-4 py-5 mx-4">
-
-                            <div class="flex p-8 lg:p-10 shadow-2xl bg-white rounded-2xl min-h-full items-center justify-center"
-                            >
-
-                                <div class="">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         fill="currentColor"
-                                         class="feature-icon-mobile mx-auto"
-                                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                                         xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <path d="M373.333,160c-52.928,0-96,43.072-96,96s43.072,96,96,96c52.928,0,96-43.072,96-96S426.261,160,373.333,160z
-                                                                 M373.333,330.667c-41.173,0-74.667-33.493-74.667-74.667s33.493-74.667,74.667-74.667C414.507,181.333,448,214.827,448,256
-                                                                S414.507,330.667,373.333,330.667z"/>
-                                                        </g>
-                                                    </g>
-                                        <g>
-                                                        <g>
-                                                            <path d="M373.333,117.333H138.667C62.208,117.333,0,179.541,0,256s62.208,138.667,138.667,138.667h234.667
-                                                                C449.792,394.667,512,332.459,512,256S449.792,117.333,373.333,117.333z M373.333,373.333H138.667
-                                                                c-64.683,0-117.333-52.629-117.333-117.333s52.651-117.333,117.333-117.333h234.667c64.683,0,117.333,52.629,117.333,117.333
-                                                                S438.016,373.333,373.333,373.333z"/>
-                                                        </g>
-                                                    </g>
-                                        <g>
-                                                        <g>
-                                                            <path d="M117.333,202.667c-17.643,0-32,14.357-32,32v42.667c0,17.643,14.357,32,32,32c17.643,0,32-14.357,32-32v-42.667
-                                                                C149.333,217.024,134.976,202.667,117.333,202.667z M128,277.333c0,5.888-4.8,10.667-10.667,10.667
-                                                                c-5.867,0-10.667-4.779-10.667-10.667v-42.667c0-5.888,4.8-10.667,10.667-10.667C123.2,224,128,228.779,128,234.667V277.333z"/>
-                                                        </g>
-                                                    </g>
-                                        <g>
-                                                        <g>
-                                                            <path d="M224,202.667c-5.888,0-10.667,4.779-10.667,10.667v40.149l-22.443-44.928c-2.219-4.416-7.104-6.763-12.011-5.611
-                                                                c-4.821,1.131-8.213,5.44-8.213,10.389v85.333c0,5.888,4.779,10.667,10.667,10.667S192,304.555,192,298.667v-40.149l22.464,44.928
-                                                                c1.835,3.669,5.547,5.888,9.536,5.888c0.811,0,1.621-0.085,2.453-0.277c4.821-1.131,8.213-5.44,8.213-10.389v-85.333
-                                                                C234.667,207.445,229.888,202.667,224,202.667z"/>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                    <dt class="text-lg leading-6 font-medium text-gray-900 mt-10 text-center">
-                                        Autorización de terceros
-                                    </dt>
-                                    <dd class="mt-2 text-base text-gray-500 text-justify">
-                                        Todo el proceso de compra lo realizarás desde tu teléfono. Recoge tu compra
-                                        de la máquina y listo.
-                                    </dd>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
 
 
             <!--                    INSTALACIÓN MOVIL-->
@@ -761,13 +625,13 @@
             <!-- STEPPER INSTALACIÓN DESKTOP-->
 
             <div class="container" id="install-stepper-desktop">
-                <h1 class="text-6xl font-semibold text-gray-600  text-center font-helvetica py-10">Instalación</h1>
+                <h1 class="text-6xl font-semibold text-gray-600  text-center font-helvetica py-10 pt-24 md:pt-20">Instalación</h1>
 
                 <div class="grid grid-cols-9 mx-auto p-2 text-blue-50">
                     <!-- left -->
                     <div class="contents">
                         <div class="bg-palette-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md animate transform transition-transform hover:-translate-x-2 cursor-default">
-                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="bc1f3139-0466-4655-9cee-0348334ffa8f" data-name="Layer 1" viewBox="0 0 977.47786 801.93613" version="1.1" sodipodi:docname="undraw_download_pc33.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+                            <svg class="" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="bc1f3139-0466-4655-9cee-0348334ffa8f" data-name="Layer 1" viewBox="0 0 977.47786 801.93613" version="1.1" sodipodi:docname="undraw_download_pc33.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
                                 <metadata id="metadata168">
                                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                                         <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
@@ -1359,7 +1223,7 @@
             document.getElementById("nav-content").classList.toggle("hidden");
         }
     </script>
-    <footer class="footer bg-white relative pt-1 border-b-2 border-yellow-500">
+    <footer class="footer bg-white relative pt-1 border-b-2 border-yellow-500 border-t border-t-grey-500 py-4">
         <div class="container mx-auto px-6 mx-auto flex flex-col md:flex-row">
 
             <div class="sm:flex sm:mt-8">

@@ -8,6 +8,35 @@
 #navbar{
     transition: top ease 0.5s;
 }
+
+#home-desktop{
+    max-width: 70%;
+}
+
+@media(min-width: 1024px){
+    #home-desktop{
+        max-width: 55%;
+    }
+}
+
+
+.feature-icon{
+    color: #26B7B8;
+    height: 5rem;
+    width: 5rem;
+}
+
+.feature-icon-mobile{
+    color: #26B7B8;
+    height: 5rem;
+    width: 5rem;
+}
+
+.feature-icon-steps{
+    color: #26B7B8;
+    height: 4.5rem;
+}
+
 #install-stepper-desktop svg{
     color: #ffffff;
     height: 7rem;
