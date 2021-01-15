@@ -181,7 +181,7 @@
     </div>
     <!--        SPONSOR-->
     <section id="sponsor">
-        <div class="grid grid-cols-2 md:grid-cols-4 px-24 md:mt-32  md:mx-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 px-8 md:px-20 md:mt-32  md:mx-20">
             <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
                  src="img/espaitec.png" alt="Espaitec" style=" filter: grayscale(1); opacity: 0.5;">
             <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
@@ -2463,7 +2463,7 @@
                             event.preventDefault();
                             // these IDs from the previous steps
                                 emailjs.send('service_y3f2hrw', 'template_xbmwatk', {
-                                    message_html: $message,
+                                    message_html: message,
                                     from_mail: email,
                                     from_name: name,
                                 });
