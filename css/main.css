@@ -52,3 +52,12 @@
     transform: translateX(-50%);
 }
 
+#contact-form-sendButton:hover{
+   background:  #39374e;
+}
+#contact-form{
+    background: #ffa73e3d;
+    padding: 1rem;
+    border-radius: .75rem;
+}
+
