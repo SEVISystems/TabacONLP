@@ -136,9 +136,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="228" key="#Web_Browsers/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1610224358000" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1610224343523">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="592" y="217" key="FileChooserDialogImpl" timestamp="1610709252663">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610709252663" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1610224343523" />
     <state width="1516" height="254" key="GridCell.Tab.0.bottom" timestamp="1608568512411">
       <screen x="0" y="0" width="1536" height="824" />

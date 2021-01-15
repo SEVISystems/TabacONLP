@@ -2,8 +2,20 @@
     background: #26B7B8;
 }
 .bg-palette-primary-dark{
-    background: #1b7f80;
+    background: #138081;
 }
+
+.bg-palette-complementary{
+    background: #9e1f64;
+}
+.text-palette-complementary{
+    background: #9e1f64;
+}
+.bg-palette-complementary-dark{
+    background: #7e0748;
+}
+
+
 
 #navbar{
     transition: top ease 0.5s;
@@ -21,18 +33,18 @@
 
 
 .feature-icon{
-    color: #26B7B8;
+    color: #9e1f64;
     height: 5rem;
     width: 5rem;
 }
 
 .feature-icon-mobile{
-    color: #26B7B8;
+    color: #9e1f64;
     height: 5rem;
     width: 5rem;
 }
 
-.feature-icon-steps{
+.howto-icon-steps{
     color: #26B7B8;
     height: 4.5rem;
 }
@@ -52,8 +64,12 @@
     transform: translateX(-50%);
 }
 
+#contact-form-sendButton{
+    background:  #39374e;
+}
 #contact-form-sendButton:hover{
-   background:  #39374e;
+    background: #9e1f64;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 #contact-form{
     background: #ffa73e3d;
