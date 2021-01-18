@@ -12,6 +12,8 @@
         html {
             scroll-behavior: smooth
         }
+         .slides { width: 100%; }
+        .slides-hidden { display : none; }
     </style>
 
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
@@ -24,6 +26,7 @@
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.css">
     <link href="css/carouselControl.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/devices.css">
     <script src="vendor/owlcarousel/owl.carousel.js"></script>
     <script src="vendor/scrollmagic.min.js"></script>
     <script type="text/javascript" src="js/carouselControl.js"></script>
@@ -123,9 +126,49 @@
                                     </div>
                                 </div>
                                 <div class="my-auto mx-auto">
-                                    <img class="object-contain pl-8 " src="img/smartphone.png"
-                                         alt="Tabacon" >
-                                </div>
+
+
+
+                                    <script>
+                                        addEventListener("load", () => { // "load" is safe but "DOMContentLoaded" starts earlier
+                                            let index = 0;
+                                            const slides = document.querySelectorAll(".slides");
+                                            const classHide = "slides-hidden", count = slides.length;
+                                            nextSlide();
+
+                                            function nextSlide() {
+                                                slides[(index++) % count].classList.add(classHide);
+                                                slides[index % count].classList.remove(classHide);
+                                                setTimeout(nextSlide, 3000);
+                                            }
+                                        });
+                                    </script>
+<!--                                    <img class="object-contain pl-8 " src="img/smartphone.png"-->
+<!--                                         alt="Tabacon" >-->
+<!--                                    <section>-->
+
+
+
+<!--                                    </section>-->
+                                    <div class="marvel-device note8 ml-24" style="max-height: 411px;">
+                                        <div class="inner"></div>
+                                        <div class="overflow">
+                                            <div class="shadow"></div>
+                                        </div>
+                                        <div class="speaker"></div>
+<!--                                        <div class="sensors"></div>-->
+<!--                                        <div class="more-sensors"></div>-->
+<!--                                        <div class="sleep"></div>-->
+<!--                                        <div class="volume"></div>-->
+<!--                                        <div class="camera"></div>-->
+                                        <div class="screen">
+                                            <img class="slides slides-hidden" src="img/screenshots/screenshot_home.jpg">
+                                            <img class="slides slides-hidden" src="img/screenshots/screenshot_card.jpg">
+                                            <img class="slides slides-hidden" src="img/screenshots/screenshot_list.jpg">
+                                            <img class="slides slides-hidden" src="img/screenshots/screenshot_select.jpg">
+                                            <img class="slides slides-hidden" src="img/screenshots/screenshot_pay.jpg">
+                                        </div>
+                                    </div>
 
                             </div>
                         </div>
@@ -2223,7 +2266,7 @@
             <div class="" id="contact-form">
                 <form id="contactForm" name="sentMessage" novalidate="novalidate">
 
-                <div>
+                    <div>
                         <span class="uppercase text-sm text-gray-600 font-bold">Nombre</span>
                         <input class="w-full bg-white text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                type="text" placeholder="" name="name" id="name" required>
