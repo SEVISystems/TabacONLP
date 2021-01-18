@@ -14,9 +14,16 @@ $(function() {
          $('#email').val('');
          $('#message').val('');
          $('#name').val('');
-         alert("Gracias por ponerte en contacto con nosotros. ¡Te responderemos en un plazo de 24 horas!");
+         Swal.fire({
+             title: "<i>¡Mensaje enviado!</i>",
+             html: "Muchas gracias por ponerte en contacto con nosotros. <br><b>Te responderemos con la máxima brevedad posible</b>",
+             confirmButtonText: "Continuar",
+         });
      }else{
-         alert("Error al enviar mensaje.")
+         Swal.fire({
+             title: "<i>¡Error al enviar el mensaje!</i>",
+             confirmButtonText: "Continuar",
+         });
          if(name === ''){
              $("#name").addClass('error');
          }if(email === ''){
