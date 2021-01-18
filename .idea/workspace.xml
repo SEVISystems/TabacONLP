@@ -21,6 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2b527194-25e7-44fb-b4c5-6b763f922997" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/TabacONLP.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Gotham Medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Gotham-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/Gotham-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/GothamBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/GothamLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/GothamMedium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg-home@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tailwind.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tailwind.min.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +72,8 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -75,11 +88,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\Proyectos\TabacONLP\fonts" />
+      <recent name="C:\Sevi\Projects\TabacONLP\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Sevi\Proyectos\TabacONLP\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Sevi\Projects\TabacONLP\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,7 +109,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="526faf6f-35c9-46e0-8206-bbbcbaa58edc" name="Default Changelist" comment="" />
+      <changelist id="2b527194-25e7-44fb-b4c5-6b763f922997" name="Default Changelist" comment="" />
       <created>1608562950991</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -111,6 +125,9 @@
       <workItem from="1608734109242" duration="652000" />
       <workItem from="1610224233731" duration="4536000" />
       <workItem from="1610356133194" duration="6060000" />
+      <workItem from="1610959140314" duration="34000" />
+      <workItem from="1610961608277" duration="47000" />
+      <workItem from="1610961656696" duration="10116000" />
     </task>
     <servers />
   </component>
@@ -137,10 +154,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="228" key="#Web_Browsers/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1610224358000" />
-    <state x="592" y="217" key="FileChooserDialogImpl" timestamp="1610709252663">
+    <state x="592" y="217" key="FileChooserDialogImpl" timestamp="1610961654165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610709252663" />
+    <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610961654165" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1610224343523" />
     <state width="1516" height="254" key="GridCell.Tab.0.bottom" timestamp="1608568512411">
       <screen x="0" y="0" width="1536" height="824" />
@@ -198,13 +215,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608563290051" />
+    <state x="617" y="320" key="VCS.ChangelistChooser" timestamp="1610729040191">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="617" y="320" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1610729040191" />
     <state x="777" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610226796053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1610226796053" />
-    <state x="474" y="136" width="588" height="610" key="find.popup" timestamp="1610723100957">
+    <state x="474" y="136" width="588" height="632" key="find.popup" timestamp="1610965428944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="474" y="136" width="588" height="610" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1610723100957" />
+    <state x="474" y="136" width="588" height="632" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1610965428944" />
   </component>
 </project>
