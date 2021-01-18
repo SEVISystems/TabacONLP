@@ -14,12 +14,11 @@ $(function() {
          $('#email').val('');
          $('#message').val('');
          $('#name').val('');
-         alert("MAIL ENVIADO")
+         alert("Gracias por ponerte en contacto con nosotros. ¡Te responderemos en un plazo de 24 horas!");
      }else{
-         alert("MAIL NO ENVIADO")
+         alert("Error al enviar mensaje.")
          if(name === ''){
              $("#name").addClass('error');
-
          }if(email === ''){
              $("#email").addClass('error');
          }if(message === ''){
