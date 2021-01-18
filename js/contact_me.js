@@ -3,9 +3,9 @@ $(function() {
  $('#sendMessageButton').click(function () {
       emailjs.init("user_7dkF06ZityaunBjADBvN3");
 
-      var name = $("#name").val();
-      var email = $("#email").val();
-      var message = $("#message").val();
+      var name = $("input#name").val();
+      var email = $("input#email").val();
+      var message = $("textarea#message").val();
       $("input").removeClass('error');
       $("textarea").removeClass('error');
       console.log("ENVIANDO MAIL")
@@ -19,6 +19,7 @@ $(function() {
              html: "Muchas gracias por ponerte en contacto con nosotros. <br><b>Te responderemos con la máxima brevedad posible</b>",
              confirmButtonText: "Continuar",
          });
+
      }else{
          Swal.fire({
              title: "<i>¡Error al enviar el mensaje!</i>",
