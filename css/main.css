@@ -86,6 +86,14 @@ html{
     color: #26B7B8;
     height: 4.5rem;
 }
+/*FADE IMAGE*/
+.fadeImageStart{
+    animation:  fade 2s normal;
+}
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 /*PROGRESS BAR*/
 .progress {
     justify-content: flex-start;
