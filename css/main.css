@@ -56,6 +56,11 @@ html{
     z-index: 1;
 }
 
+.downloadLink{
+    text-decoration: none;
+    color: #fff;
+}
+
 .feature-icon{
     color: #9e1f64;
     height: 5rem;
