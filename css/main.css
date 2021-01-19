@@ -16,7 +16,6 @@ html{
 }
 
 
-
 .bg-palette-primary{
     background: #26B7B8;
 }
@@ -52,7 +51,6 @@ html{
 #navbar{
     transition: top ease 0.5s;
 }
-
 #home-desktop{
     max-width: 70%;
 }
