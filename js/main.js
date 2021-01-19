@@ -75,3 +75,35 @@ document.addEventListener("DOMContentLoaded", function () {
     handleContactRevealOnScroll();
 
 });
+
+addEventListener("load", () => { // "load" is safe but "DOMContentLoaded" starts earlier
+    let index = 0;
+    let indexPhone = 0;
+    const slides = document.querySelectorAll(".slides");
+    const slidesPhone = document.querySelectorAll(".slides-phone");
+    const animationPC = document.getElementById("progressBar");
+    const animationMobile = document.getElementById("progressBarPhone");
+
+    const classHide = "slides-hidden", count = slides.length;
+    nextSlide();
+    nextSlidePhone();
+
+    function nextSlide() {
+        slides[(index > count ? index = 0 : index++) % count].classList.add(classHide);
+        slides[index % count].classList.remove(classHide);
+        animationPC.classList.remove("progress-value")
+        void animationPC.offsetWidth;
+        animationPC.classList.add("progress-value")
+        setTimeout(nextSlide, 10000);
+    }
+
+    function nextSlidePhone() {
+
+        slidesPhone[(indexPhone > count ? indexPhone = 0 : indexPhone++) % count].classList.add(classHide);
+        slidesPhone[indexPhone % count].classList.remove(classHide);
+        animationMobile.classList.remove("progress-value")
+        void animationMobile.offsetWidth;
+        animationMobile.classList.add("progress-value")
+        setTimeout(nextSlidePhone, 10000);
+    }
+});
