@@ -108,7 +108,7 @@ html{
 }
 
 .progress-value {
-    animation: load 10s normal forwards ;
+    animation: load 5s normal forwards ;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
     height: 7px;

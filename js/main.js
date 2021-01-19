@@ -94,7 +94,7 @@ addEventListener("load", () => { // "load" is safe but "DOMContentLoaded" starts
         animationPC.classList.remove("progress-value")
         void animationPC.offsetWidth;
         animationPC.classList.add("progress-value")
-        setTimeout(nextSlide, 10000);
+        setTimeout(nextSlide, 5000);
     }
 
     function nextSlidePhone() {
@@ -104,6 +104,6 @@ addEventListener("load", () => { // "load" is safe but "DOMContentLoaded" starts
         animationMobile.classList.remove("progress-value")
         void animationMobile.offsetWidth;
         animationMobile.classList.add("progress-value")
-        setTimeout(nextSlidePhone, 10000);
+        setTimeout(nextSlidePhone, 5000);
     }
 });
