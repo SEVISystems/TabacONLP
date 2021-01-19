@@ -91,12 +91,12 @@
                                      style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
                                     <div class="my-auto text-left s:p-2 ">
 
-                                        <div class="lg:text-4xl xl:text-5xl text-3xl font-bold text-palette-complementary-dark leading-none text-center">
-                                            Tu aplicación para comprar tabaco desde tu teléfono móvil
+                                        <div class="lg:text-3xl xl:text-4xl text-2xl font-bold text-palette-complementary-dark leading-none text-center">
+                                            Compra tu tabaco desde el móvil y sin tocar la máquina
                                         </div>
-                                        <div class="mt-6 text-2xl font-light text-gray-500 antialiased text-center">
+                                       <!-- <div class="mt-6 text-2xl font-light text-gray-500 antialiased text-center">
                                             ¿Estás preparado?
-                                        </div>
+                                        </div>-->
                                         <div class="flex flex-column justify-center">
                                             <a href="bundle/TabacON-App-Oficial-v0.2.1.apk" target="_blank" class="downloadLink">
                                                 <button class="bg-palette-primary mt-6 px-8 py-4 font-bold py-2 rounded-lg px-4 rounded text-white inline-flex items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
@@ -233,23 +233,45 @@
                         </div>
 
                         </div>
-                    </div>
+
                     <!--HOME MOVIL-->
-                    <div id="home-mobile" class="bg-transparent pt-20 flex flex-col justify-center  ">
+                    <div id="home-mobile" class="bg-transparent mt-20 flex flex-col justify-center  ">
                         <div class="relative visible md:hidden bg-transparent font-helvetica">
-                            <div class="px-10 py-10 grid md:grid-flow-col">
-                                <div class="my-auto  lg:ml-16 text-left lg:p-10 s:p-2 h-full">
-                                    <div
-                                            class="lg:text-6xl  text-4xl font-bold text-palette-complementary-dark  text-center">
-                                        TU APLICACIÓN PARA COMPRAR TABACO ESTÉS DONDE ESTÉS
+                            <div class="px-8 lg:text-6xl text-3xl font-bold text-palette-complementary-dark  text-center">
+                                Compra tu tabaco desde el móvil y sin tocar la máquina
+                            </div>
+                            <div id='mockup-mobile' class="flex ">
+                                <div class=" marvel-device note8 mt-8 mb-8 mx-auto" style="max-height: 500px;"
+                                     style="display: flex">
+                                    <div class="inner"></div>
+                                    <div class="overflow">
+                                        <!--                                    <div class="shadow"></div>-->
                                     </div>
-                                    <div
+                                    <div class="speaker"></div>
+                                    <!--                                        <div class="sensors"></div>-->
+                                    <!--                                        <div class="more-sensors"></div>-->
+                                    <!--                                        <div class="sleep"></div>-->
+                                    <!--                                        <div class="volume"></div>-->
+                                    <!--                                        <div class="camera"></div>-->
+                                    <div class="screen">
+                                        <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_home.jpg">
+                                        <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_card.jpg">
+                                        <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_list.jpg">
+                                        <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_select.jpg">
+                                        <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_pay.jpg">
+                                    </div>
+                                    <div class="progress">
+                                        <div id="progressBarPhone" class="progress-value " style="background-color: #26B7B8;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-10  grid md:grid-flow-col">
+                                <div class="my-auto  lg:ml-16 text-left lg:p-10 s:p-2 h-full">
+                               <!--     <div
                                             class="mt-6 text-2xl font-light text-gray-500 antialiased text-center">
                                         ¿Estás preparado?
-                                    </div>
+                                    </div>-->
                                     <div class="flex flex-col ">
-                                        <a href="bundle/TabacON-App-Oficial-v0.2.1.apk" target="_blank" class="downloadLink">
-
                                         <button style="background-color: #26B7B8;"
                                                 class="mt-6 px-3 w-full font-bold py-2 rounded-lg px-4 rounded inline-flex text-white items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
                                             <div class="mx-auto inline-flex items-center">
@@ -260,84 +282,31 @@
                                                 </svg>
                                                 <span>Descargar App</span>
                                             </div>
+
+
                                         </button>
-                                        </a>
                                     </div>
-                    </div>
-                </div>
-                <!--HOME MOVIL-->
-                <div id="home-mobile" class="bg-transparent  flex flex-col justify-center  ">
-                    <div class="relative visible md:hidden bg-transparent font-helvetica">
-                        <div class="px-10  grid md:grid-flow-col">
-                            <div class="my-auto  lg:ml-16 text-left lg:p-10 s:p-2 h-full">
-                                <div
-                                        class="lg:text-6xl  text-4xl font-bold text-palette-complementary-dark  text-center">
-                                    TU APLICACIÓN PARA COMPRAR TABACO ESTÉS DONDE ESTÉS
                                 </div>
-                                <div
-                                        class="mt-6 text-2xl font-light text-gray-500 antialiased text-center">
-                                    ¿Estás preparado?
-                                </div>
-                                <div class="flex flex-col ">
-                                    <button style="background-color: #26B7B8;"
-                                            class="mt-6 px-3 w-full font-bold py-2 rounded-lg px-4 rounded inline-flex text-white items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
-                                        <div class="mx-auto inline-flex items-center">
-                                            <svg class="mx-3" height="40" viewBox="2.993 .918 26.014 30.687"
-                                                 width="40" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
-                                                      fill="#ffffff"/>
-                                            </svg>
-                                            <span>Descargar App</span>
-                                        </div>
 
-
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="flex py-16">
-                            <div class=" marvel-device note8 mt-8 mb-8 mx-auto" style="max-height: 500px;"
-                                 style="display: flex">
-                                <div class="inner"></div>
-                                <div class="overflow">
-                                    <!--                                    <div class="shadow"></div>-->
-                                </div>
-                                <div class="speaker"></div>
-                                <!--                                        <div class="sensors"></div>-->
-                                <!--                                        <div class="more-sensors"></div>-->
-                                <!--                                        <div class="sleep"></div>-->
-                                <!--                                        <div class="volume"></div>-->
-                                <!--                                        <div class="camera"></div>-->
-                                <div class="screen">
-                                    <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_home.jpg">
-                                    <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_card.jpg">
-                                    <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_list.jpg">
-                                    <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_select.jpg">
-                                    <img class="slides-phone slides-hidden" src="img/screenshots/screenshot_pay.jpg">
-                                </div>
-                                <div class="progress">
-                                    <div id="progressBarPhone" class="progress-value " style="background-color: #26B7B8;"></div>
-                                </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-4 px-8 md:px-20 md:mt-24  ">
-                        <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
-                             src="img/espaitec.png" alt="Espaitec" style=" filter: grayscale(1); opacity: 0.5;">
-                        <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
-                             src="img/paycomet.png" alt="Paycomet" style=" filter: grayscale(1); opacity: 0.5;">
-                        <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-16 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
-                             src="img/natiu.png" alt="Natiu" style=" filter: grayscale(1); opacity: 0.5;">
-                        <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
-                             src="img/xarxatec.png" alt="Xarxatec" style=" filter: grayscale(1); opacity: 0.5;">
-
-
                     </div>
                 </div>
 
             </section>
+            <div id='sponsors' class=" mt-20 grid grid-cols-2 md:grid-cols-4 px-8 md:px-20 md:mt-24  ">
+                <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
+                     src="img/espaitec.png" alt="Espaitec" style=" filter: grayscale(1); opacity: 0.5;">
+                <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
+                     src="img/paycomet.png" alt="Paycomet" style=" filter: grayscale(1); opacity: 0.5;">
+                <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-16 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
+                     src="img/natiu.png" alt="Natiu" style=" filter: grayscale(1); opacity: 0.5;">
+                <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
+                     src="img/xarxatec.png" alt="Xarxatec" style=" filter: grayscale(1); opacity: 0.5;">
+
+
+            </div>
+
             <!--        SPONSOR-->
 <!--            <section id="sponsor">-->
 <!--                <div class="grid grid-cols-2 md:grid-cols-4 px-8 md:px-20 md:mt-16  ">-->
