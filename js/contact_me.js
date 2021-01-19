@@ -1,39 +1,37 @@
 $(function() {
 
  $('#sendMessageButton').click(function () {
-
-      event.preventDefault();
-
       emailjs.init("user_7dkF06ZityaunBjADBvN3");
-   
+
       var name = $("input#name").val();
       var email = $("input#email").val();
       var message = $("textarea#message").val();
       $("input").removeClass('error');
       $("textarea").removeClass('error');
-
-     if(name !== '' && email !== '' && phone !== '' && message !== ''){
-
-         emailjs.send('service_y3f2hrw', 'template_xbmwatk', {from_mail: email , message_html: message, from_name: name, from_phone: phone});
-
+      console.log("ENVIANDO MAIL")
+     if(name !== '' && email !== '' && message !== ''){
+         emailjs.send('service_y3f2hrw', 'template_xbmwatk', {from_mail: email , message_html: message, from_name: name});
          $('#email').val('');
          $('#message').val('');
          $('#name').val('');
-         $('#phone').val('');
-
-         swal("¡Gracias!", "Nos pondremos en contacto contigo lo más rápido posible", "success");
+         Swal.fire({
+             title: "<i>¡Mensaje enviado!</i>",
+             html: "Muchas gracias por ponerte en contacto con nosotros. <br><b>Te responderemos con la máxima brevedad posible</b>",
+             confirmButtonText: "Continuar",
+         });
 
      }else{
+         Swal.fire({
+             title: "<i>¡Error al enviar el mensaje!</i>",
+             confirmButtonText: "Continuar",
+         });
          if(name === ''){
-             $("input#name").addClass('error');
-         }if(phone === ''){
-             $("input#phone").addClass('error');
+             $("#name").addClass('error');
          }if(email === ''){
-             $("input#email").addClass('error');
+             $("#email").addClass('error');
          }if(message === ''){
-             $("textarea#message").addClass('error');
+             $("#message").addClass('error');
          }
      }
-
  });
 });
