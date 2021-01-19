@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contact_me.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contact_me.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <workItem from="1610961608277" duration="47000" />
       <workItem from="1610961656696" duration="14563000" />
       <workItem from="1611053731600" duration="2757000" />
-      <workItem from="1611071829534" duration="2944000" />
+      <workItem from="1611071829534" duration="4504000" />
     </task>
     <servers />
   </component>
@@ -221,9 +222,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1610226796053" />
-    <state x="474" y="136" width="588" height="632" key="find.popup" timestamp="1611074250037">
+    <state x="474" y="136" width="588" height="632" key="find.popup" timestamp="1611075275102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="474" y="136" width="588" height="632" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1611074250037" />
+    <state x="474" y="136" width="588" height="632" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1611075275102" />
   </component>
 </project>
