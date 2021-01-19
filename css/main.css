@@ -182,7 +182,6 @@ html{
 }
 
 #contact, .howto-children-block, .features-card {
-    background: #fff;
     opacity: 0;
     -webkit-transition: all 0.6s ease-out;
     -moz-transition: all 0.6s ease-out;
