@@ -5,7 +5,18 @@
 
 html{
     font-family: 'Gotham', 'Droid Sans', sans-serif;
+    scroll-behavior: smooth;
 }
+
+.slides {
+    width: 100%;
+}
+.slides-hidden {
+    display: none;
+}
+
+
+
 .bg-palette-primary{
     background: #26B7B8;
 }
