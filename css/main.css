@@ -70,6 +70,12 @@ html{
     color: #fff;
 }
 
+.sponsors-label{
+    width: 100%;
+    color: #a9a6a6;
+}
+
+
 .feature-icon{
     color: #9e1f64;
     height: 5rem;

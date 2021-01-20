@@ -66,7 +66,22 @@ function handleContactRevealOnScroll() {
 
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+function NavbarLinksBehavior(){
+    document.getElementById('nav-toggle').onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+    }
+    let navLinks = document.querySelectorAll('.nav-link');
+    for (let i = 0, length = navLinks.length; i < length; i++) {
+        navLinks[i].onclick = function (){
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+    }
+    document.getElementsByClassName('nav-link')
+}
+
+document.addEventListener("DOMContentLoaded", function (){
+    // Navbar behavior
+    NavbarLinksBehavior();
     NavbarScrollBehavior();
     // SCROLL MAGIC
     handleHowtoSectionBlocksRevealOnScroll();
