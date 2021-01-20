@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TabacON</title>
+    <meta name="author" content="name">
+    <meta name="description" content="Tu app para comprar tabaco 24h con pago contactless">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="vendor/tailwind.min.css">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script type="text/javascript" src="vendor/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="vendor/scrollmagic.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+
+</head>
+<body class="bg-transparent">
+<!--NAVBAR-->
+<nav class="flex items-center justify-between flex-wrap bg-white p-4 fixed w-screen z-10 top-0 shadow-xl" id="navbar">
+
+    <img style="height: 2rem;" src="img/TabacOn color.png" alt="Tabacon">
+
+    <div class="block lg:hidden">
+        <button id="nav-toggle"
+                class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-black hover:border-black">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="transition duration-50 ease-in w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+         id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="#how">¿Cómo funciona?</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="#features">Ventajas</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="#install">Instalación</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="#">Legal</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<script>
+    //Javascript to toggle the menu
+    document.getElementById('nav-toggle').onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+    }
+</script>
+<!--    OPTIONS-->
+<div class="bg-wrapper container  mx-auto max-w-full min-w-full pb-12 bg-transparent">
+    <section id="sectionSelector">
+        <div id='sections' class=" md:pb-4 grid grid-cols-1 md:grid-cols-3 md:px-4 md:px-8 w-full mt-24 md:mt-32 no-underline ">
+            <a class=" mt-4 md:mt-0 md:py-0 text-xl mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110 min-w-full px-8"
+               href="#privacy"
+            >
+                <div class="flex p-2 lg:p-4 custom-box-shadow text-white rounded-2xl min-w-full items-center justify-center" style="background-color: #26B7B8;">
+                    Política de privacidad
+                </div>
+            </a>
+            <a class=" mt-4 md:mt-0 md:py-0 text-xl mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110 min-w-full px-8"
+               href="#law"
+            >
+                <div class="flex p-2 lg:p-4 custom-box-shadow text-white rounded-2xl min-w-full items-center justify-center" style="background-color: #26B7B8;">
+                    Aviso legal
+                </div>
+            </a>
+            <a class=" mt-4 md:mt-0 md:py-0 text-xl mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110 min-w-full px-8"
+               href="#conditions"
+            >
+                <div class="flex p-2 lg:p-4 custom-box-shadow text-white rounded-2xl min-w-full items-center justify-center" style="background-color: #26B7B8;">
+                    Condiciones generales
+                </div>
+            </a>
+
+        </div>
+    </section>
+    <div>
+
+    </div>
+    <section id="privacy">
+        <h1 class="text-4xl sectionTitle md:text-4xl font-bold text-palette-complementary-dark text-center font-helvetica pt-8 md:pb-8">
+            Política de privacidad
+        </h1>
+        <div class="legalText  px-8 md:px-24 lg:px-48 text-justify">
+            <h1 class="text-palette-complementary-dark  text-3xl font-bold py-4">Tratamiento de los datos recogidos en
+                el
+                formulario de contacto <br></h1>
+            <h1 class="text-palette-complementary-dark  text-2xl font-bold py-4">Información básica sobre protección de
+                datos: <br></h1>
+            <p class=" text-lg md:text-sm pl-2 md:pl-12 text-justify">
+                <span class="text-palette-complementary-dark text-lg md:text-sm">Responsable: </span> Sociedad Europea
+                de Verificación
+                de Identidad S.L. (en adelante SEVI Systems) <br>
+                <span class="text-palette-complementary-dark text-lg md:text-sm">Finalidad: </span> Atender su
+                solicitud. <br>
+                <span class="text-palette-complementary-dark text-lg md:text-sm">Legitimación: </span> Alta en la
+                aplicación. <br>
+                <span class="text-palette-complementary-dark text-lg md:text-sm">Destinatarios: </span> No se cederán
+                datos a terceros,
+                salvo obligación legal. <br>
+                <span class="text-palette-complementary-dark text-lg md:text-sm">Derechos: </span> Tiene derecho a
+                acceder, rectificar
+                y suprimir los datos, así como otros derechos, indicados en la información adicional, que puede ejercer
+                dirigiéndose a C\Santa Caterina 21,2º 3 - 12540 Vila Real - CASTELLÓN DE LA PLANA. <br>
+
+            </p>
+
+
+            <h1 class="text-palette-complementary-dark  text-2xl font-bold py-4">Información completa sobre Protección
+                de
+                Datos: <br></h1>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">1. ¿Quién es el responsable del
+                tratamiento
+                de sus datos?
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Sociedad Europea de Verificación de Identidad S.L.<br>
+                B44503985<br>
+                C\Santa Caterina 21,2º 3 - 12540 Vila Real - CASTELLÓN DE LA PLANA.
+                <br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">2. ¿Con qué finalidad tratamos sus datos
+                personales?
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                En Sociedad Europea de Verificación de Identidad S.L. tratamos la información que nos facilitan las
+                personas
+                interesadas con el fin de darlo de alta en la aplicación.<br>
+
+                No se van a tomar decisiones automatizadas en base a los datos proporcionados.
+
+                <br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">3. ¿Por cuánto tiempo conservaremos sus
+                datos?
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Los datos se conservarán mientras el interesado no solicite su supresión.
+
+                <br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">4. ¿Cuál es la legitimación para el
+                tratamiento de sus datos?
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Le indicamos la base legal para el tratamiento de sus datos:
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                Ejecución de un contrato: Atender su solicitud.
+                <br>
+            </p>
+
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">5. ¿A qué destinatarios se comunicarán
+                sus
+                datos?
+
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                No se cederán datos a terceros, salvo obligación legal.<br>
+                Los datos estadísticos se usarán anonimizados, no existiendo la posibilidad de trazar perfiles asociados
+                a
+                su persona.
+
+
+                <br>
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">6. Transferencias de datos a terceros
+                países
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                No están previstas transferencias de datos a terceros países.
+                <br>
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">7. ¿Qué datos pedimos y con qué
+                finalidad?
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Sevi Systems recoge los siguientes datos.
+                <br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4 pl-12">Datos para el alta
+
+                <br></h1>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                • Nombre<br>
+                • Apellido<br>
+                • Teléfono móvil<br>
+                • Email<br>
+                • Dirección<br>
+                • Cp<br>
+                • Fecha de nacimiento<br>
+                • Género
+                <br>
+            </p>
+            <p class="pl-2 md:pl-24 pt-4 text-lg md:text-sm">
+                Estos datos serán tratados para el alta dentro de la plataforma TabacOn. Una vez guardados, a cada
+                usuario
+                se le
+                asigna un UUID, que será la única relación entre los datos estadísticos y los datos personales.
+                Es decir, todos los datos estadísticos que se usen, serán anonimizados, no pudiendo nunca desprenderse
+                la
+                identidad del usuario.
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                Ambas bases estarán en servidores distintos.
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4 pl-12">Otros datos
+
+                <br></h1>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                Los datos de métodos de pago, serán recogidos por Paycomet y almacenados en sus servidores con las
+                medidas
+                de
+                seguridad dispuestas por el Banco de España, siguiendo la normativa PSD2.<br>
+                Sevi Systems no tiene acceso a estos datos, tan sólo al saldo del monedero virtual.<br>
+                Si el usuario acepta que compartamos su información personal, podemos enviar un histórico del consumo a
+                su
+                médico de familia, para que, por medio de una consulta, lo ayude a dejar de fumar.<br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4 pl-12">Datos estadísicos
+
+                <br></h1>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                Sevi Systems podrá usar libremente los datos estadísticos anonimizados.<br>
+
+                Los mismos pueden ser:<br>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                • Género, edad y código postal del usuario <br>
+                • Histórico de consumo. <br>
+                • Analítica<br>
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4 pl-2 md:pl-12">Permisos a la aplicación
+
+                <br></h1>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                • Acceso al bluetooth (necesario para vincular el dispositivo móvil con la PVR) <br>
+                • Acceso a la red de datos (para enviar los datos de la compra y recibir la autorización del pago). En
+                caso
+                de no
+                tener en ese momento conexión, el sistema los enviará en cuanto detecte el uso de alguna red de datos (
+                ya
+                sea
+                WIFI o no).<br>
+                • Acceso al lector de huella o Face ID (necesario para ingresar a la aplicación, estos datos biométricos
+                están
+                dentro del dispositivo móvil del cliente, Sevi Systems no tiene acceso a ellos).<br>
+                • Acceso a la cámara de fotos (necesario para escanear el código qr).<br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">8. ¿Cuáles son sus derechos cuando nos
+                facilita sus datos?
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Cualquier persona tiene derecho a obtener confirmación sobre si en Sociedad Europea de Verificación de
+                Identidad S.L. estamos tratando, o no, datos personales que les conciernan. <br>
+
+                Las personas interesadas tienen derecho a acceder a sus datos personales, así como a solicitar la
+                rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos,
+                los
+                datos ya no sean necesarios para los fines que fueron recogidos. Igualmente tiene derecho a la
+                portabilidad
+                de sus datos. <br>
+
+                En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus
+                datos,
+                en cuyo caso únicamente los conservaremos para el ejercicio o la defensa de reclamaciones. <br>
+
+                En determinadas circunstancias y por motivos relacionados con su situación particular, los interesados
+                podrán oponerse al tratamiento de sus datos. En este caso, Sociedad Europea de Verificación de Identidad
+                S.L. dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de
+                posibles reclamaciones. <br>
+
+                Podrá ejercitar materialmente sus derechos de la siguiente forma: dirigiendo un escrito a Sociedad
+                Europea
+                de Verificación de Identidad S.L. – C\Santa Caterina 21,2º 3 - 12540 Vila Real - CASTELLÓN DE LA PLANA.
+
+                En caso de que sienta vulnerados sus derechos en lo concerniente a la protección de sus datos
+                personales,
+                especialmente cuando no haya obtenido satisfacción en el ejercicio de sus derechos, puede presentar una
+                reclamación ante la Autoridad de Control en materia de Protección de Datos competente a través de su
+                sitio
+                web: www.agpd.es. <br>
+
+            </p>
+
+
+        </div>
+    </section>
+    <section id="law">
+        <h1 class="text-4xl sectionTitle md:text-4xl font-bold text-palette-complementary-dark text-center font-helvetica pt-8 md:pb-8">
+            Aviso legal
+        </h1>
+        <div class="legalText px-8 md:px-24 lg:px-48 break-words text-justify">
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold pb-4">0. Objeto<br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                El presente aviso legal regula el uso y utilización de la aplicación TabacON, de la que es titular
+                Sociedad
+                Europea de Verificación de Identidad S.L. (en adelante, SEVI Systems).<br>
+                La navegación por la aplicación de SEVI Systems le atribuye la condición de USUARIO de la misma y
+                conlleva
+                su
+                aceptación plena y sin reservas de todas y cada una de las condiciones publicadas en este aviso legal,
+                advirtiendo de que dichas condiciones podrán ser modificadas sin notificación previa por parte de SEVI
+                Systems,
+                en cuyo caso se procederá a su publicación y aviso con la máxima antelación posible. <br>
+                Por ello es recomendable leer atentamente su contenido en caso de desear acceder y hacer uso de la
+                información y
+                de los servicios ofrecidos desde esta aplicación. <br>
+                El usuario además, se obliga a hacer un uso correcto de conformidad con las leyes, la buena fe, el orden
+                público, los usos del tráfico y el presente Aviso Legal, y responderá frente a SEVI Systems o frente a
+                terceros,
+                de cualesquiera daños y perjuicios que pudieran causarse como consecuencia del incumplimiento de dicha
+                obligación. <br>
+                Cualquier utilización distinta a la autorizada está expresamente prohibida, pudiendo SEVI Systems
+                denegar o
+                retirar el acceso y su uso en cualquier momento. <br>
+
+
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold pb-4">1. Identificación<br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                SEVI Systems, en cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la
+                Información y de Comercio Electrónico, le informa de que:
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                • Su denominación social es: Sociedad Europea de Verificación de Identidad S.L.. <br>
+                • Su nombre comercial es: SEVI Systems. <br>
+                • Su CIF es: B44503985. <br>
+                • Su domicilio social está en: C\Santa Caterina 21,2º 3 - 12540 Vila Real - CASTELLÓN DE LA PLANA
+                (ESPAÑA).
+                <br>
+                • Está inscrita en el Registro Mercantil de CASTELLÓN DE LA PLANA  Inscrita en el Registro Mercantil de
+                Castellón, el 26/03/18, en el Tomo 1756 , Folio 86, Inscripción 4, Hoja CS-40883. <br>
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">2. Comunicaciones<br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Para comunicarse con nosotros, ponemos a su disposición diferentes medios de contacto que detallamos a
+                continuación:
+                <br>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                • Email: rgpd@sevisl.com <br>
+
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Todas las notificaciones y comunicaciones entre los usuarios y SEVI Systems se considerarán eficaces, a
+                todos los efectos, cuando se realicen a través de cualquier medio de los detallados anteriormente.
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">3. Condiciones de acceso y
+                utilización<br>
+            </h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                La aplicación y sus servicios son de acceso libre y gratuito. No obstante, SEVI Systems puede
+                condicionar la
+                utilización de algunos de los servicios ofrecidos en su aplicación a la previa cumplimentación del
+                correspondiente formulario. <br>
+                El usuario garantiza la autenticidad y actualidad de todos aquellos datos que comunique a SEVI Systems y
+                será el único responsable de las manifestaciones falsas o inexactas que realice. <br>
+                Sólo podrán registrarse en la aplicación quienes hayan cumplido los 18 años en el momento del registro.
+                <br>
+                El usuario se compromete expresamente a hacer un uso adecuado de los contenidos y servicios de SEVI
+                Systems
+                y a no emplearlos para, entre otros: <br>
+
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                a) Difundir contenidos delictivos, violentos, pornográficos, racistas, xenófobos, ofensivos, de apología
+                del
+                terrorismo o, en general, contrarios a la ley o al orden público. <br>
+                b) Introducir en la red virus informáticos o realizar actuaciones susceptibles de alterar, estropear,
+                interrumpir o generar errores o daños en los documentos electrónicos, datos o sistemas físicos y lógicos
+                de
+                SEVI Systems o de terceras personas; así como obstaculizar el acceso de otros usuarios al sitio web y a
+                sus
+                servicios mediante el consumo masivo de los recursos informáticos a través de los cuales SEVI Systems
+                presta
+                sus servicios. <br>
+                c) Intentar acceder a las cuentas de correo electrónico de otros usuarios o a áreas restringidas de los
+                sistemas informáticos de SEVI Systems o de terceros y, en su caso, extraer información. <br>
+                d) Vulnerar los derechos de propiedad intelectual o industrial, así como violar la confidencialidad de
+                la
+                información de SEVI Systems o de terceros. <br>
+                e) Suplantar la identidad de cualquier otro usuario. <br>
+                f) Reproducir, copiar, distribuir, poner a disposición de, o cualquier otra forma de comunicación
+                pública,
+                transformar o modificar los contenidos, a menos que se cuente con la autorización del titular de los
+                correspondientes derechos o ello resulte legalmente permitido. <br>
+                g) Recabar datos con finalidad publicitaria y de remitir publicidad de cualquier clase y comunicaciones
+                con
+                fines de venta u otras de naturaleza comercial sin que medie su previa solicitud o consentimiento. <br>
+
+
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Todos los contenidos de la aplicación, como textos, fotografías, gráficos, imágenes, iconos, tecnología,
+                software, así como su diseño gráfico y códigos fuente, constituyen una obra cuya propiedad pertenece a
+                SEVI
+                Systems, sin que puedan entenderse cedidos al usuario ninguno de los derechos de explotación sobre los
+                mismos más allá de lo estrictamente necesario para el correcto uso de la aplicación. <br>
+                En definitiva, los usuarios que accedan a esta aplicación pueden visualizar los contenidos y efectuar,
+                en su
+                caso, copias privadas autorizadas siempre que los elementos reproducidos no sean cedidos posteriormente
+                a
+                terceros, ni se instalen a servidores conectados a redes, ni sean objeto de ningún tipo de explotación.
+                <br>
+                Asimismo, todas las marcas, nombres comerciales o signos distintivos de cualquier clase que aparecen en
+                la
+                aplicación son propiedad de SEVI Systems, sin que pueda entenderse que el uso o acceso al mismo atribuya
+                al
+                usuario derecho alguno sobre los mismos. <br>
+                La distribución, modificación, cesión o comunicación pública de los contenidos y cualquier otro acto que
+                no
+                haya sido expresamente autorizado por el titular de los derechos de explotación quedan prohibidos. <br>
+                El establecimiento de un hiperenlace no implica en ningún caso la existencia de relaciones entre SEVI
+                Systems y el propietario la aplicaciónen la que se establezca, ni la aceptación y aprobación por parte
+                de
+                SEVI Systems de sus contenidos o servicios. <br>
+                SEVI Systems no se responsabiliza del uso que cada usuario le dé a los materiales puestos a disposición
+                en
+                esta aplicación ni de las actuaciones que realice en base a los mismos. <br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">3.1 Exclusión de garantías y de
+                responsabilidad en ela cceso y la utilización<br>
+            </h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                El contenido de la aplicación es de carácter general y tiene una finalidad meramente informativa, sin
+                que se
+                garantice plenamente el acceso a todos los contenidos, ni su exhaustividad, corrección, vigencia o
+                actualidad, ni su idoneidad o utilidad para un objetivo específico. <br>
+                SEVI Systems excluye, hasta donde permite el ordenamiento jurídico, cualquier responsabilidad por los
+                daños
+                y perjuicios de toda naturaleza derivados de: <br>
+
+
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                a) La imposibilidad de acceso al sitio web o la falta de veracidad, exactitud, exhaustividad y/o
+                actualidad
+                de los contenidos, así como la existencia de vicios y defectos de toda clase de los contenidos
+                transmitidos,
+                difundidos, almacenados, puestos a disposición, a los que se haya accedido a través la aplicación no de
+                los
+                servicios que se ofrecen. <br>
+                b) La presencia de virus o de otros elementos en los contenidos que puedan producir alteraciones en los
+                sistemas informáticos, documentos electrónicos o datos de los usuarios. <br>
+                c) El incumplimiento de las leyes, la buena fe, el orden público, los usos del tráfico y el presente
+                aviso
+                legal como consecuencia del uso incorrecto del sitio web. En particular, y a modo ejemplificativo, SEVI
+                Systems no se hace responsable de las actuaciones de terceros que vulneren derechos de propiedad
+                intelectual
+                e industrial, secretos empresariales, derechos al honor, a la intimidad personal y familiar y a la
+                propia
+                imagen, así como la normativa en materia de competencia desleal y publicidad ilícita. <br>
+
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Asimismo, SEVI Systems declina cualquier responsabilidad respecto a la información que se halle fuera de
+                esta web y no sea gestionada directamente por nuestro webmaster. La función de los links que aparecen en
+                esta web es exclusivamente la de informar al usuario sobre la existencia de otras fuentes susceptibles
+                de
+                ampliar los contenidos que ofrece este sitio web. SEVI Systems no garantiza ni se responsabiliza del
+                funcionamiento o accesibilidad de los sitios enlazados; ni sugiere, invita o recomienda la visita a los
+                mismos, por lo que tampoco será responsable del resultado obtenido. SEVI Systems no se responsabiliza
+                del
+                establecimiento de hipervínculos por parte de terceros.
+                <br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">3.2 Procedimiento en caso de realización
+                de
+                actividades de carácter ilícito.<br>
+            </h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                En el caso de que cualquier usuario o un tercero considere que existen hechos o circunstancias que
+                revelen
+                el carácter ilícito de la utilización de cualquier contenido y/o de la realización de cualquier
+                actividad en
+                las páginas web incluidas o accesibles a través del sitio web, deberá enviar una notificación a SEVI
+                Systems
+                identificándose debidamente y especificando las supuestas infracciones.
+                <br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold py-4">3.3 Publicaciones<br>
+            </h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                La información administrativa facilitada a través la aplicación no sustituye la publicidad legal de las
+                leyes, normativas, planes, disposiciones generales y actos que tengan que ser publicados formalmente a
+                los
+                diarios oficiales de las administraciones públicas, que constituyen el único instrumento que da fe de su
+                autenticidad y contenido. La información disponible en este sitio web debe entenderse como una guía sin
+                propósito de validez legal.
+
+                <br>
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">4. Política de cookies
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-palette-complementary-dark">
+
+                ¿Qué son las cookies?
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las
+                cookies
+                permiten a una página web, entre otras cosas, almacenar y recuperar información sobre hábitos de
+                navegación
+                de
+                un usuario o de su equipo y, dependiendo de la información que contengan y de la forma que utilice su
+                equipo,
+                pueden utilizarse para reconocer al usuario.
+
+            <p class="pl-2 md:pl-12 text-lg md:text-sm text-palette-complementary-dark">
+
+                ¿Para qué utiliza las cookies esta página web y cuáles son?
+            </p>
+            <p class="pl-2 md:-24 text-lg md:text-sm">
+
+                Esta página web utiliza las cookies para una serie de finalidades, incluidas:
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+
+                • Análisis: son aquellas cookies que bien, tratadas por nosotros o por terceros, nos permiten
+                cuantificar el
+                número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los
+                usuarios
+                del servicio. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la
+                experiencia
+                del
+                usuario..
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                El detalle de las cookies utilizadas en esta página web es el siguiente:
+                Recoger información sobre la navegación de los
+                usuarios por el sitio con el fin de conocer el origen de las visitas y otros datos similares a nivel
+                estadístico. No obtiene datos de los nombres o apellidos de los usuarios ni de la dirección postal
+                concreta
+                desde donde se conectan. Google Analytics Centro de privacidad de Google:
+                http://www.google.com/intl/es/policies/privacy/ <br>
+                Nota: Las cookies de tipo 'Propias' son utilizadas sólo por el propietario de esta web y las cookies 'De
+                terceros' son utilizadas, por el prestador del servicio que está detallado en el cuadro anterior.
+            </p>
+
+            <p class="pl-2 md:pl-12 text-lg md:text-sm text-palette-complementary-dark">
+
+
+                ¿Cómo puedo desactivar o eliminar estas cookies?
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración
+                de
+                las
+                opciones del navegador instalado en su ordenador:
+            </p>
+
+
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+                <span class="text-palette-complementary-dark">Firefox</span> <br>
+                http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+                <span class="text-palette-complementary-dark">Chrome</span> <br>
+
+                http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+                <span class="text-palette-complementary-dark">Explorer</span> <br>
+
+                http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-in-internet-explorer-9
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+                <span class="text-palette-complementary-dark">Firefox</span> <br>
+
+                http://support.apple.com/kb/ph5042
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+                <span class="text-palette-complementary-dark">Opera</span> <br>
+
+                http://help.opera.com/Windows/11.50/es-ES/cookies.html
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+                <span class="text-palette-complementary-dark">Otros navegadores</span> <br>
+
+                Consulte la documentación del navegador que tenga instalado.
+            </p>
+
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                Complemento de inhabilitación para navegadores de Google Analytics. <br>
+                Si desea rechazar las cookies analíticas de Google Analytics en todos los navegadores, de forma que no
+                se
+                envíe
+                información suya a Google Analytics, puede descargar un complemento que realiza esta función desde este
+                enlace:
+                https://tools.google.com/dlpage/gaoptout.
+            </p>
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">5. Legislación aplicable
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Las condiciones presentes se regirán por la legislación española vigente.
+                La lengua utilizada será el Castellano.
+            </p>
+
+        </div>
+    </section>
+    <section id="conditions">
+
+
+        <h1 class="text-4xl sectionTitle md:text-4xl font-bold text-palette-complementary-dark text-center font-helvetica pt-8 md:pb-8">
+            Condiciones generales
+        </h1>
+
+        <div class="legalText px-8 md:px-24 lg:px-48 break-words text-justify">
+            <h1 class="text-palette-complementary-dark  text-xl font-bold pb-4">0. Objeto<br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Las presentes Condiciones Generales regulan la adquisición de los productos ofertados en TabacON
+                aplicación,
+                de la que es titular Sociedad Europea de Verificación de Identidad S.L. (en adelante, SEVI Systems).
+                <br>
+                TabacON es una aplicación informática titularidad de SEVI Systems con terminal virtual para la
+                gestión
+                del
+                pago y sistema de fidelización basado en la acumulación de saldos (a estos efectos [“Saldos”] que
+                proporciona a sus usuarios acceso a promociones y descuentos y permite realizar compras/pagos de
+                productos
+                y/o servicios en los establecimientos adheridos (en adelante, los “Comercios adheridos”). <br>
+                La adquisición de cualesquiera de los productos conlleva la aceptación plena y sin reservas de todas
+                y
+                cada
+                una de las Condiciones Generales que se indican, sin perjuicio de la aceptación de las Condiciones
+                Particulares que pudieran ser de aplicación al adquirir determinados productos. <br>
+                Estas Condiciones Generales podrán ser modificadas sin notificación previa, por tanto, es
+                recomendable
+                leer
+                atentamente su contenido antes de proceder a la adquisición de cualquiera de los productos
+                ofertados.
+                <br>
+
+            </p>
+            <h1 class="text-palette-complementary-dark  text-xl font-bold pb-4">1. Identificación<br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                SEVI Systems, en cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la
+                Información y de Comercio Electrónico, le informa de que:
+
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                • Su denominación social es: Sociedad Europea de Verificación de Identidad S.L. <br>
+                • Su nombre comercial es: SEVI Systems. <br>
+                • Su CIF es: B44503985. <br>
+                • Su domicilio social está en: C\Santa Caterina 21, 2º 3 - 12540 Vila Real - CASTELLÓN DE LA PLANA
+                (ESPAÑA).
+                <br>
+                • Está inscrita en el Registro Mercantil de CASTELLÓN DE LA PLANA, Inscrita en el Registro Mercantil
+                de
+                Castellón, el 26/03/18, en el Tomo 1756, Folio 86, Inscripción 4, Hoja CS-40883.
+                <br>
+
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold pb-4">2. Comunicaciones<br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Para comunicarse con nosotros, ponemos a su disposición diferentes medios de contacto que detallamos
+                a
+                continuación:
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                • Email: rgpd@sevisl.com.
+                <br>
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Todas las notificaciones y comunicaciones entre los usuarios y SEVI Systems se considerarán
+                eficaces, a
+                todos los efectos, cuando se realicen a través de cualquier medio de los detallados anteriormente.
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold pb-4">3. Requisitos del usuario<br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Ser usuario de TabacON es voluntario y exige ser mayor de diez y ocho (18) años, y no tener limitada
+                o
+                restringida la capacidad de obrar (en adelante denominado como el “Usuario”). Alguno de los
+                servicios de
+                TabacON pueden estar dirigidos, exclusivamente, a personas con una edad igual o mayor a 18 años, de
+                lo
+                que
+                se informará debidamente, además de reservarse la posibilidad de solicitar la confirmación de la
+                mayoría
+                de
+                edad del usuario en cuestión, tanto por medio de la aplicación como por medio del empleado del
+                establecimiento tantas veces como se estime oportuno cuando el producto o servicio que quiera
+                adquirir
+                el
+                usuario implique que éste debe cumplir la mayoría de edad. <br>
+                Con el fin de garantizar y proteger la seguridad de tu cuenta, será de obligado complimiento tener
+                completado el campo DNI en tu perfil personal. De no hacerlo en los términos indicados se
+                imposibilitará
+                el
+                uso de la aplicación en todos sus ámbitos, no haciéndose SEVI Systems responsable de cualquier
+                perjuicio
+                para el usuario provocado por la imposibilidad de uso de la aplicación hasta cumplimentar dicho
+                requisito.
+                <br>
+                Por otro lado, no se admitirá el registro y activación de ninguna cuenta de correo con dominios
+                temporales,
+                del mismo modo que SEVI Systems se reserva el derecho de no permitir el registro y, por tanto, la
+                activación
+                de cualquier otra cuenta de correo de dominio no temporal, sin la obligación de tener que justificar
+                la
+                admisión de la cuenta de correo no permitida. <br>
+                Al registrarte en TabacON declaras cumplir con los requisitos que se citan anteriormente.
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-xl font-bold pb-4">4. Servicios de Tabacon<br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm text-palette-complementary-dark">
+                A. Pago con dispositivo móvil de tus compras
+            </p>
+            <p class="pl-24 text-lg md:text-sm">
+
+                I. Servicio de Compras
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+
+                El servicio de Compras permite la compra de productos y/o servicios en Comercios adheridos (en
+                adelante,
+                las
+                “Compras”).<br>
+                El servicio de Compras te permite asociar una o varias tarjetas de pago para la realización de las
+                Compras
+                siempre y cuando dicha tarjeta que se quiera activar en la aplicación no estuviera ya activada en la
+                cuenta
+                de otro usuario, con independencia del grado de parentesco entre los usuarios, o de que el
+                propietario
+                de la
+                tarjeta haya autorizado de forma verbal o por escrito el uso de la misma en otro perfil/cuenta de
+                correo.
+                Las tarjetas admitidas para realizar el pago por TabacON son: Visa, Mastercard. Del mismo modo, de
+                haber
+                más
+                de un usuario utilizando la misma tarjeta, una vez expirada será considerada como inválida, y solo
+                el
+                usuario que realice su primera activación podrá hacer uso de la nueva tarjeta en TabacON. Por otro
+                lado,
+                SEVI Systems no se hace responsable si, a la hora de formalizar el pago mediante la aplicación, el
+                establecimiento adherido a la red TabacON no admite el pago por alguna de las tarjetas indicadas en
+                el
+                párrafo anterior. <br>
+                Además, podrás asociar más de una tarjeta de fidelización admitida por el Comercio adherido y por
+                TabacON,
+                lo que te permitirá acumular ventajas de acuerdo a las condiciones del correspondiente programa de
+                fidelización siempre y cuando dicha tarjeta sea admitida en el establecimiento donde se vaya a
+                realizar
+                el
+                pago. De no ser admitida, se podrá ejecutar el pago, pero no recibirás la gratificación
+                correspondiente
+                por
+                el uso de la tarjeta de fidelización activada en TabacON. <br>
+                Como Usuario declaras ser el titular de la tarjeta asociada al pago y que la misma es válida y se
+                encuentra
+                vigente y bajo tu control. Asímismo declaras que no consta en ninguna lista negra de una entidad
+                bancaria.
+                <br>
+                El uso de una tarjeta que no sea de tu titularidad se considerará uso fraudulento, siendo
+                responsable
+                frente
+                al titular de la tarjeta, y frente a terceros, de las consecuencias derivadas del mismo y
+                garantizando
+                la
+                indemnidad de SEVI Systems y de los Comercios adheridos en este sentido. SEVI Systems se reserva el
+                derecho
+                de realizar acciones frente a ese usuario en caso de perjuicio económico a la compañía, y/o de daños
+                de
+                imagen y honorabilidad de las buenas prácticas de la compañía. <br>
+                Además, reconoces y aceptas que: <br>
+            <p class="pl-2 md:pl-48 text-lg md:text-sm">
+
+                a. Las Compras son transacciones que se realizan entre el Comercio adherido y el Usuario. SEVI
+                Systems
+                no es
+                responsable de las incidencias que surjan entre el establecimiento vendedor y el Usuario con ocasión
+                de
+                la
+                Compra o con ocasión de los productos y/o servicios adquiridos a través de TabacON. <br>
+                b.SEVI Systems no interviene en la Compra como comprador, ni como vendedor cuando no sea titular del
+                producto que se adquiere o a menos que así se haya convenido expresamente entre estos y el Usuario.
+                Recuerda que eres responsable del cumplimiento de las obligaciones de carácter fiscal que te sean
+                imputables
+                como consecuencia de las operaciones y transacciones que efectúes a través de TabacON. <br>
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                II. Funcionamiento del servicio de Compras
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+
+                Para realizar las Compras a través de TabacON deberás seguir las instrucciones que se te facilitan
+                en la
+                misma.
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                III. Seguridad de las operaciones de pago
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+
+                TabacON por medio de la plataforma PAYCOMET aplica los estándares PCI-DSS para la seguridad de tus
+                operaciones.
+                Podrás modificar las tarjetas asociadas al pago de las Compras así como las tarjetas de
+                fidelización, o
+                dar
+                de baja alguna de las tarjetas asociadas, en cualquier momento. Para garantizar la autenticidad de
+                las
+                tarjetas de pago asociadas, se realizará una operación de validación de las mismas, mediante la
+                realización,
+                generalmente, de un cargo de poco valor cuyo importe se devolverá de conformidad con los
+                procedimientos
+                de
+                devolución de tu entidad bancaria (los tiempos suelen ser entre 2 y 7 días). Pudiera realizarse otro
+                procedimiento de validación si así estuviera establecido por la entidad emisora de la tarjeta de
+                pago.
+                <br>
+                Cada vez que realices una Compra tu autorización se entenderá otorgada cuando introduzcas el código
+                de
+                seguridad que valida la transacción o cuando facilites el código de pago al vendedor. A partir de
+                dicho
+                momento, no podrás revocar la operación de pago, autorizando expresamente el cargo en tu cuenta del
+                importe
+                correspondiente a la Compra, incluidos los impuestos. Es tu responsabilidad custodiar diligentemente
+                el
+                código de seguridad necesario para efectuar el pago de las Compras, mantenerlo en secreto y evitar
+                el
+                acceso
+                de terceros al mismo. Las operaciones que realices desde tu cuenta de Usuario haciendo uso del
+                código de
+                seguridad se entenderán autorizadas por ti mismo, y que una vez hayas introducido el código no
+                podrán
+                ser
+                revocadas, respondiendo de éstas frente a SEVI Systems y frente al Comercio adherido. <br>
+                Como Usuario aceptas que se te efectúe el cargo del importe correspondiente a la Compra, incluidos
+                los
+                impuestos, y asimismo que se comparta la información de tu medio de pago con terceros en la medida
+                en
+                que
+                sea necesario para procesar el pago y emitir la factura, en su caso, así como también para, en la
+                medida
+                que
+                sea necesario, poder acumular las ventajas asociadas al medio de fidelización que asocies al
+                servicio de
+                Compras. <br>
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm text-palette-complementary-dark">
+
+                B. Programa Usuario Fiel
+            </p>
+            <p class="pl-2 md:pl-24 text-lg">
+                Como Usuario TabacON, según el mayor o menor uso de la aplicación TabacON, obtendrás una
+                categorización
+                (bronce, plata, oro o platino) que premiará tu fidelidad con beneficios adicionales. SEVI Systems se
+                reserva
+                siempre el derecho a modificar suprograma de fidelización y gamificación sin previo aviso.
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm text-palette-complementary-dark">
+                C. Reembolso “Saldos”
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                El Saldo es un beneficio que tienes como Usuario de TabacON, por el que obtendrás un porcentaje de
+                reembolso
+                sobre el precio de venta al público, por los pagos que se realicen con TabacON, una vez descontado
+                los
+                cupones descuento que en su caso apliquen a la operación. Podrás saber dónde y qué porcentaje de
+                saldo
+                generas en la ficha de cada establecimiento.
+                El porcentaje de Saldo será definido por cada comercio.
+                El Saldo no caducará para el usuario salvo en dos casos:
+                Si el Usuario se da de baja en TabacON
+                Si el Usuario no realiza, al menos, una transacción con TabacON donde se genere o se utilice el
+                Saldo
+                durante un periodo de 12 meses.
+                Las devoluciones de operaciones implican el abono al cliente del importe cargado en su tarjeta y la
+                anulación del Saldo generado en dicha operación dentro de las 48 horas de realizado el cargo. En
+                caso de
+                realizarse devoluciones, si el Saldo del Usuario resultase negativo, se procederá a realizar un
+                cargo en
+                la
+                tarjeta por el importe necesario para que el Saldo se mantenga a cero.
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm text-palette-complementary-dark">
+
+                D. Otros servicios
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                A través de TabacON te facilitaremos el acceso a otros servicios siempre pensados para ti. En cada
+                caso,
+                de
+                existir condiciones particulares del servicio, te las comunicaremos.
+            </p>
+
+            </p>
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">5. Productos
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                Los productos ofertados, junto con las características principales de los mismos y su precio
+                aparecen en
+                pantalla. <br>
+                SEVI Systems se reserva el derecho de decidir, en cada momento, los productos y/o servicios que se
+                ofrecen a
+                los Clientes. De este modo, SEVI Systems podrá, en cualquier momento, añadir nuevos productos y/o
+                servicios
+                a los ofertados actualmente. Asímismo SEVI Systems se reserva el derecho a retirar o dejar de
+                ofrecer,
+                en
+                cualquier momento, y sin previo aviso, cualesquiera de los productos ofrecidos. <br>
+                Todo ello sin perjuicio de que la adquisición de alguno de los productos sólo podrá hacerse mediante
+                la
+                suscripción o registro del USUARIO, otorgando por parte de SEVI Systems al interesado un nombre de
+                Usuario y
+                una contraseña, los cuales le identificarán y habilitarán personalmente para poder tener acceso a
+                los
+                productos. <br>
+                Una vez dentro de TabacON aplicación, y para acceder a la contratación de los distintos productos,
+                el
+                Usuario deberá seguir todas las instrucciones indicadas en el proceso de compra, lo cual supondrá la
+                lectura
+                y aceptación de todas las condiciones generales y particulares fijadas en TabacON aplicación. <br>
+
+            </p>
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">6. Disponibilidad y sustituciones
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+
+                SEVI Systems pretende garantizar la disponibilidad de todos los productos que están publicitados a
+                través de
+                TabacON aplicación. No obstante, en el caso de que cualquier producto solicitado no estuviera
+                disponible
+                o
+                si el
+                mismo se hubiera agotado, se le informará al cliente vía correo electrónico lo antes posible. <br>
+                De no hallarse disponible el producto, y habiendo sido informado de ello el consumidor, SEVI Systems
+                podrá
+                cancelar la venta. <br>
+                En caso de indisponibilidad de la totalidad o parte del pedido, y el rechazo de los productos de
+                sustitución
+                por
+                el cliente, el reembolso previamente abonado, se efectuará en la tarjeta de crédito con la que
+                realizó
+                la
+                compra
+                dentro de las 48 horas de la operación. <br>
+                Si SEVI Systems se retrasara injustificadamente en la devolución de las cantidades abonadas, el
+                consumidor
+                podrá
+                reclamar el doble de la cantidad adeudada. <br>
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">7. Proceso de compra y/o
+                contratación
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                PRODUCTO
+            </p>
+
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                Para realizar cualquier compra en TabacON aplicación, es necesario que el cliente sea mayor de 18
+                años
+                de
+                edad. <br>
+                Además será preciso que el cliente se registre en TabacON aplicación a través de un formulario de
+                recogida
+                de datos en el que se proporcione a SEVI Systems la información necesaria para la contratación;
+                datos
+                que en
+                cualquier caso serán veraces, exactos y completos sobre su identidad y que el cliente deberá
+                consentir
+                expresamente mediante la aceptación de la política de privacidad de SEVI Systems. <br>
+                Los pasos a seguir para realizar la compra son: <br>
+
+
+            </p>
+            <p class="pl-2 md:pl-36 text-lg md:text-sm">
+                • Ingresar en la aplicación, en la que previamente, deberá haberse creado una cuenta. <br>
+                • Búsqueda de la máquina más cercana. <br>
+                • Emparejar el dispositivo móvil con la máquina expendedora. <br>
+                • Elección del producto. <br>
+                • Elección del método de pago. <br>
+                • Pago. <br>
+                • Retirar el producto. <br>
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+
+                Asímismo es recomendable que el cliente imprima y/o guarde una copia en soporte duradero de las
+                condiciones
+                de
+                venta al realizar su pedido, así como también del comprobante de recepción enviado por SEVI Systems
+                por
+                correo
+                electrónico.
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                FACTURACIÓN
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                Junto con su pedido, recibirá la correspondiente notificación de la transacción. <br>
+                A tal efecto, el cliente consiente que dicha notificación se le remita en formato electrónico. El
+                cliente la
+                recibirá en su correo electrónico. Podrá, en cualquier momento, revocar este consentimiento para
+                recibir
+                la
+                factura en papel. <br>
+
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">8. Duración, Renovación y
+                cancelación del
+                contrato
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                DURACIÓN
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                La duración es indeterminada, siempre y cuando la empresa esté en funcionamiento.
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                RENOVACIÓN
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                No hay renovación de los servicios.
+
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                CANCELACIÓN
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                Se puede cancelar previo aviso con quince días de anticipación.
+
+            </p>
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">9. Enterga
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                PRODUCTOS
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                El pedido será entregado en el momento en que se haya completado correctamente el pago.
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">10. Precios, gastos e impuestos
+
+                <br></h1>
+
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Los precios de los productos que se recogen en TabacON aplicación vendrán expresados en Euros salvo
+                que
+                se
+                exprese lo contrario y estarán garantizados durante el tiempo de validez de los mismos, salvo error
+                de
+                impresión y sea cual sea el destino del pedido
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                PRODUCTOS
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                Catálogo de los precios finales de todos los productos, (y en su caso, los precios finales por
+                unidad de
+                medida, cuando sea obligatorio) junto a sus características, las ofertas, descuentos, etc., se
+                reflejan
+                en
+                cada uno de los artículos que aparecen en el TabacON aplicación. <br>
+                Los precios de los productos pueden variar en cualquier momento. En este caso, el precio a aplicar
+                será
+                el
+                vigente en la fecha de realización del pedido. De cualquier modo, el coste final será comunicado al
+                cliente
+                en el proceso de compra electrónica antes de que éste formalice su aceptación. <br>
+
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">11. Formas de pago
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Ponemos a su disposición estas formas de pago:
+
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                • Monedero virtual, en el que, al momento de registrarse, debe dar de alta los medios de pago para
+                recargarlo.
+                Estos pueden ser: tarjeta de crédito o débito, Bizum o Paypal. <br>
+                • Efectivo
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Puede realizar el pago de manera inmediata a través de la pasarela de pago seguro SSL de nuestro
+                Banco.
+                Si
+                fuera necesario realizar cualquier devolución o cancelación del pedido, el importe se reembolsará a
+                través
+                de la misma tarjeta de pago dentro de las 48 horas de la operación. Los datos tanto personales como
+                bancarios serán protegidos con todas las medidas de seguridad establecidas por la Ley de Protección
+                de
+                Datos
+                Personales y garantía de los derechos digitales su Reglamento de Desarrollo con total
+                confidencialidad.
+
+            </p>
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">12. Ampliación de información
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Descarga de la aplicación TabacON y condiciones de uso del software TabacON
+                I. La utilización del software por el Usuario queda restringida al uso de TabacON para el acceso a
+                sus
+                funcionalidades. Su empleo para cualquier otro fin queda expresamente prohibido y será considerado
+                como
+                acto
+                de piratería de software que infringe las leyes de propiedad intelectual e industrial. <br>
+                II. La totalidad de TabacON, es decir, los elementos que la componen (textos, imágenes, marcas,
+                nombres
+                comerciales o signos distintivos de cualquier clase, logotipos, archivos de audio, archivos de
+                software,
+                combinaciones de colores), así como la estructura, selección y orden de sus contenidos, son
+                titularidad
+                de
+                SEVI Systems, o de terceros, y se encuentran protegidos por la normativa de Propiedad Intelectual e
+                Industrial y de Marcas, no pudiendo entenderse que el uso o acceso a TabacON por tu parte te
+                atribuya
+                derecho alguno sobre éstos, y por tanto, no podrán ser objeto de explotación, reproducción,
+                distribución,
+                transformación, comunicación pública, cesión, transformación o cualquier otra forma de difusión no
+                autorizada expresamente por SEVI Systems, más allá de lo estrictamente necesario para el correcto
+                uso de
+                TabacON.<br>
+                III. SEVI Systems ha adoptado las medidas razonablemente necesarias para el correcto funcionamiento,
+                acceso
+                y uso de TabacON, así como la ausencia de virus o componentes maliciosos. Sin embargo, SEVI Systems
+                no
+                garantiza la disponibilidad total de TabacON, puesto que la misma depende de la red de
+                comunicaciones y
+                del
+                proveedor de servicio de comunicaciones, el acceso y uso de los servicios a través de TabacON queda
+                condicionado al buen funcionamiento del sistema operativo de tu Dispositivo, y a que el uso de
+                TabacON
+                se
+                realice de acuerdo con lo establecido en estas Condiciones; cuestiones todas ellas ajenas a SEVI
+                Systems.<br>
+                IV. Algunas de las funcionalidades de los servicios de TabacON pueden no estar totalmente operativas
+                por
+                razón de las características del Dispositivo y/o por la imposibilidad física o práctica de poder
+                cumplimentar a través de los mismos determinados trámites y/o requisitos establecidos con carácter
+                previo
+                por la normativa aplicable; circunstancias que, en la medida que la tecnología lo permita, se te
+                comunicarán
+                en el momento del acceso.<br>
+                V. TabacON podrá permitir la conexión con otras aplicaciones de terceros descargadas en el
+                Dispositivo.
+                Como
+                Usuario serás el único responsable del funcionamiento de dichas aplicaciones, y de la utilización de
+                las
+                mismas según las condiciones establecidas por el tercero titular de dicho software.<br>
+                VI. La descarga de TabacON y/o las funcionalidades previstas o que en el futuro se puedan permitir a
+                través
+                de TabacON, tendrá/n carácter gratuito, sin perjuicio de que la conexión y navegación que, en su
+                caso,
+                realices, serán facturadas por su operador según la tarifa que tengas contratada.<br>
+                VII. SEVI Systems no garantiza y no se responsabiliza de la continuidad en el uso de TabacON y los
+                servicios
+                incluidos en la misma; la ausencia de errores, virus, componentes maliciosos; las pérdidas, daños o
+                perjuicios de cualquier tipo que surjan por acceder y usar TabacON, incluyéndose, pero no
+                limitándose, a
+                los
+                producidos en los sistemas informáticos por la introducción de virus y/o ataques informáticos, y a
+                la
+                invulnerabilidad del software proporcionado o de sus medidas de seguridad; los daños o perjuicios
+                que
+                pudieran sufrir el Usuario o un tercero por un uso inadecuado de TabacON y, en modo alguno, de las
+                caídas,
+                interrupciones, ausencia o defecto en las telecomunicaciones.<br>
+                VIII. Por tu parte como Usuario serás responsable de comprobar que el software es compatible con tu
+                Dispositivo y su sistema operativo, por lo que asumes los daños que la utilización del software,
+                incluida su
+                instalación, pudiera ocasionar en tu Dispositivo; la seguridad de los Dispositivos que utilizas para
+                acceder
+                a TabacON, para garantizar la confidencialidad y privacidad de tus datos; los daños o perjuicios que
+                causes,
+                a ti mismo o a un tercero, por el uso de TabacON a través de un Dispositivo; la veracidad, exactitud
+                y
+                autenticidad de los datos que facilites al momento de realizar su registro, así como de tener
+                correctamente
+                actualizados los mismos; el debido almacenamiento y custodia de tu nombre de usuario,contraseña y
+                código
+                de
+                seguridad, evitando el acceso de dichos datos a terceros; (vi) informar a SEVI Systems de forma
+                inmediata de
+                la pérdida, el robo, la apropiación indebida o el uso no autorizado de tus datos de acceso a
+                TabacON,
+                así
+                como, en general, de cualquier hecho que pudiera comprometer la seguridad de TabacON.<br>
+                IX. SEVI Systems se reserva el derecho a realizar modificaciones y/o mejoras en el software, en
+                cualquier
+                momento y sin previo aviso, incluso de aquellas modificaciones que estén basadas en ideas o
+                aportaciones
+                de
+                los propios Usuarios. Dichas modificaciones pasarán a ser titularidad exclusiva de SEVI Systems, o
+                de un
+                tercero, según corresponda.<br>
+                X. SEVI Systems no responde de la veracidad, integridad o actualización de las informaciones que no
+                sean
+                de
+                elaboración propia y de las que se indique otra fuente, así como tampoco de las contenidas en otros
+                websites
+                o aplicaciones mediante hiperenlace o vínculo desde TabacON, que se regirán por los términos y
+                condiciones
+                de utilización que a tal efecto resulten exigibles por los titulares de dichos sitios web o
+                aplicaciones.<br>
+                XI. SEVI Systems se reservan el derecho a eliminar, limitar o impedir el acceso a TabacON cuando
+                surjan
+                dificultades técnicas por hechos o circunstancias ajenos a SEVI Systems que, a su criterio,
+                disminuyan o
+                anulen los niveles de seguridad estándares adoptados para el adecuado funcionamiento de TabacON.<br>
+                XII. SEVI Systems podrá suspender tu cuenta de Usuario, incluso cancelarla, si su seguridad se viera
+                comprometida o si se hubiera llevado a cabo un uso fraudulento o no autorizado o tuviera sospechas
+                fundadas
+                del mismo. En este caso, se te informará con antelación o, si no fuera posible, inmediatamente
+                después
+                de
+                suspender o cancelar tu cuenta de Usuario, de las razones de dicha suspensión o cancelación, a menos
+                que
+                haya motivos razonables para pensar que esa revelación de información puede comprometer las medidas
+                de
+                seguridad o ser ilegal. La activación de tu cuenta se realizará una vez hayan desaparecido las
+                causas
+                que
+                motivaron la suspensión.<br>
+            </p>
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">13. General
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                A. Firma telemática
+
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                La utilización de las credenciales de Usuario tendrá la consideración de firma contractual, con el
+                mismo
+                valor que tu firma manuscrita. Por tanto, el envío de órdenes e instrucciones a través de TabacON
+                tendrá
+                plena eficacia jurídica.
+            </p>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                B. Contacto
+
+            </p>
+            <p class="pl-2 md:pl-24 text-lg md:text-sm">
+                Para cualquier duda, sugerencia, incidencia, reclamación o baja relativa a TabacON puedes dirigirte
+                a
+                nosotros remitiéndonos una carta a la siguiente dirección: <br>
+                SEVI Systems - TabacON (Servicio de Atención al Cliente) <br>
+                C/Colón 16, 12520, Nules, Castellón. <br>
+                O a través de un correo electrónico al siguiente email: rgpd@sevisl.com <br>
+                ANTES DE ACEPTAR DARTE DE ALTA EN TABACON TE RECORDAMOS QUE TRATAREMOS TUS DATOS PARA FINALIDADES
+                COMERCIALES. SI NO QUIERES QUE TRATEMOS TUS DATOS, NO CONTINÚES CON EL ALTA Y PODRÁS SEGUIR
+                REALIZANDO
+                LAS
+                COMPRAS EN LOS ESTABLECIMIENTOS ADHERIDOS A TRAVÉS DE OTROS SERVICIOS DE PAGO.
+            </p>
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">14. Atención al cliente y
+                reclamaciones
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Para interponer cualquier queja o reclamación ante SEVI Systems el cliente deberá dirigirse al
+                departamento
+                de atención al cliente a través de la dirección de correo electrónico: direccion@sevisl.com. <br>
+                Según la Resolución de litigios en línea en materia de consumo de la UE y conforme al Art. 14.1 del
+                Reglamento (UE) 524/2013, le informamos que la Comisión Europea facilita a todos los consumidores
+                una
+                plataforma de resolución de litigios en línea que se encuentra disponible en el siguiente enlace:
+                http://ec.europa.eu/consumers/odr/. <br>
+
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">15. Legislación aplicable
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Las condiciones presentes se regirán por la legislación española vigente. <br>
+                La lengua utilizada será el Castellano. <br>
+            </p>
+
+            <h1 class="text-palette-complementary-dark  text-lg font-bold py-4">SOLICITUD DE DISOCIACIÓN Y
+                BORRADO DE LOS DATOS DE TABACON:
+
+                <br></h1>
+            <p class="pl-2 md:pl-12 text-lg md:text-sm">
+                Por la presente, solicito a Sociedad Europea de Verificación de Identidad S.L. el borrado de mis
+                datos
+                personales de la aplicación TabacON.
+                <br>
+                En (completar la fecha completa y la ciudad) <br>
+                Firmado (nombre completo y DNI) <br>
+
+            </p>
+
+        </div>
+
+    </section>
+</div>
+<footer class="footer bg-white relative pt-10">
+    <div class="container mx-auto ">
+        <div class="mt-8 border-yellow-500 flex flex-col items-center">
+            <div class="sm:w-2/3 text-center my-6">
+                <img class="mx-auto mb-4" style="height: 1rem" src="img/TabacOn color.png" alt="Tabacon"
+                     alt="tabacon logo"/>
+                <a href="https://sevisl.com" target="_blank">
+                    <p class="text-sm text-yellow-500 font-bold">
+                        © 2021 by SEVI Systems
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
