@@ -1,3 +1,15 @@
+function NavbarLinksBehavior(){
+    document.getElementById('nav-toggle').onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+    }
+    let navLinks = document.querySelectorAll('.nav-link');
+    for (let i = 0, length = navLinks.length; i < length; i++) {
+        navLinks[i].onclick = function (){
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+    }
+    document.getElementsByClassName('nav-link')
+}
 function NavbarScrollBehavior() {
     let prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
@@ -66,32 +78,7 @@ function handleContactRevealOnScroll() {
 
 }
 
-function NavbarLinksBehavior(){
-    document.getElementById('nav-toggle').onclick = function () {
-        document.getElementById("nav-content").classList.toggle("hidden");
-    }
-    let navLinks = document.querySelectorAll('.nav-link');
-    for (let i = 0, length = navLinks.length; i < length; i++) {
-        navLinks[i].onclick = function (){
-            document.getElementById("nav-content").classList.toggle("hidden");
-        }
-    }
-    document.getElementsByClassName('nav-link')
-}
-
-document.addEventListener("DOMContentLoaded", function (){
-    // Navbar behavior
-    NavbarLinksBehavior();
-    NavbarScrollBehavior();
-    // SCROLL MAGIC
-    handleHowtoSectionBlocksRevealOnScroll();
-    handleFeaturesSectionBlocksRevealOnScroll();
-    handleInstallationStepsRevealOnScroll();
-    handleContactRevealOnScroll();
-
-});
-
-addEventListener("load", () => { // "load" is safe but "DOMContentLoaded" starts earlier
+function mobileMockupCarouselControl(){
     let index = 0;
     let indexPhone = 0;
     const slides = document.querySelectorAll(".slides");
@@ -121,4 +108,21 @@ addEventListener("load", () => { // "load" is safe but "DOMContentLoaded" starts
         animationMobile.classList.add("progress-value")
         setTimeout(nextSlidePhone, 5000);
     }
+}
+
+//ON DOM LOADED MAIN FUNCTION
+document.addEventListener("DOMContentLoaded", function (){
+    // Mobile mockup carousel behavior
+    mobileMockupCarouselControl();
+
+    // Navbar behavior
+    NavbarLinksBehavior();
+    NavbarScrollBehavior();
+
+    // SCROLL MAGIC
+    handleHowtoSectionBlocksRevealOnScroll();
+    handleFeaturesSectionBlocksRevealOnScroll();
+    handleInstallationStepsRevealOnScroll();
+    handleContactRevealOnScroll();
+
 });
