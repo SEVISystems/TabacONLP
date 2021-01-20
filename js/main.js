@@ -156,29 +156,41 @@ function mobileMockupCarouselControl(){
     const slidesPhone = document.querySelectorAll(".slides-phone");
     const animationPC = document.getElementById("progressBar");
     const animationMobile = document.getElementById("progressBarPhone");
-
+    const mockPC = document.getElementById("mockPC");
+    const mockMobile = document.getElementById("mockup-mobile");
+    let timerPC =0;
+    let timerMobile =0;
     const classHide = "slides-hidden", count = slides.length;
-    nextSlide();
-    nextSlidePhone();
+    nextSlideTime();
+    nextSlidePhoneTime();
 
-    function nextSlide() {
+    function nextSlideTime() {
         slides[(index > count ? index = 0 : index++) % count].classList.add(classHide);
         slides[index % count].classList.remove(classHide);
         animationPC.classList.remove("progress-value")
         void animationPC.offsetWidth;
         animationPC.classList.add("progress-value")
-        setTimeout(nextSlide, 5000);
+        timerPC = setTimeout(nextSlideTime, 5000);
     }
 
-    function nextSlidePhone() {
+    function nextSlidePhoneTime() {
 
         slidesPhone[(indexPhone > count ? indexPhone = 0 : indexPhone++) % count].classList.add(classHide);
         slidesPhone[indexPhone % count].classList.remove(classHide);
         animationMobile.classList.remove("progress-value")
         void animationMobile.offsetWidth;
         animationMobile.classList.add("progress-value")
-        setTimeout(nextSlidePhone, 5000);
+        timerMobile= setTimeout(nextSlidePhoneTime, 5000);
     }
+    mockMobile.onclick= function () {
+        clearTimeout(timerMobile);
+        nextSlidePhoneTime();
+    };
+    mockPC.onclick= function () {
+        clearTimeout(timerPC);
+        nextSlideTime();
+    };
+
 }
 
 //ON DOM LOADED MAIN FUNCTION
