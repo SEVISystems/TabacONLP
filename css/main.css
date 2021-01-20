@@ -232,6 +232,11 @@ html{
     margin: auto;
 }
 
+#lottieVIPAnimation{
+    height: 9rem;
+    margin-bottom: 0.5rem;
+}
+
 /* DESKTOP MEDIA QUERY */
 @media(min-width: 1024px){
     #home-desktop{
