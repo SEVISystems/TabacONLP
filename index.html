@@ -32,8 +32,9 @@
 
 <!--NAVBAR-->
 <nav class="flex items-center justify-between flex-wrap bg-white p-4 fixed w-screen z-10 top-0 shadow-xl" id="navbar">
-
-    <img style="height: 2rem;" src="img/TabacOn color.png" alt="Tabacon">
+    <a href="#">
+        <img style="height: 2rem;" src="img/TabacOn color.png" alt="Tabacon">
+    </a>
 
     <div class="block lg:hidden">
         <button id="nav-toggle"
@@ -59,6 +60,10 @@
             <li class="mr-3">
                 <a class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
                    href="#install">Instalación</a>
+            </li>
+            <li class="mr-3">
+                <a class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="/legal">Legal</a>
             </li>
 
         </ul>
@@ -99,18 +104,18 @@
                                              ¿Estás preparado?
                                          </div>-->
                                         <div class="flex flex-column justify-center">
-                                           <!-- <a href="bundle/TabacON-App-Oficial-v0.2.1.apk" target="_blank"
-                                               class="downloadLink">-->
-                                                <button class="main-cta bg-palette-primary mt-6 px-8 py-4 font-bold py-2 rounded-lg px-4 rounded text-white inline-flex items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
-                                                    <svg class="items-center" height="40"
-                                                         viewBox="2.993 .918 26.014 30.687"
-                                                         width="40" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
-                                                              fill="#ffffff"/>
-                                                    </svg>
-                                                    <h3 class="ml-8">Descargar APP</h3>
-                                                </button>
-                                           <!-- </a>-->
+                                            <!-- <a href="bundle/TabacON-App-Oficial-v0.2.1.apk" target="_blank"
+                                                class="downloadLink">-->
+                                            <button class="main-cta bg-palette-primary mt-6 px-8 py-4 font-bold py-2 rounded-lg px-4 rounded text-white inline-flex items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
+                                                <svg class="items-center" height="40"
+                                                     viewBox="2.993 .918 26.014 30.687"
+                                                     width="40" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
+                                                          fill="#ffffff"/>
+                                                </svg>
+                                                <h3 class="ml-8">Descargar APP</h3>
+                                            </button>
+                                            <!-- </a>-->
                                             <!--  <small><i>Peso de la App: 30Mb</i></small>-->
 
                                             <!--                                            <button style="background-color: #26B7B8;"-->
@@ -133,7 +138,7 @@
                                     </div>
 
                                     <!--                                            </button>-->
-                                    <div class="marvel-device note8  ml-8 lg:ml-12 ">
+                                    <div id="mockPC" class=" marvel-device note8  ml-8 lg:ml-12 ">
                                         <div class="inner"></div>
                                         <div class="overflow">
                                             <!--                                            <div class="shadow"></div>-->
@@ -165,8 +170,6 @@
 
                             </div>
                             <div class="my-auto mx-auto">
-
-
 
 
                                 <!--
@@ -262,16 +265,17 @@
                                     <!--                                        <div class="volume"></div>-->
                                     <!--                                        <div class="camera"></div>-->
                                     <div class="screen">
-                                        <img class="slides-phone slides-hidden"
-                                             src="img/screenshots/screenshot_home.jpg">
-                                        <img class="slides-phone slides-hidden"
-                                             src="img/screenshots/screenshot_card.jpg">
-                                        <img class="slides-phone slides-hidden"
-                                             src="img/screenshots/screenshot_list.jpg">
-                                        <img class="slides-phone slides-hidden"
-                                             src="img/screenshots/screenshot_select.jpg">
-                                        <img class="slides-phone slides-hidden"
+                                        <img class="slides-phone slides-hidden fadeImageStart"
                                              src="img/screenshots/screenshot_pay.jpg">
+                                        <img class="slides-phone slides-hidden fadeImageStart"
+                                             src="img/screenshots/screenshot_home.jpg">
+                                        <img class="slides-phone slides-hidden fadeImageStart"
+                                             src="img/screenshots/screenshot_card.jpg">
+                                        <img class="slides-phone slides-hidden fadeImageStart"
+                                             src="img/screenshots/screenshot_list.jpg">
+                                        <img class="slides-phone slides-hidden fadeImageStart"
+                                             src="img/screenshots/screenshot_select.jpg">
+
                                     </div>
                                     <div class="progress">
                                         <div id="progressBarPhone" class="progress-value "
@@ -287,7 +291,7 @@
                                          </div>-->
                                     <div class="flex flex-col ">
                                         <button style="background-color: #26B7B8;"
-                                                class="main-cta mt-6 px-3 w-full font-bold py-2 rounded-lg px-4 rounded inline-flex text-white items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
+                                                class="main-cta-mobile mt-6 px-3 w-full font-bold py-2 rounded-lg px-4 rounded inline-flex text-white items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
                                             <div class="mx-auto inline-flex items-center">
                                                 <svg class="mx-3" height="40" viewBox="2.993 .918 26.014 30.687"
                                                      width="40" xmlns="http://www.w3.org/2000/svg">
@@ -840,7 +844,8 @@
                               stroke="#3f3d56" stroke-miterlimit="10" id="line163"/>
                     </svg>
                     <h3 class="font-bold text-lg mb-1">Descarga la APK</h3>
-                    <p class="leading-tight ">Descarga nuestra App directamente desde aquí, es 100% seguro y solo te llevará unos segundos.</p>
+                    <p class="leading-tight ">Descarga nuestra App directamente desde aquí, es 100% seguro y solo te
+                        llevará unos segundos.</p>
                 </div>
                 <div class="col-start-5 col-end-6 mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
@@ -1461,7 +1466,8 @@
                               stroke="#3f3d56" stroke-miterlimit="10" id="line163"/>
                     </svg>
                     <h3 class="font-bold text-lg mb-1">Descarga la APK</h3>
-                    <p class="leading-tight ">Descarga nuestra App directamente desde aqui, es 100% seguro y solo te llevará unos segundos.</p>
+                    <p class="leading-tight ">Descarga nuestra App directamente desde aqui, es 100% seguro y solo te
+                        llevará unos segundos.</p>
                 </div>
 
             </div>
