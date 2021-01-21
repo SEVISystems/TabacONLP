@@ -47,6 +47,10 @@ html{
     box-shadow: 0 6px 17px 0 rgba(0, 0, 0, 0.45);
 }
 
+.text-gray{
+    color: #a9a6a6;
+}
+
 
 #navbar{
     transition: top ease 0.5s;
