@@ -11,12 +11,12 @@ $(function () {
         if (name !== '' && email !== '' && message !== '') {
             try {
 
-                emailjs.send('service_y3f2hrw', 'template_xbmwatk', {
+                emailjs.send('service_y3f2hrw', 'template_wxgjtbd', {
                     from_mail: email,
                     message_html: message,
                     from_name: name
                 });
-            }catch (error){
+            } catch (error) {
                 Swal.fire({
                     title: "<i>Error al enviar el mensaje</i>",
                     html: "Prueba otra vez en unos minutos.",
@@ -53,3 +53,5 @@ $(function () {
         }
     });
 });
+
+
