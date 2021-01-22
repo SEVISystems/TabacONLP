@@ -13,7 +13,7 @@ function NavbarLinksBehavior(){
     }
 }
 function NavbarScrollBehavior() {
-    let prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.pageYOffset+500;
     window.onscroll = function () {
         let currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {

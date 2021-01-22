@@ -2,6 +2,10 @@
     font-family: Gotham;
     src: url('../fonts/Gotham-Light.otf')  format('opentype');
 }
+@font-face {
+    font-family: Gotham-Bold;
+    src: url('../fonts/Gotham-Bold.otf')  format('opentype');
+}
 
 html{
     font-family: 'Gotham', 'Droid Sans', sans-serif;
@@ -240,11 +244,19 @@ html{
     height: 9rem;
     margin-bottom: 0.5rem;
 }
+#legal-links-footer a{
+    font-weight: bold;
+}
+
+#legal-links-footer a:hover {
+    text-decoration: underline;
+    color: #26B7B8;
+}
 
 /* DESKTOP MEDIA QUERY */
 @media(min-width: 1024px){
     #home-desktop{
-        max-width: 50%;
+        max-width: 75%;
     }
 }
 
