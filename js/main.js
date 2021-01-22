@@ -80,7 +80,6 @@ function CtaBehaviorControllerMobile(){
                 grow: "fullscreen",
                 showCloseButton: true,
             });
-
             document.getElementById('lead-input-mobile').focus();
 
             let animation = bodymovin.loadAnimation({

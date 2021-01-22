@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b527194-25e7-44fb-b4c5-6b763f922997" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TabacONLP.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/rrss_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +127,8 @@
       <workItem from="1611156214170" duration="5643000" />
       <workItem from="1611171067143" duration="149000" />
       <workItem from="1611221450126" duration="3968000" />
-      <workItem from="1611233658617" duration="1579000" />
+      <workItem from="1611233658617" duration="2493000" />
+      <workItem from="1611244491645" duration="827000" />
     </task>
     <servers />
   </component>
