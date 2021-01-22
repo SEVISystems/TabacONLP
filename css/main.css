@@ -244,6 +244,11 @@ html{
     height: 9rem;
     margin-bottom: 0.5rem;
 }
+
+.legal-link:hover{
+    cursor: pointer;
+}
+
 #legal-links-footer a{
     font-weight: bold;
 }

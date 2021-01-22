@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b527194-25e7-44fb-b4c5-6b763f922997" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/legal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/legal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/legal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/Documentation_API_Tabacon_v0.3.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +132,7 @@
       <workItem from="1611233658617" duration="2493000" />
       <workItem from="1611244491645" duration="827000" />
       <workItem from="1611307024830" duration="4765000" />
+      <workItem from="1611328161674" duration="2143000" />
     </task>
     <servers />
   </component>
