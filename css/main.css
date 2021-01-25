@@ -118,7 +118,6 @@ html{
     display: flex;
     height: 10px;
     width: 205px;
-    margin-top: 20px;
 }
 
 .progress-value {
@@ -258,9 +257,69 @@ html{
     color: #26B7B8;
 }
 
-.interestedButtonMobile{
+.interestedButton, .interestedButtonMobile{
+    border-radius: 22rem;
+    padding: 1rem;
+    background: #26B7B8;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.interestedButton:hover, .interestedButtonMobile:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#mockPC, #mockup-mobile{
+    position: relative;
+}
+
+.previousPhoto, .skipPhoto {
+    background: #26B7B8;
+    top: 50%;
+    border-radius: 33rem;
+    padding: 0.35rem;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#previousPhotoPC{
+    position: absolute;
+    left: -2.45rem;
+}
+#skipPhotoPC{
+    position: absolute;
+    right: -2.35rem;
+}
+
+#previousPhotoPC:hover, #skipPhotoPC:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
+.previousPhoto svg, .skipPhoto svg {
+    fill: #FFFFFF !important;
+    height:  1rem;
+    width: 1rem;
+}
+
+
+#previousPhotoMobile{
+    padding: 1.5rem 0.5rem;
+    margin-right: 0.75rem;
+    background: rgba(0, 1, 1, 0.3);
+}
+#skipPhotoMobile{
+    padding: 1.5rem 0.5rem;
+    margin-left: 0.75rem;
+    background: rgba(0, 1, 1, 0.3);
+
+}
+#skipPhotoMobile svg, #previousPhotoMobile svg{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
 
 /* DESKTOP MEDIA QUERY */
 @media(min-width: 1024px){
@@ -268,4 +327,5 @@ html{
         max-width: 75%;
     }
 }
+
 
