@@ -320,6 +320,13 @@ html{
     width: 1.25rem;
 }
 
+.swal2-container{
+    padding: 0 !important;
+}
+.swal2-popup{
+    padding: 0.5rem !important;
+}
+
 
 /* DESKTOP MEDIA QUERY */
 @media(min-width: 1024px){
