@@ -2362,11 +2362,13 @@ function PcMockupCarouselControl() {
     const previousPhotoPC = document.getElementById("previousPhotoPC");
     const animationPC = document.getElementById("progressBar");
     let timerPC = 0
-    let picList = ["img/screenshots/screenshot_pay.jpg",
+    let picList = ["" +
+
         "img/screenshots/screenshot_home.jpg",
         "img/screenshots/screenshot_card.jpg",
         "img/screenshots/screenshot_list.jpg",
         "img/screenshots/screenshot_select.jpg",
+        "img/screenshots/screenshot_pay.jpg",
     ];
     let currentIndex = 0;
     let pic = document.getElementById("screenshotPC");
@@ -2422,11 +2424,13 @@ function MobileMockupCarouselControl() {
     const previousPhotoMobile = document.getElementById("previousPhotoMobile");
     const animationMobile = document.getElementById("progressBarPhone");
     let timerMobile = 0
-    let picList = ["img/screenshots/screenshot_pay.jpg",
+    let picList = [
+
         "img/screenshots/screenshot_home.jpg",
         "img/screenshots/screenshot_card.jpg",
         "img/screenshots/screenshot_list.jpg",
         "img/screenshots/screenshot_select.jpg",
+        "img/screenshots/screenshot_pay.jpg",
     ];
     let currentIndex = 0;
     let pic = document.getElementById("screenshotMobile");
