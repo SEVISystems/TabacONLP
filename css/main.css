@@ -118,7 +118,6 @@ html{
     display: flex;
     height: 10px;
     width: 205px;
-    margin-top: 20px;
 }
 
 .progress-value {

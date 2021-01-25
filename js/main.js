@@ -2097,7 +2097,7 @@ function NavbarLinksBehavior() {
 }
 
 function NavbarScrollBehavior() {
-    let prevScrollpos = window.pageYOffset+500;
+    let prevScrollpos = window.pageYOffset + 500;
     window.onscroll = function () {
         let currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
@@ -2129,7 +2129,7 @@ function CtaBehaviorController() {
                 confirmButtonText: '¡Lo quiero!',
                 showConfirmButton: true,
                 showCloseButton: true,
-                validationMessage : 'Por favor, introduce un email válido.'
+                validationMessage: 'Por favor, introduce un email válido.'
 
 
             }).then((result) => {
@@ -2203,7 +2203,7 @@ function CtaBehaviorControllerMobile() {
                 showConfirmButton: true,
                 showCloseButton: true,
                 grow: "fullscreen",
-                validationMessage : 'Por favor, introduce un email válido.'
+                validationMessage: 'Por favor, introduce un email válido.'
 
 
             }).then((result) => {
@@ -2354,55 +2354,132 @@ function handleContactRevealOnScroll() {
 
 }
 
-function mobileMockupCarouselControl() {
-    let index = 0;
-    let indexPhone = 0;
-    const slides = document.querySelectorAll(".slides");
-    const slidesPhone = document.querySelectorAll(".slides-phone");
-    const animationPC = document.getElementById("progressBar");
-    const animationMobile = document.getElementById("progressBarPhone");
+function PcMockupCarouselControl() {
+
+
     const mockPC = document.getElementById("mockPC");
-    const mockMobile = document.getElementById("mockup-mobile");
-    let timerPC = 0;
-    let timerMobile = 0;
-    const classHide = "slides-hidden", count = slides.length;
-    nextSlideTime();
-    nextSlidePhoneTime();
+    const skipPhotoPC = document.getElementById("skipPhotoPC");
+    const previousPhotoPC = document.getElementById("previousPhotoPC");
+    const animationPC = document.getElementById("progressBar");
+    let timerPC = 0
+    let picList = ["img/screenshots/screenshot_pay.jpg",
+        "img/screenshots/screenshot_home.jpg",
+        "img/screenshots/screenshot_card.jpg",
+        "img/screenshots/screenshot_list.jpg",
+        "img/screenshots/screenshot_select.jpg",
+    ];
+    let currentIndex = 0;
+    let pic = document.getElementById("screenshotPC");
 
-    function nextSlideTime() {
-        slides[(index > count ? index = 0 : index++) % count].classList.add(classHide);
-        slides[index % count].classList.remove(classHide);
+    function autoNext() {
+        nextPic();
+        timerPC = setTimeout(autoNext, 5000);
+    }
+
+    function resetAnimations() {
+        pic.classList.remove("fadeImageStart");
         animationPC.classList.remove("progress-value")
-        void animationPC.offsetWidth;
+        animationPC.offsetWidth;
+        pic.offsetLeft;
         animationPC.classList.add("progress-value")
-        timerPC = setTimeout(nextSlideTime, 5000);
+        pic.classList.add("fadeImageStart");
     }
 
-    function nextSlidePhoneTime() {
-
-        slidesPhone[(indexPhone > count ? indexPhone = 0 : indexPhone++) % count].classList.add(classHide);
-        slidesPhone[indexPhone % count].classList.remove(classHide);
-        animationMobile.classList.remove("progress-value")
-        void animationMobile.offsetWidth;
-        animationMobile.classList.add("progress-value")
-        timerMobile = setTimeout(nextSlidePhoneTime, 5000);
-    }
-
-    mockMobile.onclick = function () {
-        clearTimeout(timerMobile);
-        nextSlidePhoneTime();
-    };
-    mockPC.onclick = function () {
+    function nextPic() {
         clearTimeout(timerPC);
-        nextSlideTime();
-    };
+        pic.src = picList[(currentIndex++) % picList.length];
+        resetAnimations();
+        clearTimeout(timerPC);
+    }
 
+    function previousPic() {
+        clearTimeout(timerPC);
+        pic.src = picList[(currentIndex === 0 ? currentIndex = picList.length - 1 : currentIndex--) % picList.length];
+        resetAnimations();
+        clearTimeout(timerPC);
+    }
+
+    autoNext();
+
+    mockPC.onclick = function () {
+        nextPic();
+        timerPC = setTimeout(autoNext, 5000);
+    };
+    skipPhotoPC.onclick = function () {
+        nextPic();
+        timerPC = setTimeout(autoNext, 5000);
+    };
+    previousPhotoPC.onclick = function () {
+        previousPic();
+        timerPC = setTimeout(autoNext, 5000);
+    };
+}
+
+function MobileMockupCarouselControl() {
+
+    const mockupMobile = document.getElementById("mockup-mobile");
+    const skipPhotoMobile = document.getElementById("skipPhotoMobile");
+    const previousPhotoMobile = document.getElementById("previousPhotoMobile");
+    const animationMobile = document.getElementById("progressBarPhone");
+    let timerMobile = 0
+    let picList = ["img/screenshots/screenshot_pay.jpg",
+        "img/screenshots/screenshot_home.jpg",
+        "img/screenshots/screenshot_card.jpg",
+        "img/screenshots/screenshot_list.jpg",
+        "img/screenshots/screenshot_select.jpg",
+    ];
+    let currentIndex = 0;
+    let pic = document.getElementById("screenshotMobile");
+
+    function autoNext() {
+        nextPic();
+        timerMobile = setTimeout(autoNext, 5000);
+    }
+
+    function resetAnimations() {
+        pic.classList.remove("fadeImageStart");
+        animationMobile.classList.remove("progress-value")
+        animationMobile.offsetWidth;
+        pic.offsetLeft;
+        animationMobile.classList.add("progress-value")
+        pic.classList.add("fadeImageStart");
+    }
+
+    function nextPic() {
+        clearTimeout(timerMobile);
+        pic.src = picList[(currentIndex++) % picList.length];
+        resetAnimations();
+        clearTimeout(timerMobile);
+    }
+
+    function previousPic() {
+        clearTimeout(timerMobile);
+        pic.src = picList[(currentIndex === 0 ? currentIndex = picList.length - 1 : currentIndex--) % picList.length];
+        resetAnimations();
+        clearTimeout(timerMobile);
+    }
+
+    autoNext();
+
+    mockupMobile.onclick = function () {
+        nextPic();
+        timerMobile = setTimeout(autoNext, 5000);
+    };
+    skipPhotoMobile.onclick = function () {
+        nextPic();
+        timerMobile = setTimeout(autoNext, 5000);
+    };
+    previousPhotoMobile.onclick = function () {
+        previousPic();
+        timerMobile = setTimeout(autoNext, 5000);
+    };
 }
 
 //ON DOM LOADED MAIN FUNCTION
 document.addEventListener("DOMContentLoaded", function () {
     // Mobile mockup carousel behavior
-    mobileMockupCarouselControl();
+    PcMockupCarouselControl();
+    MobileMockupCarouselControl();
 
     // CTA behavior
     CtaBehaviorController();
