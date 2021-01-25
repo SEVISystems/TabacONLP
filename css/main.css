@@ -258,6 +258,10 @@ html{
     color: #26B7B8;
 }
 
+.interestedButtonMobile{
+
+}
+
 /* DESKTOP MEDIA QUERY */
 @media(min-width: 1024px){
     #home-desktop{

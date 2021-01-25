@@ -2097,7 +2097,7 @@ function NavbarLinksBehavior() {
 }
 
 function NavbarScrollBehavior() {
-    let prevScrollpos = window.pageYOffset+500;
+    let prevScrollpos = window.pageYOffset + 500;
     window.onscroll = function () {
         let currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
@@ -2129,7 +2129,6 @@ function CtaBehaviorController() {
                 confirmButtonText: '¡Lo quiero!',
                 showConfirmButton: true,
                 showCloseButton: true,
-
 
             }).then((result) => {
                 if (result.value) {
@@ -2165,7 +2164,6 @@ function CtaBehaviorController() {
                     }
                 }
             });
-            // document.getElementById('frm_input_srt').focus();
             let animation = bodymovin.loadAnimation({
                 container: document.getElementById('lottieVIPAnimation'), // Required
                 animationData: vipAnimation, // Required
@@ -2200,22 +2198,33 @@ function CtaBehaviorControllerMobile() {
                 background: '#fff url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' version=\'1.1\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' xmlns:svgjs=\'http://svgjs.com/svgjs\' width=\'600\' height=\'600\' preserveAspectRatio=\'none\' viewBox=\'0 0 600 600\'%3e%3cg mask=\'url(%26quot%3b%23SvgjsMask1046%26quot%3b)\' fill=\'none\'%3e%3cpath d=\'M138 519L397 778\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1047)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M398 421L595 618\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1048)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M417 305L157 45\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1047)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M379 419L567 607\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1049)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M39 438L-244 155\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1047)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M515 583L890 958\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1050)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M86 180L-222 -128\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1047)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M243 294L4 55\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1050)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M35 430L440 835\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1050)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M72 336L405 669\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1047)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M339 443L39 143\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1047)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M548 127L864 443\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1049)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M140 426L-53 233\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1047)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M357 396L668 707\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1048)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M357 595L85 323\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1048)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M215 393L-165 13\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1049)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M397 346L622 571\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1048)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M341 284L557 500\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1050)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M450 398L3 -49\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1049)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M138 166L503 531\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1050)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M170 507L9 346\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1050)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M56 419L296 659\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1049)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id=\'SvgjsMask1046\'%3e%3crect width=\'600\' height=\'600\' fill=\'white\'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1=\'100%25\' y1=\'100%25\' x2=\'0%25\' y2=\'0%25\' id=\'SvgjsLinearGradient1047\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.09)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'100%25\' id=\'SvgjsLinearGradient1048\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.09)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'100%25\' y1=\'100%25\' x2=\'0%25\' y2=\'0%25\' id=\'SvgjsLinearGradient1049\'%3e%3cstop stop-color=\'rgba(246%2c 147%2c 30%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(246%2c 147%2c 30%2c 0.09)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'100%25\' id=\'SvgjsLinearGradient1050\'%3e%3cstop stop-color=\'rgba(246%2c 147%2c 30%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(246%2c 147%2c 30%2c 0.09)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e")',
                 confirmButtonText: '¡Lo quiero!',
                 showConfirmButton: true,
+                showLoaderOnConfirm: true,
+                buttonsStyling: false,
                 showCloseButton: true,
                 grow: "fullscreen",
+                customClass:{
+                    confirmButton: 'interestedButtonMobile'
+                }
 
             }).then((result) => {
                 if (result.value) {
                     emailjs.init("user_7dkF06ZityaunBjADBvN3");
                     let email = result.value;
-                    try {
-                        console.log("SENDING");
 
-                        emailjs.send('service_y3f2hrw', 'template_xbmwatk', {
-                            interested_mail: email,
+                    console.log("SENDING");
+                    emailjs.send('service_y3f2hrw', 'template_xbmwatk', {
+                        interested_mail: email,
+                    }).then(function (response) {
+                        Swal.fire({
+                            title: "<i>¡Solicitud enviada!</i>",
+                            html: "Gracias por ponerte en contacto con nosotros. <br><b>Nada más esté la aplicación disponible te la enviaremos vía email!</b>",
+                            icon: 'success',
+                            background: '#fff url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' version=\'1.1\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' xmlns:svgjs=\'http://svgjs.com/svgjs\' width=\'600\' height=\'600\' preserveAspectRatio=\'none\' viewBox=\'0 0 600 600\'%3e%3cg mask=\'url(%26quot%3b%23SvgjsMask1057%26quot%3b)\' fill=\'none\'%3e%3cpath d=\'M220 321L-40 61\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M5 479L-188 286\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M468 523L734 789\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M468 588L760 880\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M329 481L657 809\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M98 159L-351 -290\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M183 528L-9 336\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M515 317L247 49\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M554 463L881 790\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M98 300L-62 140\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M561 174L297 -90\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M298 541L503 746\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M93 138L-322 -277\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M498 598L895 995\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M586 44L989 447\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M317 424L753 860\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M65 455L-133 257\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M38 460L275 697\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M382 166L180 -36\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M397 562L193 358\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M449 379L154 84\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M107 403L-133 163\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id=\'SvgjsMask1057\'%3e%3crect width=\'600\' height=\'600\' fill=\'white\'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1=\'100%25\' y1=\'100%25\' x2=\'0%25\' y2=\'0%25\' id=\'SvgjsLinearGradient1058\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.27)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'100%25\' id=\'SvgjsLinearGradient1059\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.27)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e")',
+                            confirmButtonText: "Continuar",
+                            confirmButtonColor: '#26B7B8'
                         });
-                        console.log("SENDED : " + email);
-
-                    } catch (error) {
+                        $('#lead-input').val('');
+                    }, function (error) {
                         Swal.fire({
                             title: "<i>Error al enviar la solicitud</i>",
                             html: "Prueba otra vez en unos minutos.",
@@ -2224,6 +2233,22 @@ function CtaBehaviorControllerMobile() {
                             confirmButtonText: "Entendido",
                             confirmButtonColor: '#26B7B8'
                         });
+                    });
+                    console.log("SENDED : " + email);
+                }
+            });
+
+            let interestedButtonMobile = document.getElementById('interestedButtonMobile');
+            interestedButtonMobile && interestedButtonMobile.addEventListener('click', ev => {
+                emailjs.init("user_7dkF06ZityaunBjADBvN3");
+                let email = $("input#lead-input-mobile").val();
+                if (email !== '') {
+
+                    console.log("SENDING");
+
+                    emailjs.send('service_y3f2hrw', 'template_xbmwatk', {
+                        interested_mail: email,
+                    }).then(function (response) {
                         Swal.fire({
                             title: "<i>¡Solicitud enviada!</i>",
                             html: "Gracias por ponerte en contacto con nosotros. <br><b>Nada más esté la aplicación disponible te la enviaremos vía email!</b>",
@@ -2233,24 +2258,8 @@ function CtaBehaviorControllerMobile() {
                             confirmButtonColor: '#26B7B8'
 
                         });
-                        $('#lead-input').val('');
-                    }
-                }
-            });
-            document.getElementById('lead-input-mobile').focus();
-            document.getElementById('interestedButtonMobile').onclick = function () {
-                emailjs.init("user_7dkF06ZityaunBjADBvN3");
-                let email = $("input#lead-input-mobile").val();
-                if (email !== '') {
-                    try {
-                        console.log("SENDING");
-
-                        emailjs.send('service_y3f2hrw', 'template_xbmwatk', {
-                            interested_mail: email,
-                        });
-                        console.log("SENDED");
-
-                    } catch (error) {
+                        $('#lead-input-mobile').val('');
+                    }, function (error) {
                         Swal.fire({
                             title: "<i>Error al enviar la solicitud</i>",
                             html: "Prueba otra vez en unos minutos.",
@@ -2259,21 +2268,10 @@ function CtaBehaviorControllerMobile() {
                             confirmButtonText: "Entendido",
                             confirmButtonColor: '#26B7B8'
                         });
-                    }
-                    Swal.fire({
-                        title: "<i>¡Solicitud enviada!</i>",
-                        html: "Gracias por ponerte en contacto con nosotros. <br><b>Nada más esté la aplicación disponible te la enviaremos vía email!</b>",
-                        icon: 'success',
-                        background: '#fff url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' version=\'1.1\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' xmlns:svgjs=\'http://svgjs.com/svgjs\' width=\'600\' height=\'600\' preserveAspectRatio=\'none\' viewBox=\'0 0 600 600\'%3e%3cg mask=\'url(%26quot%3b%23SvgjsMask1057%26quot%3b)\' fill=\'none\'%3e%3cpath d=\'M220 321L-40 61\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M5 479L-188 286\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M468 523L734 789\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M468 588L760 880\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M329 481L657 809\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M98 159L-351 -290\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M183 528L-9 336\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M515 317L247 49\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M554 463L881 790\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M98 300L-62 140\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M561 174L297 -90\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M298 541L503 746\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M93 138L-322 -277\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M498 598L895 995\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M586 44L989 447\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M317 424L753 860\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M65 455L-133 257\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M38 460L275 697\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M382 166L180 -36\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M397 562L193 358\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M449 379L154 84\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M107 403L-133 163\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id=\'SvgjsMask1057\'%3e%3crect width=\'600\' height=\'600\' fill=\'white\'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1=\'100%25\' y1=\'100%25\' x2=\'0%25\' y2=\'0%25\' id=\'SvgjsLinearGradient1058\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.27)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'100%25\' id=\'SvgjsLinearGradient1059\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.27)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e")',
-                        confirmButtonText: "Continuar",
-                        confirmButtonColor: '#26B7B8'
-
                     });
-                    $('#lead-input-mobile').val('');
-
-
+                    console.log("SENDED");
                 }
-            }
+            });
 
 
             let animation = bodymovin.loadAnimation({
@@ -2309,7 +2307,6 @@ function handleFeaturesSectionBlocksRevealOnScroll() {
     let controller = new ScrollMagic.Controller();
     let revealElements = document.getElementsByClassName("features-card");
     for (let i = 0; i < revealElements.length; i++) { // create a scene for each element
-
         setTimeout(function () {
             new ScrollMagic.Scene({
                 triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
