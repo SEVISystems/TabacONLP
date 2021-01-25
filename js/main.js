@@ -2363,7 +2363,6 @@ function PcMockupCarouselControl() {
     const animationPC = document.getElementById("progressBar");
     let timerPC = 0
     let picList = ["" +
-
         "img/screenshots/screenshot_home.jpg",
         "img/screenshots/screenshot_card.jpg",
         "img/screenshots/screenshot_list.jpg",
