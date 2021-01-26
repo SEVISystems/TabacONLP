@@ -2362,7 +2362,7 @@ function PcMockupCarouselControl() {
         "img/screenshots/screenshot_select.jpg",
         "img/screenshots/screenshot_pay.jpg",
     ];
-    let currentIndex = 0;
+    let currentIndex = 4;
     let pic = document.getElementById("screenshotPC");
 
     function autoNext() {
@@ -2381,16 +2381,19 @@ function PcMockupCarouselControl() {
 
     function nextPic() {
         clearTimeout(timerPC);
-        pic.src = picList[(currentIndex++) % picList.length];
+        currentIndex++;
+        pic.src = picList[(currentIndex) % picList.length];
         resetAnimations();
         clearTimeout(timerPC);
     }
 
     function previousPic() {
         clearTimeout(timerPC);
-        pic.src = picList[(currentIndex === 0 ? currentIndex = picList.length - 1 : currentIndex--) % picList.length];
+        currentIndex+=4;
+        pic.src = picList[(currentIndex) % picList.length];
         resetAnimations();
         clearTimeout(timerPC);
+
     }
 
     autoNext();
@@ -2424,7 +2427,7 @@ function MobileMockupCarouselControl() {
         "img/screenshots/screenshot_select.jpg",
         "img/screenshots/screenshot_pay.jpg",
     ];
-    let currentIndex = 0;
+    let currentIndex = 4;
     let pic = document.getElementById("screenshotMobile");
 
     function autoNext() {
@@ -2443,14 +2446,16 @@ function MobileMockupCarouselControl() {
 
     function nextPic() {
         clearTimeout(timerMobile);
-        pic.src = picList[(currentIndex++) % picList.length];
+        currentIndex++;
+        pic.src = picList[(currentIndex) % picList.length];
         resetAnimations();
         clearTimeout(timerMobile);
     }
 
     function previousPic() {
         clearTimeout(timerMobile);
-        pic.src = picList[(currentIndex === 0 ? currentIndex = picList.length - 1 : currentIndex--) % picList.length];
+        currentIndex += 4;
+        pic.src = picList[(currentIndex) % picList.length];
         resetAnimations();
         clearTimeout(timerMobile);
     }
