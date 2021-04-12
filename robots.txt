@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /vendor/
+Disallow: /js/
+Disallow: /bundle/
+Disallow: /animations/
+
