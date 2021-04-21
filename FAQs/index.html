@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TabacON</title>
+    <meta name="title" content="La primera app para comprar tabaco desde tu móvil">
+    <meta name="description"
+          content=" TabacON es la primera app que te permitirá comprar tabaco desde tu móvil. Es muy sencillo: descarga la app, busca una de nuestras máquinas asociadas, conéctate, selecciona el producto y listo. ">
+    <meta name="keywords"
+          content="pvra, tabaco, app, comprar, aplicación, estanco, estanquero, online, venta tabaco, compra tabaco, app tabaco">
+    <meta property="og:title" content="TabacON - Legal">
+    <meta property="og:image" content="https://tabacon.es/img/rrss_logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="910">
+    <meta property="og:image:height" content="80">
+
+    <link rel="stylesheet" href="../vendor/tailwind.min.css">
+    <link href="../css/main.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../vendor/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../vendor/scrollmagic.min.js"></script>
+    <script type="text/javascript" src="../js/legal.js"></script>
+
+
+    <link rel="icon" type="image/png" href="../img/icon.png">
+
+
+</head>
+<body class="bg-transparent">
+<!--NAVBAR-->
+<nav class="flex items-center justify-between flex-wrap bg-white p-4 fixed w-screen z-10 top-0 shadow-xl" id="navbar">
+
+    <a href="../#">
+        <img style="height: 2rem;" src="../img/TabacOn%20color.png" alt="Tabacon">
+    </a>
+
+    <div class="block lg:hidden">
+        <button id="nav-toggle"
+                class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-black hover:border-black">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="transition duration-50 ease-in w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+         id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="../#how">¿Cómo funciona?</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="../#features">Ventajas</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="../#install">Instalación</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<script>
+    //Javascript to toggle the menu
+    function showActive(flag) {
+        let active = document.getElementById("active");
+        let userFaqs = document.getElementById("userFaqs");
+        let clientFaqs = document.getElementById("clientFaqs");
+
+        if(flag === undefined){
+            flag = document.getElementById("mySelect").value;
+        }
+
+        switch (flag) {
+            case '1':
+                active.style.left = "0";
+                active.style.width = "20rem";
+                userFaqs.style.display = "block";
+                clientFaqs.style.display = "none";
+                break;
+            case '2':
+                active.style.left = "40%";
+                active.style.width = "20rem";
+                userFaqs.style.display = "none";
+                clientFaqs.style.display = "block";
+                break;
+        }
+    }
+
+</script>
+
+<div class="container mx-auto">
+    <div class="w-11/12 xl:w-full mx-auto pt-16">
+        <div class="pt-4 pb-6 md:pb-8 lg:pb-10 xl:pb-12">
+            <p class="text-gray-500 text-lg uppercase leading-tight mb-4">Resolvemos tus dudas</p>
+            <h1 class="xl:text-5xl text-3xl font-extrabold text-gray-800">Preguntas frecuentes</h1>
+        </div>
+        <div>
+            <div class="xl:hidden mb-8 relative">
+                <div class="absolute inset-0 m-auto mr-4 z-0 w-6 h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-selector" width="24"
+                         height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A0AEC0" fill="none"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <polyline points="8 9 12 5 16 9"/>
+                        <polyline points="16 15 12 19 8 15"/>
+                    </svg>
+                </div>
+                <select id="mySelect" aria-label="Selected tab"
+                        class="form-select block w-full p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative" onchange="showActive()">
+                    <option value='1' selected class="text-sm text-gray-600">Soy usuario</option>
+                    <option value='2' class="text-sm text-gray-600">Soy estanquero</option>
+                </select>
+            </div>
+            <div class="w-full xl:w-6/12 hidden xl:block">
+                <ul class="flex justify-between mb-2">
+                    <li onclick="showActive('1')" class="xl:text-xl text-sm cursor-pointer ">Soy
+                        usuario
+                    </li>
+                    <li onclick="showActive('2')" class="xl:text-xl text-sm cursor-pointer">Soy
+                        estanquero
+                    </li>
+                </ul>
+            </div>
+            <div class="relative h-2 bg-gray-200 rounded-lg mb-8 hidden xl:block">
+                <div id="active"
+                     class="transition ease-in-out duration-150 absolute h-2 rounded-lg md:w-80 w-80 bg-palette-primary"></div>
+            </div>
+
+            <div class="mx-auto">
+                <ul class="bg-gray-100 rounded" id="userFaqs">
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo funciona TabacON? </p>
+                        <p class="xl:w-10/12 w-full text-gray-600 text-lg leading-8">TabacON es una aplicación que te
+                            permite pagar desde tu móvil en máquinas de tabaco. Descarga la app, introduce tu tarjeta y
+                            recarga tu monedero virtual y estarás listo para pagar en máquinas de tabaco. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Por qué tengo que activar mi ubicación
+                            y el bluetooth? </p>
+                        <p class="xl:w-10/12 w-full text-gray-600 text-lg leading-8">TabacON necesita acceder a estos
+                            parámetros para establecer la conexión entre la aplicación y la máquina. De lo contrario, el
+                            proceso de compra no podría realizarse. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cuánto cuesta TabacON? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Descargar y tener una
+                            cuenta en la aplicación es totalmente gratuito. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cuándo me cobran gastos de
+                            gestión?</p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">El gasto de gestión es
+                            de 5 céntimos y se cobra por cada compra que realices en la máquina de tabaco. Estos gastos
+                            no varían independientemente del producto elegido. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">Cuando recargo mi monedero... ¿me
+                            cobran? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">No. TabacON no cobra ninguna comisión por las operaciones de recarga del monedero virtual. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Me puedo conectar a cualquier máquina de tabaco? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Solo a las máquinas que usen el sistema de TabacON. Si encuentras una pegatina con nuestro logo en una máquina, tu compra con el móvil estará garantizada. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo contacto con el equipo de TabacON? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Puedes escribirnos a la siguiente dirección: <a href="mailto:soporte@tabacon.es">soporte@tabacon.es</a> o reportar una nueva incidencia. Te atenderemos lo antes posible. </p>
+                    </li>
+                </ul>
+                <ul class="bg-gray-100 rounded" id="clientFaqs" style="display: none">
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo funciona TabacON? </p>
+                        <p class="xl:w-10/12 w-full text-gray-600 text-lg leading-8">TabacON </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">?</p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8"></p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer bg-white relative pt-10">
+    <div class="container mx-auto ">
+        <div class="mt-8 border-yellow-500 flex flex-col items-center">
+            <div class="sm:w-2/3 text-center my-6">
+                <img class="mx-auto mb-4" style="height: 1rem" src="../img/TabacOn%20color.png" alt="Tabacon"
+                     alt="tabacon logo"/>
+                <a href="https://sevisl.com" target="_blank">
+                    <p class="text-sm text-yellow-500 font-bold">
+                        © 2021 by SEVI Systems
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
