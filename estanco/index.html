@@ -27,7 +27,8 @@
     <script type="text/javascript" src="../vendor/sweetalert2@10.js"></script>
 
     <script type="text/javascript" src="../vendor/scrollmagic.min.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/scroll.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
 
     <link rel="icon" type="image/png" href="../img/icon.png">
 
@@ -48,7 +49,7 @@
         -moz-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-        background: url(placeholder.jpg) repeat;
+        background: #f08a24 repeat;
         background-size: contain;
         object-fit: cover;
     }
@@ -96,7 +97,7 @@
 <!--END NAVBAR-->
 <div class="">
     <div class="bg-palette-secondary-hero md:bg-transparent pt-32 md:pt-48 relative  mx-auto flex flex-col items-center pb-24 h-full">
-        <video playsinline autoplay muted loop poster="placeholder.jpg" id="bgvideo" width="x" height="y" class="object-contain">
+        <video playsinline autoplay muted loop  id="bgvideo" width="x" height="y" class="object-contain">
             <source src="../video/Tabacon%20recortado.mp4" type="video/mp4">
         </video>
         <div class="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
@@ -323,7 +324,7 @@
 <!--</div>-->
 
 <section id="what">
-    <div class="flex flex-col items-center " style="background-color:#9E1F64">
+    <div class=" flex flex-col items-center " style="background-color:#9E1F64">
         <h1 class="text-4xl sectionTitle md:text-6xl font-bold text-white text-center font-helvetica pt-8 md:pb-8">
             ¿Qué es TabacON?
         </h1>
@@ -358,9 +359,9 @@
                 ¿Cómo instalar TabacON en tus máquinas?
             </h1>
 
-            <div class="grid container grid-cols-9 mx-auto p-2 md:p-8 lg:p-16 pt-0 text-blue-50">
+            <div class=" grid container grid-cols-9 mx-auto p-2 md:p-8 lg:p-16 pt-0 text-blue-50">
                 <!-- left -->
-                <div class="contents text-center">
+                <div class="step-scroll-revealing contents text-center">
                     <div class=" bg-palette-primary text-center col-start-1 col-end-5 w-full p-4 rounded-xl my-4 ml-auto shadow-md animate transform transition-transform hover:-translate-x-2 cursor-default">
                         <svg height="70" viewBox="0 0 512 512" width="70"
                              xmlns="http://www.w3.org/2000/svg">
@@ -412,7 +413,7 @@
                 </div>
 
                 <!-- right -->
-                <div class="contents text-center">
+                <div class="step-scroll-revealing contents text-center">
                     <div class="col-start-5 col-end-6 mx-auto relative">
                         <div class="h-full w-6 flex items-center justify-center">
                             <div class="h-full w-1 bg-palette-complementary-dark pointer-events-none"></div>
@@ -545,7 +546,7 @@
 
 
                 <!-- left -->
-                <div class="contents text-center">
+                <div class="step-scroll-revealing contents text-center">
                     <div class=" bg-palette-primary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md animate transform transition-transform hover:-translate-x-2 cursor-default">
                         <svg class="mx-auto" id="Capa_1" enable-background="new 0 0 512.004 512.004" height="70"
                              viewBox="0 0 512.004 512.004" width="70" xmlns="http://www.w3.org/2000/svg">

@@ -2083,32 +2083,6 @@ let vipAnimation = {
     "markers": []
 };
 
-
-function NavbarLinksBehavior() {
-    document.getElementById('nav-toggle').onclick = function () {
-        document.getElementById("nav-content").classList.toggle("hidden");
-    }
-    let navLinks = document.querySelectorAll('.nav-link');
-    for (let i = 0, length = navLinks.length; i < length; i++) {
-        navLinks[i].onclick = function () {
-            document.getElementById("nav-content").classList.toggle("hidden");
-        }
-    }
-}
-
-function NavbarScrollBehavior() {
-    let prevScrollpos = window.pageYOffset + 500;
-    window.onscroll = function () {
-        let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-13rem";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-}
-
 function CtaBehaviorController() {
     let navLinks = document.querySelectorAll('.main-cta');
     for (let i = 0, length = navLinks.length; i < length; i++) {
@@ -2169,35 +2143,35 @@ function CtaBehaviorController() {
                 allowOutsideClick: () => !Swal.isLoading()
 
             });
-           /*     .then((result) => {
-                if (result.value) {
-                    emailjs.init("user_7dkF06ZityaunBjADBvN3");
-                    let email = result.value;
+            /*     .then((result) => {
+                 if (result.value) {
+                     emailjs.init("user_7dkF06ZityaunBjADBvN3");
+                     let email = result.value;
 
-                    emailjs.send('service_y3f2hrw', 'template_xbmwatk', {
-                        interested_mail: email,
-                    }).then(function (response) {
-                        Swal.fire({
-                            title: "<i>¡Solicitud enviada!</i>",
-                            html: "Gracias por ponerte en contacto con nosotros. <br><b>¡Serás de los primerxs en recibir tu app por correo électronico!</b>",
-                            icon: 'success',
-                            background: '#fff url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' version=\'1.1\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' xmlns:svgjs=\'http://svgjs.com/svgjs\' width=\'600\' height=\'600\' preserveAspectRatio=\'none\' viewBox=\'0 0 600 600\'%3e%3cg mask=\'url(%26quot%3b%23SvgjsMask1057%26quot%3b)\' fill=\'none\'%3e%3cpath d=\'M220 321L-40 61\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M5 479L-188 286\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M468 523L734 789\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M468 588L760 880\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M329 481L657 809\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M98 159L-351 -290\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M183 528L-9 336\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M515 317L247 49\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M554 463L881 790\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M98 300L-62 140\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M561 174L297 -90\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M298 541L503 746\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M93 138L-322 -277\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M498 598L895 995\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M586 44L989 447\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M317 424L753 860\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M65 455L-133 257\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M38 460L275 697\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M382 166L180 -36\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M397 562L193 358\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M449 379L154 84\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M107 403L-133 163\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id=\'SvgjsMask1057\'%3e%3crect width=\'600\' height=\'600\' fill=\'white\'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1=\'100%25\' y1=\'100%25\' x2=\'0%25\' y2=\'0%25\' id=\'SvgjsLinearGradient1058\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.27)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'100%25\' id=\'SvgjsLinearGradient1059\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.27)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e")',
-                            confirmButtonText: "Continuar",
-                            confirmButtonColor: '#26B7B8'
-                        });
-                        $('#lead-input').val('');
-                    }, function (error) {
-                        Swal.fire({
-                            title: "<i>Error al enviar la solicitud</i>",
-                            html: "Prueba otra vez en unos minutos.",
-                            icon: 'error',
-                            background: '#fff url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' version=\'1.1\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' xmlns:svgjs=\'http://svgjs.com/svgjs\' width=\'600\' height=\'600\' preserveAspectRatio=\'none\' viewBox=\'0 0 600 600\'%3e%3cg mask=\'url(%26quot%3b%23SvgjsMask1087%26quot%3b)\' fill=\'none\'%3e%3cpath d=\'M536 316L190 -30\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M451 14L847 410\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M60 178L236 354\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M335 181L758 604\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M75 283L-294 -86\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M329 535L145 351\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M488 245L727 484\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M216 210L-207 -213\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M39 467L-368 60\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M105 435L-322 8\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M387 14L645 272\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M321 469L-74 74\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M55 139L-208 -124\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M285 571L564 850\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M259 488L38 267\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M184 44L7 -133\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M375 511L771 907\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M501 459L856 814\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M291 280L489 478\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M585 471L228 114\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M579 559L340 320\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M2 550L-272 276\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id=\'SvgjsMask1087\'%3e%3crect width=\'600\' height=\'600\' fill=\'white\'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1=\'100%25\' y1=\'100%25\' x2=\'0%25\' y2=\'0%25\' id=\'SvgjsLinearGradient1088\'%3e%3cstop stop-color=\'rgba(184%2c 38%2c 38%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(184%2c 38%2c 38%2c 0.15)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'100%25\' id=\'SvgjsLinearGradient1089\'%3e%3cstop stop-color=\'rgba(184%2c 38%2c 38%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(184%2c 38%2c 38%2c 0.15)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e")',
-                            confirmButtonText: "Entendido",
-                            confirmButtonColor: '#26B7B8'
-                        });
-                    });
-                }
-            });*/
+                     emailjs.send('service_y3f2hrw', 'template_xbmwatk', {
+                         interested_mail: email,
+                     }).then(function (response) {
+                         Swal.fire({
+                             title: "<i>¡Solicitud enviada!</i>",
+                             html: "Gracias por ponerte en contacto con nosotros. <br><b>¡Serás de los primerxs en recibir tu app por correo électronico!</b>",
+                             icon: 'success',
+                             background: '#fff url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' version=\'1.1\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' xmlns:svgjs=\'http://svgjs.com/svgjs\' width=\'600\' height=\'600\' preserveAspectRatio=\'none\' viewBox=\'0 0 600 600\'%3e%3cg mask=\'url(%26quot%3b%23SvgjsMask1057%26quot%3b)\' fill=\'none\'%3e%3cpath d=\'M220 321L-40 61\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M5 479L-188 286\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M468 523L734 789\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M468 588L760 880\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M329 481L657 809\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M98 159L-351 -290\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M183 528L-9 336\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M515 317L247 49\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M554 463L881 790\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M98 300L-62 140\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M561 174L297 -90\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M298 541L503 746\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M93 138L-322 -277\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M498 598L895 995\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M586 44L989 447\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M317 424L753 860\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M65 455L-133 257\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M38 460L275 697\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M382 166L180 -36\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M397 562L193 358\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1058)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M449 379L154 84\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M107 403L-133 163\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1059)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id=\'SvgjsMask1057\'%3e%3crect width=\'600\' height=\'600\' fill=\'white\'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1=\'100%25\' y1=\'100%25\' x2=\'0%25\' y2=\'0%25\' id=\'SvgjsLinearGradient1058\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.27)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'100%25\' id=\'SvgjsLinearGradient1059\'%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(38%2c 183%2c 184%2c 0.27)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e")',
+                             confirmButtonText: "Continuar",
+                             confirmButtonColor: '#26B7B8'
+                         });
+                         $('#lead-input').val('');
+                     }, function (error) {
+                         Swal.fire({
+                             title: "<i>Error al enviar la solicitud</i>",
+                             html: "Prueba otra vez en unos minutos.",
+                             icon: 'error',
+                             background: '#fff url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' version=\'1.1\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' xmlns:svgjs=\'http://svgjs.com/svgjs\' width=\'600\' height=\'600\' preserveAspectRatio=\'none\' viewBox=\'0 0 600 600\'%3e%3cg mask=\'url(%26quot%3b%23SvgjsMask1087%26quot%3b)\' fill=\'none\'%3e%3cpath d=\'M536 316L190 -30\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M451 14L847 410\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M60 178L236 354\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M335 181L758 604\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M75 283L-294 -86\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M329 535L145 351\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M488 245L727 484\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M216 210L-207 -213\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M39 467L-368 60\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M105 435L-322 8\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M387 14L645 272\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M321 469L-74 74\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M55 139L-208 -124\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M285 571L564 850\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M259 488L38 267\' stroke-width=\'6\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M184 44L7 -133\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M375 511L771 907\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M501 459L856 814\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M291 280L489 478\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1088)\' stroke-linecap=\'round\' class=\'TopLeft\'%3e%3c/path%3e%3cpath d=\'M585 471L228 114\' stroke-width=\'8\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M579 559L340 320\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3cpath d=\'M2 550L-272 276\' stroke-width=\'10\' stroke=\'url(%23SvgjsLinearGradient1089)\' stroke-linecap=\'round\' class=\'BottomRight\'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id=\'SvgjsMask1087\'%3e%3crect width=\'600\' height=\'600\' fill=\'white\'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1=\'100%25\' y1=\'100%25\' x2=\'0%25\' y2=\'0%25\' id=\'SvgjsLinearGradient1088\'%3e%3cstop stop-color=\'rgba(184%2c 38%2c 38%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(184%2c 38%2c 38%2c 0.15)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1=\'0%25\' y1=\'0%25\' x2=\'100%25\' y2=\'100%25\' id=\'SvgjsLinearGradient1089\'%3e%3cstop stop-color=\'rgba(184%2c 38%2c 38%2c 0)\' offset=\'0\'%3e%3c/stop%3e%3cstop stop-color=\'rgba(184%2c 38%2c 38%2c 0.15)\' offset=\'1\'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e")',
+                             confirmButtonText: "Entendido",
+                             confirmButtonColor: '#26B7B8'
+                         });
+                     });
+                 }
+             });*/
             let animation = bodymovin.loadAnimation({
                 container: document.getElementById('lottieVIPAnimation'), // Required
                 animationData: vipAnimation, // Required
@@ -2321,209 +2295,9 @@ function CtaBehaviorControllerMobile() {
     }
 }
 
-function handleHowtoSectionBlocksRevealOnScroll() {
-    let controller = new ScrollMagic.Controller();
-    let revealElements = document.getElementsByClassName("howto-children-block");
-    for (let i = 0; i < revealElements.length; i++) { // create a scene for each element
-        new ScrollMagic.Scene({
-            triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-            offset: i < 3 ? 35 * i : 15 * i,												 // start a little later
-            triggerHook: 0.9,
-        })
-            .setClassToggle(revealElements[i], "revealed") // add class toggle
-            .addTo(controller);
-    }
-}
 
-function handleFeaturesSectionBlocksRevealOnScroll() {
-    let controller = new ScrollMagic.Controller();
-    let revealElements = document.getElementsByClassName("features-card");
-    for (let i = 0; i < revealElements.length; i++) { // create a scene for each element
-        setTimeout(function () {
-            new ScrollMagic.Scene({
-                triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-                offset: 40,												 // start a little later
-                triggerHook: 0.8,
-            })
-                .setClassToggle(revealElements[i], "revealed") // add class toggle
-                .addTo(controller);
-        }, i * 200);
-    }
-}
-
-function handleInstallationStepsRevealOnScroll() {
-    let controller = new ScrollMagic.Controller();
-    let revealElements = document.getElementsByClassName("step-scroll-revealing");
-    for (let i = 0; i < revealElements.length; i++) { // create a scene for each element
-        new ScrollMagic.Scene({
-            triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-            offset: 50,												 // start a little later
-            triggerHook: 0.9,
-        })
-            .setClassToggle(revealElements[i], "visible") // add class toggle
-            .addTo(controller);
-    }
-}
-
-function handleContactRevealOnScroll() {
-    let controller = new ScrollMagic.Controller();
-    let elementToReveal = document.getElementById("contact");
-
-    new ScrollMagic.Scene({
-        triggerElement: elementToReveal, // y value not modified, so we can use element as trigger as well
-        offset: 50,												 // start a little later
-        triggerHook: 0.9,
-    }).setClassToggle(elementToReveal, "revealed")
-        .addTo(controller);
-
-}
-
-function PcMockupCarouselControl() {
-
-
-    const mockPC = document.getElementById("mockPC");
-    const skipPhotoPC = document.getElementById("skipPhotoPC");
-    const previousPhotoPC = document.getElementById("previousPhotoPC");
-    const animationPC = document.getElementById("progressBar");
-    let timerPC = 0
-    let picList = ["" +
-    "img/screenshots/screenshot_home.jpg",
-        "img/screenshots/screenshot_card.jpg",
-        "img/screenshots/screenshot_list.jpg",
-        "img/screenshots/screenshot_select.jpg",
-        "img/screenshots/screenshot_pay.jpg",
-    ];
-    let currentIndex = 4;
-    let pic = document.getElementById("screenshotPC");
-
-    function autoNext() {
-        nextPic();
-        timerPC = setTimeout(autoNext, 5000);
-    }
-
-    function resetAnimations() {
-        pic.classList.remove("fadeImageStart");
-        animationPC.classList.remove("progress-value")
-        animationPC.offsetWidth;
-        pic.offsetLeft;
-        animationPC.classList.add("progress-value")
-        pic.classList.add("fadeImageStart");
-    }
-
-    function nextPic() {
-        clearTimeout(timerPC);
-        currentIndex++;
-        pic.src = picList[(currentIndex) % picList.length];
-        resetAnimations();
-        clearTimeout(timerPC);
-    }
-
-    function previousPic() {
-        clearTimeout(timerPC);
-        currentIndex+=4;
-        pic.src = picList[(currentIndex) % picList.length];
-        resetAnimations();
-        clearTimeout(timerPC);
-
-    }
-
-    autoNext();
-
-    mockPC.onclick = function () {
-        nextPic();
-        timerPC = setTimeout(autoNext, 5000);
-    };
-    skipPhotoPC.onclick = function () {
-        nextPic();
-        timerPC = setTimeout(autoNext, 5000);
-    };
-    previousPhotoPC.onclick = function () {
-        previousPic();
-        timerPC = setTimeout(autoNext, 5000);
-    };
-}
-
-function MobileMockupCarouselControl() {
-
-    const mockupMobile = document.getElementById("mockup-mobile");
-    const skipPhotoMobile = document.getElementById("skipPhotoMobile");
-    const previousPhotoMobile = document.getElementById("previousPhotoMobile");
-    const animationMobile = document.getElementById("progressBarPhone");
-    let timerMobile = 0
-    let picList = [
-
-        "img/screenshots/screenshot_home.jpg",
-        "img/screenshots/screenshot_card.jpg",
-        "img/screenshots/screenshot_list.jpg",
-        "img/screenshots/screenshot_select.jpg",
-        "img/screenshots/screenshot_pay.jpg",
-    ];
-    let currentIndex = 4;
-    let pic = document.getElementById("screenshotMobile");
-
-    function autoNext() {
-        nextPic();
-        timerMobile = setTimeout(autoNext, 5000);
-    }
-
-    function resetAnimations() {
-        pic.classList.remove("fadeImageStart");
-        animationMobile.classList.remove("progress-value")
-        animationMobile.offsetWidth;
-        pic.offsetLeft;
-        animationMobile.classList.add("progress-value")
-        pic.classList.add("fadeImageStart");
-    }
-
-    function nextPic() {
-        clearTimeout(timerMobile);
-        currentIndex++;
-        pic.src = picList[(currentIndex) % picList.length];
-        resetAnimations();
-        clearTimeout(timerMobile);
-    }
-
-    function previousPic() {
-        clearTimeout(timerMobile);
-        currentIndex += 4;
-        pic.src = picList[(currentIndex) % picList.length];
-        resetAnimations();
-        clearTimeout(timerMobile);
-    }
-
-    autoNext();
-
-    mockupMobile.onclick = function () {
-        nextPic();
-        timerMobile = setTimeout(autoNext, 5000);
-    };
-    skipPhotoMobile.onclick = function () {
-        nextPic();
-        timerMobile = setTimeout(autoNext, 5000);
-    };
-    previousPhotoMobile.onclick = function () {
-        previousPic();
-        timerMobile = setTimeout(autoNext, 5000);
-    };
-}
-
-//ON DOM LOADED MAIN FUNCTION
 document.addEventListener("DOMContentLoaded", function () {
-    // Mobile mockup carousel behavior
-    PcMockupCarouselControl();
-    MobileMockupCarouselControl();
-
     // CTA behavior
     CtaBehaviorController();
     CtaBehaviorControllerMobile();
-    // Navbar behavior
-    NavbarLinksBehavior();
-    NavbarScrollBehavior();
-
-    // SCROLL MAGIC
-    handleHowtoSectionBlocksRevealOnScroll();
-    handleFeaturesSectionBlocksRevealOnScroll();
-    handleInstallationStepsRevealOnScroll();
-    handleContactRevealOnScroll();
-
 });
