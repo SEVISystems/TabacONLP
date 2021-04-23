@@ -4,11 +4,12 @@ $(function () {
 
         let name = $("input#name").val();
         let email = $("input#email").val();
+        let phone = $("input#phone").val();
         let message = $("textarea#message").val();
         $("input").removeClass('error');
         $("textarea").removeClass('error');
 
-        if (name !== '' && email !== '' && message !== '') {
+        if (name !== '' && email !== '' && message !== '' && phone !== '') {
 
             //Set button ton disabled, add background and make loader visible
             $('#sendMessageButton').attr("disabled", true);
@@ -19,8 +20,11 @@ $(function () {
 
             emailjs.send('service_y3f2hrw', 'template_wxgjtbd', {
                 from_mail: email,
+                telephone: phone,
                 message_html: message,
-                from_name: name
+                from_name: name,
+                tabacon: "SI",
+                estanco: "NO"
             }).then(function (response) {
                 Swal.fire({
                     title: "<i>¡Mensaje enviado!</i>",
@@ -32,6 +36,7 @@ $(function () {
                 });
                 $('#email').val('');
                 $('#message').val('');
+                $('#phone').val('');
                 $('#name').val('');
                 $('#sendMessageButton').attr("disabled", false);
                 $('#contact-button-icon').removeClass('custom-hidden');
