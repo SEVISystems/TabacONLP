@@ -49,7 +49,10 @@
     <div class="transition duration-50 ease-in w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
          id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
-
+            <li class="mr-3">
+                <a class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline" style="color: #9e1f64"
+                   href="/estanco">Soy estanco</a>
+            </li>
             <li class="mr-3">
                 <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
                    href="../#how">¿Cómo funciona?</a>
@@ -61,6 +64,10 @@
             <li class="mr-3">
                 <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
                    href="../#install">Instalación</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="#">FAQs</a>
             </li>
         </ul>
     </div>
@@ -79,13 +86,13 @@
         switch (flag) {
             case '1':
                 active.style.left = "0";
-                active.style.width = "20rem";
+                active.style.width = "50%";
                 userFaqs.style.display = "block";
                 clientFaqs.style.display = "none";
                 break;
             case '2':
-                active.style.left = "40%";
-                active.style.width = "20rem";
+                active.style.left = "50%";
+                active.style.width = "50%";
                 userFaqs.style.display = "none";
                 clientFaqs.style.display = "block";
                 break;
@@ -118,7 +125,7 @@
                 </select>
             </div>
             <div class="w-full xl:w-6/12 hidden xl:block">
-                <ul class="flex justify-between mb-2">
+                <ul class="flex justify-around mb-2" style="width: 200%">
                     <li onclick="showActive('1')" class="xl:text-xl text-sm cursor-pointer ">Soy
                         usuario
                     </li>
@@ -129,7 +136,7 @@
             </div>
             <div class="relative h-2 bg-gray-200 rounded-lg mb-8 hidden xl:block">
                 <div id="active"
-                     class="transition ease-in-out duration-150 absolute h-2 rounded-lg md:w-80 w-80 bg-palette-primary"></div>
+                     class="transition ease-in-out duration-150 absolute h-2 rounded-lg md:w-1/2 w-1/2 bg-palette-primary"></div>
             </div>
 
             <div class="mx-auto">
@@ -175,12 +182,16 @@
                 </ul>
                 <ul class="bg-gray-100 rounded" id="clientFaqs" style="display: none">
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
-                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo funciona TabacON? </p>
-                        <p class="xl:w-10/12 w-full text-gray-600 text-lg leading-8">TabacON </p>
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cuánto cuesta el sistema? </p>
+                        <p class="xl:w-10/12 w-full text-gray-600 text-lg leading-8">Disponemos de promociones exclusivas para los primeros interesados en TabacON. Tan solo tienes que contactar con nosotros para informarte.  </p>
                     </li>
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
-                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">?</p>
-                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8"></p>
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Existen planes de financiación?  </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Sí. Para asumir el coste de la placa ofrecemos la posibilidad de financiar el pago a través del método de renting.  </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Máquinas compatibles?   </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Por el momento, nuestra placa no es compatible con todas las máquinas de tabaco. Estamos trabajando para poder garantizar que TabacON funcione en el 100% de las máquinas. </p>
                     </li>
                 </ul>
 
@@ -192,15 +203,21 @@
 
 <footer class="footer bg-white relative pt-10">
     <div class="container mx-auto ">
-        <div class="mt-8 border-yellow-500 flex flex-col items-center">
+        <div class="mt-8 flex flex-col items-center">
+            <div id="legal-links-footer">
+                <a href="/legal/#privacy" target="_blank">Política de privacidad</a> | <a href="/legal/#legal"
+                                                                                          target="_blank">Aviso
+                Legal</a>
+                | <a href="/legal/#conditions" target="_blank">Condiciones generales</a>
+            </div>
             <div class="sm:w-2/3 text-center my-6">
-                <img class="mx-auto mb-4" style="height: 1rem" src="../img/TabacOn%20color.png" alt="Tabacon"
-                     alt="tabacon logo"/>
+                <img class="mx-auto mb-4" style="height: 1rem" src="../img/TabacOn%20color.png" alt="tabacon logo"/>
                 <a href="https://sevisl.com" target="_blank">
                     <p class="text-sm text-yellow-500 font-bold">
                         © 2021 by SEVI Systems
                     </p>
                 </a>
+                <div>Icons from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
             </div>
         </div>
     </div>
