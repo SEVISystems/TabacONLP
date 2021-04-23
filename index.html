@@ -2611,7 +2611,19 @@
                             class="w-full h-32 bg-white text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
                 </div>
                 <div class="mt-4">
-                    <button type="submit" value="Send" id="sendMessageButton"
+                    <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="field_terms"
+                            onchange="document.getElementById('sendMessageButton').disabled = !this.checked;"
+                            required
+                            class="  bg-white text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"><span
+                        class="pl-4">Acepto la <a
+                        href="/legal#privacy"
+                        target="_blank"><span><u>Política de privacidad</u></span> </a>  </span></input>
+                </div>
+                <div class="mt-4">
+                    <button type="submit" value="Send" id="sendMessageButton" disabled
                             class="flex disabled justify-center items-center uppercase text-sm  font-bold tracking-wide bg-yellow-500 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline transition duration-50 ease-in transform hover:-translate-y-1 text-white ">
                         Enviar mensaje
                         <svg id="contact-button-icon" xmlns="http://www.w3.org/2000/svg"
