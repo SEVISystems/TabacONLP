@@ -517,13 +517,6 @@ html {
 }
 
 .contactButton{
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    padding: 20px;
-    z-index: 5000;
-}
-.roundedFixedBtn{
     height: 60px;
     line-height: 80px;
     width: 60px;
@@ -537,6 +530,18 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+    z-index: 5000;
+
+
+}
+
+
+.roundedFixedBtn{
+
 }
 
 
