@@ -539,6 +539,9 @@ html {
 
 }
 
+#onetrust-close-btn-container{
+    display: none;
+}
 
 .roundedFixedBtn{
 
