@@ -6,14 +6,15 @@ function PcMockupCarouselControl() {
     const previousPhotoPC = document.getElementById("previousPhotoPC");
     const animationPC = document.getElementById("progressBar");
     let timerPC = 0
-    let picList = ["" +
-    "img/screenshots/screenshot_home.jpg",
-        "img/screenshots/screenshot_card.jpg",
-        "img/screenshots/screenshot_list.jpg",
-        "img/screenshots/screenshot_select.jpg",
-        "img/screenshots/screenshot_pay.jpg",
+    let picList = [
+    "img/screenshots/screenshot_home.jpeg",
+        "img/screenshots/screenshot_card.jpeg",
+    "img/screenshots/screenshot_machines.jpeg",
+        "img/screenshots/screenshot_list.jpeg",
+        "img/screenshots/screenshot_select.jpeg",
+        "img/screenshots/screenshot_pay.jpeg",
     ];
-    let currentIndex = 4;
+    let currentIndex = 5;
     let pic = document.getElementById("screenshotPC");
 
     function autoNext() {
@@ -40,7 +41,7 @@ function PcMockupCarouselControl() {
 
     function previousPic() {
         clearTimeout(timerPC);
-        currentIndex+=4;
+        currentIndex += 4;
         pic.src = picList[(currentIndex) % picList.length];
         resetAnimations();
         clearTimeout(timerPC);
@@ -71,14 +72,14 @@ function MobileMockupCarouselControl() {
     const animationMobile = document.getElementById("progressBarPhone");
     let timerMobile = 0
     let picList = [
-
-        "img/screenshots/screenshot_home.jpg",
-        "img/screenshots/screenshot_card.jpg",
-        "img/screenshots/screenshot_list.jpg",
-        "img/screenshots/screenshot_select.jpg",
-        "img/screenshots/screenshot_pay.jpg",
+        "img/screenshots/screenshot_home.jpeg",
+        "img/screenshots/screenshot_card.jpeg",
+        "img/screenshots/screenshot_machines.jpeg",
+        "img/screenshots/screenshot_list.jpeg",
+        "img/screenshots/screenshot_select.jpeg",
+        "img/screenshots/screenshot_pay.jpeg",
     ];
-    let currentIndex = 4;
+    let currentIndex = 5;
     let pic = document.getElementById("screenshotMobile");
 
     function autoNext() {
