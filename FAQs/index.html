@@ -2,9 +2,11 @@
 <html lang="es">
 <head>
     <!-- OneTrust Cookies Consent Notice start for tabacon.es -->
-    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="5b1cc34c-c72f-49ad-89a9-e1f3f7414d94" ></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"
+            data-domain-script="5b1cc34c-c72f-49ad-89a9-e1f3f7414d94"></script>
     <script type="text/javascript">
-        function OptanonWrapper() { }
+        function OptanonWrapper() {
+        }
     </script>
     <!-- OneTrust Cookies Consent Notice end for tabacon.es -->
     <meta charset="UTF-8">
@@ -32,9 +34,12 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-00BWG5TQD1"></script>
     <script data-cookieconsent="statistics">
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
 
 
         gtag('config', 'G-00BWG5TQD1');
@@ -95,7 +100,7 @@
         let userFaqs = document.getElementById("userFaqs");
         let clientFaqs = document.getElementById("clientFaqs");
 
-        if(flag === undefined){
+        if (flag === undefined) {
             flag = document.getElementById("mySelect").value;
         }
 
@@ -134,7 +139,8 @@
                     </svg>
                 </div>
                 <select id="mySelect" aria-label="Selected tab"
-                        class="form-select block w-full p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative" onchange="showActive()">
+                        class="form-select block w-full p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative"
+                        onchange="showActive()">
                     <option value='1' selected class="text-sm text-gray-600">Soy usuario</option>
                     <option value='2' class="text-sm text-gray-600">Soy estanquero</option>
                 </select>
@@ -159,8 +165,8 @@
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
                         <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo funciona TabacON? </p>
                         <p class="xl:w-10/12 w-full text-gray-600 text-lg leading-8">TabacON es una aplicación que te
-                            permite pagar desde tu móvil en máquinas de tabaco. Descarga la app, introduce tu tarjeta y
-                            recarga tu monedero virtual y estarás listo para pagar en máquinas de tabaco. </p>
+                            permite pagar desde tu móvil en máquinas de tabaco. Descarga la app, introduce tu tarjeta
+                            para recargar tu monedero virtual y estarás listo para comprar en máquinas de tabaco. </p>
                     </li>
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4">
                         <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Por qué tengo que activar mi ubicación
@@ -184,29 +190,90 @@
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
                         <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">Cuando recargo mi monedero... ¿me
                             cobran? </p>
-                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">No. TabacON no cobra ninguna comisión por las operaciones de recarga del monedero virtual. </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">No. TabacON no cobra
+                            ninguna comisión por las operaciones de recarga del monedero virtual. </p>
                     </li>
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
-                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Me puedo conectar a cualquier máquina de tabaco? </p>
-                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Solo a las máquinas que usen el sistema de TabacON. Si encuentras una pegatina con nuestro logo en una máquina, tu compra con el móvil estará garantizada. </p>
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Me puedo conectar a cualquier máquina
+                            de tabaco? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Solo a las máquinas que
+                            usen el sistema de TabacON. Si encuentras una pegatina con nuestro logo en una máquina, tu
+                            compra con el móvil estará garantizada. </p>
                     </li>
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
-                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo contacto con el equipo de TabacON? </p>
-                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Puedes escribirnos a la siguiente dirección: <a href="mailto:soporte@tabacon.es">soporte@tabacon.es</a> o reportar una nueva incidencia. Te atenderemos lo antes posible. </p>
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo contacto con el equipo de
+                            TabacON? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Puedes escribirnos a la
+                            siguiente dirección: <a href="mailto:soporte@tabacon.es">soporte@tabacon.es</a> o reportar
+                            una nueva incidencia. Te atenderemos lo antes posible. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Es seguro introducir los datos de mi
+                            tarjeta en la app? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Sí. El sistema de pagos
+                            de TabacON está gestionado por PAYCOMET. Esta plataforma encripta los datos de la tarjeta de
+                            los clientes para garantizar la máxima seguridad de estos. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Para qué usa mi correo TabacON? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Para enviarte
+                            notificaciones relativas al estado de tu cuenta, así como las facturas mensuales. No te
+                            preocupes, nuestra intención no es llenarte la bandeja de correos publicitarios. </p>
                     </li>
                 </ul>
                 <ul class="bg-gray-100 rounded" id="clientFaqs" style="display: none">
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
                         <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cuánto cuesta el sistema? </p>
-                        <p class="xl:w-10/12 w-full text-gray-600 text-lg leading-8">Disponemos de promociones exclusivas para los primeros interesados en TabacON. Tan solo tienes que contactar con nosotros para informarte.  </p>
+                        <p class="xl:w-10/12 w-full text-gray-600 text-lg leading-8">Disponemos de promociones
+                            exclusivas para los primeros interesados en TabacON. Tan solo tienes que contactar con
+                            nosotros para informarte. </p>
                     </li>
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
-                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Existen planes de financiación?  </p>
-                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Sí. Para asumir el coste de la placa ofrecemos la posibilidad de financiar el pago a través del método de renting.  </p>
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Existen planes de financiación? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Sí. Para asumir el coste
+                            de la placa ofrecemos la posibilidad de financiar el pago a través del método de
+                            renting. </p>
                     </li>
                     <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
-                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Máquinas compatibles?   </p>
-                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Por el momento, nuestra placa no es compatible con todas las máquinas de tabaco. Estamos trabajando para poder garantizar que TabacON funcione en el 100% de las máquinas. </p>
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cuánto tarda en llegarme el
+                            hardware? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">En 15 días como máximo.
+                            Las placas tardan 10 días en preparase más lo que tarde el envío. Siempre que haya stock
+                            disponible, el envío se agilizará considerablemente. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Máquinas compatibles? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Por el momento, nuestra
+                            placa no es compatible con todas las máquinas de tabaco. Estamos trabajando para poder
+                            garantizar que TabacON funcione en el 100% de las máquinas. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo se configura? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">El proceso es muy
+                            sencillo y no te llevará mucho tiempo. De todas formas, nuestro equipo te proporcionará todo
+                            el soporte necesario para completarlo con éxito. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Cómo sabe la gente que la máquina
+                            admite TabacON? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Para que los fumadores
+                            sepan que pueden disfrutar de las ventajas TabacON, se colocará una pegatina en tu máquina
+                            como soporte informativo. En ella habrá un código QR para poder descargarse la
+                            aplicación. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">¿Qué necesito tener para instalar
+                            Tabacon? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Ahora mismo es necesario
+                            disponer de telemetría en las máquinas para instalar TabacON. Contacta con nosotros y te
+                            explicaremos con qué telemetría trabajamos. </p>
+                    </li>
+                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">Tras instalarlo, ¿se puede seguir
+                            pagando en efectivo? </p>
+                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-lg leading-8">Por supuesto. TabacON
+                            solo es una alternativa para proporcionar un sistema de pago diferente y aumentar
+                            potencialmente las ventas. </p>
                     </li>
                 </ul>
 
