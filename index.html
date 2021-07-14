@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- OneTrust Cookies Consent Notice start for tabacon.es -->
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"
+            data-domain-script="5b1cc34c-c72f-49ad-89a9-e1f3f7414d94"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() {
+        }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end for tabacon.es -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TabacON</title>
     <meta name="title" content="La primera app para comprar tabaco desde tu móvil">
-    <meta name="description" content=" TabacON es la primera app que te permitirá comprar tabaco desde tu móvil. Es muy sencillo: descarga la app, busca una de nuestras máquinas asociadas, conéctate, selecciona el producto y listo. ">
-    <meta name="keywords" content="pvra, tabaco, app, comprar, aplicación, estanco, estanquero, online, venta tabaco, compra tabaco, app tabaco">
+    <meta name="description"
+          content=" TabacON es la primera app que te permitirá comprar tabaco desde tu móvil. Es muy sencillo: descarga la app, busca una de nuestras máquinas asociadas, conéctate, selecciona el producto y listo. ">
+    <meta name="keywords"
+          content="pvra, tabaco, app, comprar, aplicación, estanco, estanquero, online, venta tabaco, compra tabaco, app tabaco">
     <meta property="og:title" content="TabacON">
     <meta property="og:image" content="https://tabacon.es/img/rrss_logo.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="910">
     <meta property="og:image:height" content="80">
 
-    <link rel="stylesheet preload" href="vendor/tailwind.min.css" as="style">
+    <link rel="stylesheet" href="vendor/tailwind.min.css">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/devices.css">
 
     <script type="text/javascript" src="vendor/jquery-3.5.1.min.js"></script>
-    <script src="vendor/lottie.min.js" defer type="text/javascript"></script>
-    <script type="text/javascript" defer src="vendor/emailJS.min.js"></script>
-    <script type="text/javascript" defer src="js/contact_me.js"></script>
-    <script type="text/javascript" defer src="vendor/sweetalert2@10.js"></script>
+    <script src="vendor/lottie.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="vendor/emailJS.min.js"></script>
+    <script type="text/javascript" src="js/contact_me.js"></script>
+    <script type="text/javascript" src="vendor/sweetalert2@10.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-00BWG5TQD1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    <script type="text/javascript" defer src="vendor/scrollmagic.min.js"></script>
-    <script type="text/javascript"  src="js/main.js"></script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+
+        gtag('config', 'G-00BWG5TQD1');
+    </script>
+    <!-- Vidjet Script - Start -->
+    <script> (function (d, s, id) {
+        if (d.getElementById(id)) return;
+        var t = d.getElementsByTagName(s)[0];
+        var vis = d.createElement(s);
+        vis.id = id;
+        vis.src = 'https://app-api.vidjet.io/generator.js?siteId=8d2387b6-2039-440f-b937-2df2df8c3960';
+        t.parentNode.insertBefore(vis, t);
+    })(document, 'script', 'vidjet'); </script>
+    <!-- Vidjet Script - End -->
+
+    <script type="text/javascript" src="vendor/scrollmagic.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/cta.js"></script>
 
 
     <link rel="icon" type="image/png" href="img/icon.png">
@@ -34,10 +71,9 @@
 </head>
 <body class="bg-transparent">
 
-
 <!--NAVBAR-->
 <nav class="flex items-center justify-between flex-wrap bg-white p-4 fixed w-screen z-10 top-0 shadow-xl" id="navbar">
-    <a rel="noopener noreferrer"  href="#">
+    <a href="#">
         <img style="height: 2rem;" src="img/TabacOn color.png" alt="Tabacon logo principal">
     </a>
 
@@ -53,18 +89,25 @@
     <div class="transition duration-50 ease-in w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
          id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
-
             <li class="mr-3">
-                <a rel="noopener noreferrer"  class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                <a class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline" style="color: #9e1f64"
+                   href="/estanco">Soy estanco</a>
+            </li>
+            <li class="mr-3">
+                <a class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
                    href="#how">¿Cómo funciona?</a>
             </li>
             <li class="mr-3">
-                <a rel="noopener noreferrer"  class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                <a class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
                    href="#features">Ventajas</a>
             </li>
             <li class="mr-3">
-                <a rel="noopener noreferrer"  class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
-                   href="#install">Instalación</a>
+                <a class="nav-link inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="#install">Primeros pasos</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-5 text-yellow-500 font-bold no-underline"
+                   href="/FAQs">FAQs</a>
             </li>
         </ul>
     </div>
@@ -74,7 +117,6 @@
 
 <!--Container-->
 <div class="bg-wrapper container  mx-auto w-full min-w-full bg-transparent">
-
     <div id="home-wrapper">
         <div id="home-mobile-wrapper">
             <!-- HERO SECTION-->
@@ -104,25 +146,26 @@
                                              ¿Estás preparado?
                                          </div>-->
                                         <div class="flex flex-column justify-center mt-8">
-                                            <!-- <a rel="noopener noreferrer"  href="bundle/TabacON-App-Oficial-v0.2.1.apk" target="_blank"
-                                                class="downloadLink">-->
-                                            <button class="main-cta bg-palette-primary mt-6 px-8 py-4 font-bold py-2 rounded-lg px-4 rounded text-white inline-flex items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
-                                                <svg class="items-center" height="40"
-                                                     viewBox="2.993 .918 26.014 30.687"
-                                                     width="40" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
-                                                          fill="#ffffff"/>
-                                                </svg>
-                                                <h3 class="ml-8">Descargar APP</h3>
-                                            </button>
-
+                                            <a href="https://play.google.com/store/apps/details?id=com.sevisl.tb"
+                                               target="_blank"
+                                               class="downloadLink2">
+                                                <button class="main-cta bg-palette-primary mt-6 px-8 py-4 font-bold py-2 rounded-lg px-4 rounded text-white inline-flex items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
+                                                    <svg class="items-center" height="40"
+                                                         viewBox="2.993 .918 26.014 30.687"
+                                                         width="40" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
+                                                              fill="#ffffff"/>
+                                                    </svg>
+                                                    <h3 class="ml-8">Descargar APP</h3>
+                                                </button>
+                                            </a>
 
                                         </div>
                                         <div class="flex flex-column justify-center mt-8">
 
                                             <h6 class=" sponsors-label text-center my-auto mr-4">CON LA COLABORACIÓN
                                                 DE</h6>
-                                            <a rel="noopener noreferrer"  href="https://www.cehe.es/" target="_blank">
+                                            <a href="https://www.cehe.es/" target="_blank">
                                                 <img class="ml-4 object-contain max-h-20 transition duration-50 ease-in "
                                                      src="img/hosteleria_logo.png" alt="Hostelería España"
                                                      style="opacity: 0.8;">
@@ -134,9 +177,9 @@
                                     <!--                                            </button>-->
                                     <div class="flex flex-col ml-8 lg:ml-12 items-center">
 
-                                        <div  class=" marvel-device note8">
+                                        <div class=" marvel-device note8">
                                             <span id='previousPhotoPC' class="previousPhoto">
-                                                <svg  xmlns="http://www.w3.org/2000/svg"
+                                                <svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                      viewBox="0 0 443.52 443.52"
                                                      style="enable-background:new 0 0 443.52 443.52;"
@@ -150,7 +193,7 @@
                                                     </svg>
                                             </span>
                                             <span id='skipPhotoPC' class="skipPhoto">
-                                                <svg   xmlns="http://www.w3.org/2000/svg"
+                                                <svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                      viewBox="0 0 512.002 512.002" xml:space="preserve"
                                                      height="20" width="20"
@@ -266,11 +309,11 @@
                             <div class="flex flex-col items-center mb-8">
                                 <div class="flex w-full p-4 items-center justify-center">
                                     <span id='previousPhotoMobile' class="previousPhoto">
-                                                    <svg  xmlns="http://www.w3.org/2000/svg"
-                                                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                          viewBox="0 0 443.52 443.52"
-                                                          style="enable-background:new 0 0 443.52 443.52;"
-                                                          xml:space="preserve"
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 443.52 443.52"
+                                                         style="enable-background:new 0 0 443.52 443.52;"
+                                                         xml:space="preserve"
                                                     >
                                                            <g>
             <path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
@@ -293,14 +336,15 @@
                                         <!--                                        <div class="volume"></div>-->
                                         <!--                                        <div class="camera"></div>-->
                                         <div class="screen">
-                                            <img class="fadeImageStart" id="screenshotMobile" alt="captura de la app en movil">
+                                            <img class="fadeImageStart" id="screenshotMobile"
+                                                 alt="captura de la app en movil">
                                         </div>
                                     </div>
                                     <span id='skipPhotoMobile' class="skipPhoto">
-                                                    <svg   xmlns="http://www.w3.org/2000/svg"
-                                                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                           viewBox="0 0 512.002 512.002" xml:space="preserve"
-                                                           height="20" width="20"
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 512.002 512.002" xml:space="preserve"
+                                                         height="20" width="20"
                                                     >
                                                             <g>
             <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
@@ -326,24 +370,26 @@
                                              ¿Estás preparado?
                                          </div>-->
                                     <div class="flex flex-col ">
-                                        <button style="background-color: #26B7B8;"
-                                                class="main-cta-mobile mt-6 px-3 w-full font-bold py-2 rounded-lg px-4 rounded inline-flex text-white items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
-                                            <div class="mx-auto inline-flex items-center">
-                                                <svg class="mx-3" height="40" viewBox="2.993 .918 26.014 30.687"
-                                                     width="40" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
-                                                          fill="#ffffff"/>
-                                                </svg>
-                                                <span>Descargar App</span>
-                                            </div>
+                                        <a href="https://play.google.com/store/apps/details?id=com.sevisl.tb"
+                                           target="_blank">
 
+                                            <button style="background-color: #26B7B8;"
+                                                    class="main-cta-mobile mt-6 px-3 w-full font-bold py-2 rounded-lg px-4 rounded inline-flex text-white items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
+                                                <div class="mx-auto inline-flex items-center">
+                                                    <svg class="mx-3" height="40" viewBox="2.993 .918 26.014 30.687"
+                                                         width="40" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="m6.802 20.283c0 1.23-.857 2.237-1.904 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.904 1.007 1.904 2.237zm22.205 0c0 1.23-.857 2.237-1.905 2.237s-1.905-1.006-1.905-2.237v-7.321c0-1.23.857-2.237 1.905-2.237s1.905 1.007 1.905 2.237zm-8.843-16.634 1.222-2.193c.1-.179.07-.388-.065-.463s-.329.009-.428.188l-1.25 2.244a10.06 10.06 0 0 0 -3.684-.684c-1.33 0-2.588.25-3.71.695l-1.256-2.254c-.1-.179-.293-.264-.428-.188s-.165.284-.065.463l1.228 2.204c-2.555 1.2-4.276 3.453-4.276 6.035 0 .262.019.521.053.776h16.909c.035-.255.053-.513.053-.776 0-2.59-1.732-4.849-4.301-6.046zm-8.067 3.828a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm7.764 0a.744.744 0 1 1 0-1.488.744.744 0 0 1 0 1.488zm-12.411 3.734v12.471h.007c.087 1.053 1.056 1.89 2.23 1.89h12.541c1.173 0 2.142-.837 2.23-1.89h.007v-12.471h-17.014zm7.29 14.299v3.858c0 1.23-.857 2.237-1.905 2.237s-1.904-1.007-1.904-2.237v-3.855zm6.348-.002v3.86c0 1.23-.857 2.237-1.905 2.237s-1.905-1.007-1.905-2.237v-3.86z"
+                                                              fill="#ffffff"/>
+                                                    </svg>
+                                                    <span>Descargar App</span>
+                                                </div>
+                                            </button>
 
-                                        </button>
-
+                                        </a>
 
                                         <div class="mt-8">
                                             <h6 class=" sponsors-label text-center my-auto ">CON LA COLABORACIÓN DE</h6>
-                                            <a rel="noopener noreferrer"  href="https://www.cehe.es/" target="_blank">
+                                            <a href="https://www.cehe.es/" target="_blank">
                                                 <img class="mt-6 mb-6 mx-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
                                                      src="img/hosteleria_logo.png" alt="Hostelería España"
                                                      style="opacity: 0.8;">
@@ -363,13 +409,13 @@
             <h6 class="sponsors-label text-center mt-8 md:mt-2">CON EL APOYO DE</h6>
             <div id='sponsors' class="mt-6 grid grid-cols-2 md:grid-cols-4 px-8 md:px-20">
                 <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
-                     src="img/espaitec.png" alt="Espaitec" style=" filter: grayscale(1); opacity: 0.5;">
+                     src="img/espaitec.png" alt="Espaitec" style=" filter: grayscale(1); opacity: 0.8;">
                 <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
-                     src="img/paycomet.png" alt="Paycomet" style=" filter: grayscale(1); opacity: 0.5;">
+                     src="img/paycomet.png" alt="Paycomet" style=" filter: grayscale(1); opacity: 1;">
                 <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-16 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
-                     src="img/natiu.png" alt="Natiu" style=" filter: grayscale(1); opacity: 0.5;">
+                     src="img/natiu.png" alt="Natiu" style=" filter: grayscale(1); opacity: 0.8;">
                 <img class=" py-4 md:py-0 px-4 mx-auto my-auto object-contain max-h-20 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110"
-                     src="img/xarxatec.png" alt="Xarxatec" style=" filter: grayscale(1); opacity: 0.5;">
+                     src="img/xarxatec.png" alt="Xarxatec" style=" filter: grayscale(1); opacity: 1;">
             </div>
         </div>
 
@@ -384,7 +430,7 @@
 
         <div class="grid grid-cols-2 md:grid-cols-3 px-8 gap-4 gap-y-16 mt-10 md:mt-12 md:mx-20 bg-white">
             <div class="howto-children-block flex-1 flex-col transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110">
-                <svg  enable-background="new 0 0 512 512" viewBox="0 0 512 512"
+                <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                      xmlns="http://www.w3.org/2000/svg"
                      fill="currentColor"
                      class="howto-icon-steps mx-auto"
@@ -408,7 +454,7 @@
                     </g>
                 </svg>
                 <h1 class="text-xl font-bold text-palette-complementary-dark  text-center pt-4">
-                    1. Regístrate
+                    1. Instala TabacON
                 </h1>
             </div>
 
@@ -448,13 +494,31 @@
             <div class="howto-children-block flex-1 flex-col transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve" class="howto-icon-steps mx-auto">
+                     viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve"
+                     class="howto-icon-steps mx-auto">
 <style type="text/css">
-	.st0{fill:#26B7B8;}
-    .st1{fill:#26B7B8;}
-    .st2{fill:none;stroke:#26B7B8;stroke-width:21;stroke-miterlimit:10;}
-    .st3{fill:#FFFFFF;}
-    .st4{fill:#FDFEFE;}
+	.st0 {
+        fill: #26B7B8;
+    }
+
+    .st1 {
+        fill: #26B7B8;
+    }
+
+    .st2 {
+        fill: none;
+        stroke: #26B7B8;
+        stroke-width: 21;
+        stroke-miterlimit: 10;
+    }
+
+    .st3 {
+        fill: #FFFFFF;
+    }
+
+    .st4 {
+        fill: #FDFEFE;
+    }
 </style>
                     <g>
 	<path class="st0" d="M344.5,93.7c0,3.2,0.2,6.3,0,9.5c-0.4,6.5-5.1,11-11.6,11.3c-2.2,0.1-4.3,0.1-6.5,0
@@ -579,7 +643,7 @@
                 </h1>
             </div>
             <div class="howto-children-block flex-1 flex-col transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110">
-                <svg  enable-background="new 0 0 512 512" viewBox="0 0 512 512"
+                <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                      xmlns="http://www.w3.org/2000/svg"
                      fill="currentColor"
                      class="howto-icon-steps mx-auto"
@@ -608,7 +672,7 @@
                 </h1>
             </div>
             <div class="howto-children-block flex-1 flex-col transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110">
-                <svg  enable-background="new 0 0 512 512" viewBox="0 0 512 512"
+                <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                      xmlns="http://www.w3.org/2000/svg"
                      fill="currentColor"
                      class="howto-icon-steps mx-auto"
@@ -656,7 +720,7 @@
         <div class="flex flex-col md:flex-row  mx-12 lg:mx-20">
 
             <div class="features-card w-full md:w-1/3 py-5 md:mx-4 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110">
-                <div class="flex p-8 lg:p-10 custom-box-shadow bg-white rounded-2xl min-h-full items-center justify-center">
+                <div class="flex p-8 lg:p-10 custom-box-shadow bg-white rounded-2xl min-h-full  justify-center">
                     <div class="">
                         <div>
                             <svg viewBox="0 0 74 74"
@@ -678,29 +742,28 @@
                                 </g>
                             </svg>
                         </div>
-                        <div>
+                        <div class="md:min-h-40">
                             <dt class="text-lg leading-6 font-bold text-palette-complementary-dark mt-10 text-center">
                                 Olvídate de llevar efectivo encima
                             </dt>
                             <dd class="mt-2 text-base text-gray-500 text-justify">
-                                Ya no tendrás que pedir cambio en los bares. Paga desde el móvil. Es fácil,
-                                rápido y sin comisiones de venta.
+                                Ya no tendrás que pedir cambio en los bares. Paga desde el móvil. Es fácil, cómodo y
+                                rápido.
+<!--                                y sin comisiones de venta.-->
                             </dd>
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div class="features-card w-full md:w-1/3 py-5 md:mx-4 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110">
-                <div class="flex p-8 lg:p-10 custom-box-shadow bg-white rounded-2xl min-h-full items-center justify-center">
+                <div class="flex p-8 lg:p-10 custom-box-shadow bg-white rounded-2xl min-h-full  justify-center">
 
                     <div class="">
                         <svg
-                             viewBox="0 0 512 512"
-                             xmlns="http://www.w3.org/2000/svg"
-                             fill="currentColor"
-                             class="feature-icon-mobile mx-auto">
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                class="feature-icon-mobile mx-auto">
                             <g>
                                 <path d="m420.404 0h-328.808c-50.506 0-91.596 41.09-91.596 91.596v328.809c0 50.505 41.09 91.595 91.596 91.595h328.809c50.505 0 91.595-41.09 91.595-91.596v-328.808c0-50.506-41.09-91.596-91.596-91.596zm61.596 420.404c0 33.964-27.632 61.596-61.596 61.596h-328.808c-33.964 0-61.596-27.632-61.596-61.596v-328.808c0-33.964 27.632-61.596 61.596-61.596h328.809c33.963 0 61.595 27.632 61.595 61.596z"/>
                                 <path d="m432.733 112.467h-228.461c-6.281-18.655-23.926-32.133-44.672-32.133s-38.391 13.478-44.672 32.133h-35.661c-8.284 0-15 6.716-15 15s6.716 15 15 15h35.662c6.281 18.655 23.926 32.133 44.672 32.133s38.391-13.478 44.672-32.133h228.461c8.284 0 15-6.716 15-15s-6.716-15-15.001-15zm-273.133 32.133c-9.447 0-17.133-7.686-17.133-17.133s7.686-17.133 17.133-17.133 17.133 7.686 17.133 17.133-7.686 17.133-17.133 17.133z"/>
@@ -708,19 +771,52 @@
                                 <path d="m432.733 369.533h-164.194c-6.281-18.655-23.926-32.133-44.672-32.133s-38.391 13.478-44.672 32.133h-99.928c-8.284 0-15 6.716-15 15s6.716 15 15 15h99.928c6.281 18.655 23.926 32.133 44.672 32.133s38.391-13.478 44.672-32.133h164.195c8.284 0 15-6.716 15-15s-6.716-15-15.001-15zm-208.866 32.134c-9.447 0-17.133-7.686-17.133-17.133s7.686-17.133 17.133-17.133 17.133 7.685 17.133 17.132-7.686 17.134-17.133 17.134z"/>
                             </g>
                         </svg>
-                        <dt class="text-lg leading-6 font-bold text-palette-complementary-dark mt-10 text-center">
-                            Controla tu consumo
-                        </dt>
-                        <dd class="mt-2 text-base text-gray-500 text-justify">
-                            En el área «Últimas transacciones» tendrás un registro detallado de tus compras. Controla
-                            así cuánto te gastas en tabaco.
-                        </dd>
+                        <div class="md:min-h-40">
+
+                            <dt class="text-lg leading-6 font-bold text-palette-complementary-dark mt-10 text-center">
+                                Controla tu consumo
+                            </dt>
+                            <dd class="mt-2 text-base text-gray-500 text-justify">
+                                En el área «Últimas transacciones» tendrás un registro detallado de tus compras.
+                                Controla
+                                así cuánto te gastas en tabaco.
+                            </dd>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="features-card w-full md:w-1/3 py-5 md:mx-4 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110">
+                <div class="flex p-8 lg:p-10 custom-box-shadow bg-white rounded-2xl min-h-full  justify-center">
+
+                    <div class="">
+                        <svg
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                class="feature-icon-mobile mx-auto">
+                            <g id="access">
+                                <path d="m15.5 5c-1.379 0-2.5-1.122-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.122 2.5 2.5-1.121 2.5-2.5 2.5zm0-4c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"/>
+                                <path d="m13 24c-3.384 0-6.278-2.415-6.882-5.741-.049-.272.131-.532.403-.582.258-.048.531.13.581.403.517 2.851 2.998 4.92 5.898 4.92 3.309 0 6-2.691 6-6 0-2.121-1.139-4.105-2.973-5.178-.238-.14-.318-.446-.179-.684.139-.24.444-.319.685-.179 2.139 1.252 3.467 3.567 3.467 6.041 0 3.86-3.141 7-7 7z"/>
+                                <path d="m4.059 22h-1.559c-.161 0-.312-.077-.405-.208-.095-.13-.12-.298-.069-.451l2.088-6.265c.614-1.84 2.329-3.076 4.269-3.076h1.763c.617 0 1.164-.37 1.394-.943l1.003-2.508c.376-.941 1.273-1.549 2.286-1.549.792 0 1.516.366 1.985 1.004s.603 1.438.366 2.194l-1.045 3.345c-.459 1.47-1.802 2.457-3.341 2.457h-3.853c-.646 0-1.219.412-1.423 1.026l-1.088 3.265c-.341 1.022-1.294 1.709-2.371 1.709zm-.866-1h.865c.646 0 1.219-.412 1.423-1.026l1.088-3.265c.342-1.022 1.295-1.709 2.372-1.709h3.853c1.1 0 2.059-.705 2.387-1.754l1.045-3.346c.141-.45.062-.925-.217-1.304-.28-.379-.709-.596-1.18-.596-.602 0-1.135.361-1.359.92l-1.003 2.508c-.382.955-1.293 1.572-2.321 1.572h-1.763c-1.509 0-2.843.962-3.32 2.393zm8.81-9.757h.01z"/>
+                            </g>
+                        </svg>
+                        <div class="md:min-h-40">
+                            <dt class="text-lg leading-6 font-bold text-palette-complementary-dark mt-10 text-center">
+                                Por la accesibilidad
+                            </dt>
+                            <dd class="mt-2 text-base text-gray-500 text-justify">
+                                Que el proceso de compra se pueda realizar desde el móvil favorece la autonomía del
+                                usuario.
+                                TabacON fomenta así la accesibilidad de este tipo de máquinas.
+                            </dd>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="features-card w-full md:w-1/3 py-5 md:mx-4 transition duration-50 ease-in transform hover:-translate-y-1 hover:scale-110">
 
-                <div class="flex p-8 lg:p-10 custom-box-shadow  bg-white rounded-2xl min-h-full items-center justify-center"
+                <div class="flex p-8 lg:p-10 custom-box-shadow  bg-white rounded-2xl min-h-full  justify-center"
                 >
 
                     <div class="">
@@ -734,13 +830,16 @@
                                 <path d="M21.66,33l2.83-2.83a1,1,0,0,0,0-1.41l-4.25-4.25a1.034,1.034,0,0,0-1.41,0L16,27.34l-2.83-2.83a1.034,1.034,0,0,0-1.41,0L7.51,28.76a1,1,0,0,0,0,1.41L10.34,33,7.51,35.83a1,1,0,0,0,0,1.41l4.25,4.25a1.034,1.034,0,0,0,1.41,0L16,38.66l2.83,2.83a1.033,1.033,0,0,0,.71.29,1.009,1.009,0,0,0,.7-.29l4.25-4.25a1,1,0,0,0,0-1.41Zm-2.12,6.36-2.83-2.82a.99.99,0,0,0-1.42,0l-2.83,2.82L9.64,36.54l2.82-2.83a.99.99,0,0,0,0-1.42L9.64,29.46l2.82-2.82,2.83,2.82a1.027,1.027,0,0,0,1.42,0l2.83-2.82,2.82,2.82-2.82,2.83a.99.99,0,0,0,0,1.42l2.82,2.83Z"/>
                             </g>
                         </svg>
-                        <dt class="text-lg leading-6 font-bold mt-10 text-center text-palette-complementary-dark">
-                            Evita el contacto con la máquina
-                        </dt>
-                        <dd class="mt-2 text-base text-gray-500 text-justify">
-                            Todo el proceso de compra lo realizarás desde tu teléfono. Al terminar, recoge tu tabaco y
-                            listo.
-                        </dd>
+                        <div class="md:min-h-40">
+                            <dt class="text-lg leading-6 font-bold mt-10 text-center text-palette-complementary-dark">
+                                Evita el contacto con la máquina
+                            </dt>
+                            <dd class="mt-2 text-base text-gray-500 text-justify">
+                                Todo el proceso de compra lo realizarás desde tu teléfono. Al terminar, recoge tu tabaco
+                                y
+                                listo.
+                            </dd>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -756,7 +855,7 @@
     <!-- STEPPER INSTALACIÓN DESKTOP-->
     <div class="container hidden sm:block" id="install-stepper-desktop">
         <h1 class="text-4xl md:text-6xl sectionTitle font-bold text-palette-complementary-dark text-center font-helvetica md:pt-8">
-            Instalación
+            Primeros pasos
         </h1>
 
         <div class="grid grid-cols-9 mx-auto p-2 md:p-8 lg:p-16 pt-0 text-blue-50">
@@ -979,8 +1078,9 @@
                         <line x1="50.81609" y1="799.55547" x2="322.81609" y2="799.55547" fill="none"
                               stroke="#3f3d56" stroke-miterlimit="10" id="line163"/>
                     </svg>
-                    <h3 class="font-bold text-lg mb-1">Descarga la APK</h3>
-                    <p class="leading-tight ">Descarga nuestra App directamente desde aquí, es 100% seguro y solo te
+                        <h3 class="font-bold text-lg mb-1">Descarga la APP</h3>
+
+                    <p class="leading-tight ">Descarga nuestra App directamente desde Playstore, es 100% seguro y solo te
                         llevará unos segundos.</p>
                 </div>
                 <div class="col-start-5 col-end-6 mx-auto relative">
@@ -1003,6 +1103,7 @@
                         2
                     </div>
                 </div>
+<!--
                 <div class="step-scroll-revealing bg-palette-primary col-start-6 col-end-10 w-full p-4 rounded-xl my-4 mr-auto shadow-md animate transform transition-transform hover:translate-x-2 cursor-default">
                     <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -1171,6 +1272,177 @@
                         TabacON es 100% seguro, su instalación no pone en riesgo tu dispositivo.
                     </i>
                 </div>
+-->
+                <div class="step-scroll-revealing bg-palette-primary col-start-6 col-end-10 w-full p-4 rounded-xl my-4 mr-auto shadow-md animate transform transition-transform hover:translate-x-2 cursor-default">
+<!--                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"-->
+<!--                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"-->
+<!--                         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"-->
+<!--                         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                         id="b08b9267-8725-41d4-9fd9-d16b8c1f0d2f" data-name="Layer 1"-->
+<!--                         viewBox="0 0 974 729.15132" version="1.1"-->
+<!--                         sodipodi:docname="origen_desconocido_illustration.svg"-->
+<!--                         inkscape:version="0.92.4 (5da689c313, 2019-01-14)">-->
+<!--                        <metadata id="metadata76">-->
+<!--                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">-->
+<!--                                <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">-->
+<!--                                    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml-->
+<!--                                    </dc:format>-->
+<!--                                    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"-->
+<!--                                             rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>-->
+<!--                                    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>-->
+<!--                                </cc:Work>-->
+<!--                            </rdf:RDF>-->
+<!--                        </metadata>-->
+<!--                        <defs id="defs74">-->
+<!--                            <linearGradient id="a7d70b19-b507-4394-a133-55f51a2376ed" x1="323.00662"-->
+<!--                                            y1="814.32904" x2="323.00662" y2="813.88037"-->
+<!--                                            gradientTransform="matrix(-1,0,0,1,579.52555,-122.71755)"-->
+<!--                                            gradientUnits="userSpaceOnUse">-->
+<!--                                <stop offset="0" stop-color="gray" stop-opacity="0.25" id="stop2"/>-->
+<!--                                <stop offset="0.53514" stop-color="gray" stop-opacity="0.12" id="stop4"/>-->
+<!--                                <stop offset="1" stop-color="gray" stop-opacity="0.1" id="stop6"/>-->
+<!--                            </linearGradient>-->
+<!--                        </defs>-->
+<!--                        <sodipodi:namedview xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"-->
+<!--                                            pagecolor="#ffffff" bordercolor="#666666" borderopacity="1"-->
+<!--                                            objecttolerance="10" gridtolerance="10" guidetolerance="10"-->
+<!--                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                                            inkscape:pageopacity="0" inkscape:pageshadow="2"-->
+<!--                                            inkscape:window-width="1920" inkscape:window-height="1001"-->
+<!--                                            id="namedview72" showgrid="false" inkscape:zoom="0.91545993"-->
+<!--                                            inkscape:cx="278.87814" inkscape:cy="335.35369"-->
+<!--                                            inkscape:window-x="-9" inkscape:window-y="-9"-->
+<!--                                            inkscape:window-maximized="1"-->
+<!--                                            inkscape:current-layer="b08b9267-8725-41d4-9fd9-d16b8c1f0d2f"/>-->
+<!--                        <path d="m 529.30449,179.19823 h -3.85282 V 72.612482 A 61.087789,61.688943 0 0 0 464.36393,10.923471 H 240.74802 A 61.087789,61.688943 0 0 0 179.66009,72.612259 V 657.35023 a 61.087808,61.688963 0 0 0 61.08773,61.689 h 223.61583 a 61.087779,61.688934 0 0 0 61.08792,-61.68876 V 255.0678 h 3.85283 z"-->
+<!--                              id="path2" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#e6e6e6;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 512.44939,73.042901 V 656.92037 a 45.622491,46.071454 0 0 1 -45.6218,46.07075 H 242.13903 a 45.622616,46.071581 0 0 1 -45.6218,-46.07075 V 73.042901 a 45.622655,46.071619 0 0 1 45.6218,-46.070754 h 27.25746 a 21.685153,21.898553 0 0 0 20.06974,30.152749 h 128.10716 a 21.685278,21.898679 0 0 0 20.06974,-30.152749 h 29.18446 a 45.622636,46.0716 0 0 1 45.6218,46.070754 z"-->
+<!--                              id="path4" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,81.125317 a 30.832049,31.135462 0 0 0 -2.3e-4,62.270913 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.270913 z"-->
+<!--                              id="path34" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,138.53149 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 1 1 0,15.56773 z"-->
+<!--                              id="path36" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,105.45007 h -51.06558 a 7.7080133,7.7838665 0 1 1 0,-15.56773 h 51.06558 a 7.7080133,7.7838665 0 0 1 0,15.56773 z"-->
+<!--                              id="path38" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,211.50506 a 30.832049,31.135462 0 0 0 -2.3e-4,62.27092 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.27092 z"-->
+<!--                              id="path40" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,268.91124 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path42" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,235.82981 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path44" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,472.26455 a 30.832049,31.135462 0 0 0 -2.3e-4,62.27092 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.27092 z"-->
+<!--                              id="path46" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,529.67073 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path48" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,496.5893 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path50" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,602.64429 a 30.832052,31.135465 0 0 0 -2.3e-4,62.27093 h 2.3e-4 a 30.832052,31.135465 0 0 0 0,-62.27093 z"-->
+<!--                              id="path52" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,660.05048 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path54" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,626.96905 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path56" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 540.43912,447.94014 H 168.52752 A 15.915754,16.072378 0 0 1 152.62975,431.88592 V 311.23601 a 15.915764,16.072388 0 0 1 15.89777,-16.05423 h 371.9116 a 15.915773,16.072398 0 0 1 15.89777,16.05423 v 120.64991 a 15.915764,16.072388 0 0 1 -15.89777,16.05422 z"-->
+<!--                              id="path58" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,340.4255 a 30.832052,31.135465 0 0 0 -2.3e-4,62.27093 h 2.3e-4 a 30.832052,31.135465 0 0 0 0,-62.27093 z"-->
+<!--                              id="path60" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0"-->
+<!--                              style="fill:#f59e0b;fill-opacity:1;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,397.83169 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path62" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,364.75027 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path64" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 540.43912,447.94014 H 168.52752 A 15.915754,16.072378 0 0 1 152.62975,431.88592 V 311.23601 a 15.915764,16.072388 0 0 1 15.89777,-16.05423 h 371.9116 a 15.915773,16.072398 0 0 1 15.89777,16.05423 v 120.64991 a 15.915764,16.072388 0 0 1 -15.89777,16.05422 z M 168.52752,296.15477 a 14.951164,15.098296 0 0 0 -14.93427,15.08124 v 120.64991 a 14.951154,15.098286 0 0 0 14.93427,15.08124 h 371.9116 a 14.951154,15.098286 0 0 0 14.93427,-15.08124 V 311.23601 a 14.951164,15.098296 0 0 0 -14.93427,-15.08124 z"-->
+<!--                              id="path66" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#3f3d56;stroke-width:0.96823072"/>-->
+<!--                        <path id="a4f85a93-5584-48fc-9a4d-d7e2ab78dfd5" data-name="Path 395"-->
+<!--                              d="m 251.19058,384.49173 a 3.7418064,3.7786288 0 0 1 -2.25111,-0.75551 l -0.0403,-0.0305 -8.47881,-6.54987 a 3.7679365,3.8050161 0 0 1 4.58497,-6.03943 l 5.49196,4.25291 12.97767,-17.09743 a 3.7663275,3.8033912 0 0 1 5.28059,-0.70436 l 9.6e-4,8.2e-4 -0.0805,0.11294 0.0827,-0.11294 a 3.7708945,3.8080032 0 0 1 0.69668,5.33364 l -15.26466,20.10132 a 3.7686206,3.8057069 0 0 1 -2.99699,1.48388 z"-->
+<!--                              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>-->
+<!--                        <path d="M1086,814.57566H114a1,1,0,0,1,0-2h972a1,1,0,0,1,0,2Z"-->
+<!--                              transform="translate(-113 -85.42434)" fill="#ccc" id="path69"/>-->
+<!--                        <polygon transform="translate(87.776613,246.31942)" style="fill:#a0616a"-->
+<!--                                 points="588.798,461.528 582.965,414.24 601.06,414.241 601.057,461.529 "-->
+<!--                                 id="polygon1042"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#2f2e41"-->
+<!--                              d="m 667.81705,704.34472 h 23.6438 v 14.8869 h -38.5307 v 0 a 14.88686,14.88686 0 0 1 14.8869,-14.8869 z"-->
+<!--                              id="path1044"/>-->
+<!--                        <polygon transform="translate(87.776613,246.31942)" style="fill:#a0616a"-->
+<!--                                 points="681.753,435.888 645.573,404.885 658.941,392.69 690.811,427.625 "-->
+<!--                                 id="polygon1046"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#2f2e41"-->
+<!--                              d="m 760.69975,685.52122 17.4675,-15.9349 10.033,10.998 -28.4654,25.9679 v 0 a 14.88685,14.88685 0 0 1 0.9649,-21.031 z"-->
+<!--                              id="path1048"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#ff9e47;fill-opacity:1"-->
+<!--                              d="m 676.77845,697.03382 a 4.47341,4.47341 0 0 1 -4.4443,-3.856 l -10.6829,-73.88969 a 42.89891,42.89891 0 0 1 -0.1506,-11.12061 l 10.4118,-88.97509 66.4981,5.58349 -10.0364,84.30567 37.9661,47.33983 a 4.48912,4.48912 0 0 1 -0.5552,6.209 l -9.5588,8.3252 a 4.49953,4.49953 0 0 1 -6.3765,-0.4697 l -35.9744,-42.09768 a 56.53874,56.53874 0 0 1 -11.7192,-22.562 l -5.1358,-20.0293 a 1.4999,1.4999 0 0 0 -2.8703,-0.11768 l -6.793,19.62354 4.2976,86.43112 a 4.50989,4.50989 0 0 1 -4.2446,4.7163 l -10.3726,0.5762 q -0.1303,0.01 -0.259,0.01 z"-->
+<!--                              id="path1050"/>-->
+<!--                        <circle style="fill:#a0616a" cx="713.7309" cy="374.40012" r="24.561029"-->
+<!--                                id="circle1052"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#a0616a"-->
+<!--                              d="m 571.07365,402.95577 a 10.05579,10.05579 0 0 0 14.8021,4.31892 l 32.2033,19.50956 -2.5029,-16.49956 -27.2577,-17.6152 a 10.11027,10.11027 0 0 0 -17.2448,10.28628 z"-->
+<!--                              id="path1054"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc"-->
+<!--                              d="m 712.58995,536.17542 v 0 c -13.0449,4.9e-4 -26.6198,-4.04639 -40.3479,-12.0293 a 4.99126,4.99126 0 0 1 -2.1709,-6.06494 l 12.769,-34.40674 -2.9043,-40.54053 c -0.9878,-13.79052 5.8872,-26.88086 17.5152,-33.34912 a 31.59424,31.59424 0 0 1 27.5616,-1.63187 33.97516,33.97516 0 0 1 19.5756,22.31 l 4.0989,14.26075 a 87.49009,87.49009 0 0 1 -1.6374,53.10156 l -11.875,33.34131 -0.3081,0.18408 c -0.081,0.0489 -8.2298,4.8238 -22.2767,4.8248 z"-->
+<!--                              id="path1056"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc"-->
+<!--                              d="m 588.12125,414.40142 a 4.99665,4.99665 0 0 1 0.053,-5.61343 l 6.2231,-8.98822 a 5.008,5.008 0 0 1 6.4173,-1.58971 l 46.1507,24.00065 50.9208,-5.10461 a 14.23294,14.23294 0 0 1 14.8537,9.68 14.14226,14.14226 0 0 1 -13.2997,18.53332 l -47.4846,0.48187 a 29.20591,29.20591 0 0 1 -14.3096,-3.58864 l -47.7652,-26.19435 a 5.01944,5.01944 0 0 1 -1.7598,-1.61688 z"-->
+<!--                              id="path1058"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#a0616a"-->
+<!--                              d="m 734.89675,558.15785 a 10.05576,10.05576 0 0 0 0.4629,-15.41238 l 11.9934,-33.01467 -16.5393,3.51025 -10.2047,30.80817 a 10.11027,10.11027 0 0 0 14.2877,14.10863 z"-->
+<!--                              id="path1060"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc"-->
+<!--                              d="m 739.29875,538.95565 a 4.96759,4.96759 0 0 1 -1.7178,-0.30566 l -10.2632,-3.76612 a 5.00811,5.00811 0 0 1 -3.1506,-5.8125 l 11.6404,-50.69922 -17.7295,-48.00634 a 14.22708,14.22708 0 0 1 5.6389,-16.8086 14.14225,14.14225 0 0 1 21.2795,8.21875 l 12.3924,45.84131 a 29.207,29.207 0 0 1 0.1203,14.752 l -13.3581,52.813 a 4.99762,4.99762 0 0 1 -4.8477,3.77344 v 0 z"-->
+<!--                              id="path1062"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0"-->
+<!--                              d="m 715.35305,391.7308 c 1.2454,-5.168 1.8609,-8.0697 3.0946,-13.24056 0.8264,-3.46317 -1.667,-7.00916 -4.7954,-8.62753 -3.1285,-1.61837 -6.7549,-1.80418 -10.2502,-2.14678 -3.4952,-0.3426 -7.162,-0.95358 -9.8862,-3.202 -3.6574,-3.01872 -4.7032,-8.64152 -2.9046,-13.0636 a 14.85471,14.85471 0 0 1 10.6762,-8.53664 21.20272,21.20272 0 0 1 13.7268,2.11338 c 1.6487,-3.87357 6.4263,-5.55773 10.5308,-4.882 4.1045,0.67573 7.6691,3.16729 11.0053,5.68586 6.2039,4.68352 12.5697,10.36122 13.9466,18.08221 1.3296,7.45634 -2.4525,14.98109 -7.5113,20.55483 a 45.48369,45.48369 0 0 1 -26.2824,14.26285 9.30922,9.30922 0 0 1 -1.3502,-7.00002 z"-->
+<!--                              id="path1064"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc"-->
+<!--                              d="m 809.77665,720.31942 h -192 a 1,1 0 0 1 0,-2 h 192 a 1,1 0 0 1 0,2 z"-->
+<!--                              id="path1066"/>-->
+<!--                        <rect style="fill:#ffffff;fill-opacity:0.94117647" id="rect1707" width="197.71483"-->
+<!--                              height="39.324497" x="255.60922" y="26.956812"/>-->
+<!--                    </svg>-->
+                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 856.12205 674"><path d="M593.26357,266.136h-3.54069V169.13919A56.13918,56.13918,0,0,0,533.58377,113H328.0828a56.13913,56.13913,0,0,0-56.13933,56.13893v532.1324a56.13909,56.13909,0,0,0,56.13905,56.13917h205.501a56.13914,56.13914,0,0,0,56.13933-56.13895V335.18h3.54069Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M535.426,128.93322H508.60134A19.918,19.918,0,0,1,490.16,156.37379H372.4311a19.91806,19.91806,0,0,1-18.44139-27.44057H328.93542a41.92409,41.92409,0,0,0-41.92413,41.924V702.20874a41.92407,41.92407,0,0,0,41.92408,41.92408H535.426a41.92411,41.92411,0,0,0,41.92414-41.924V170.8573a41.92407,41.92407,0,0,0-41.92408-41.92408Zm-4.50666,246.49737a10.8911,10.8911,0,0,1-10.8592,10.8592H467.574a10.89109,10.89109,0,0,1-10.8592-10.8592v-2.7148a10.89111,10.89111,0,0,1,10.8592-10.8592h52.48612a10.89115,10.89115,0,0,1,10.8592,10.8592Zm5.88207-47.96146a10.89111,10.89111,0,0,1-10.8592,10.8592H337.7161a10.89109,10.89109,0,0,1-10.8592-10.8592v-2.7148a10.89112,10.89112,0,0,1,10.8592-10.8592H525.94221a10.89116,10.89116,0,0,1,10.8592,10.8592Zm0-47.96146a10.89111,10.89111,0,0,1-10.8592,10.8592H337.7161a10.89109,10.89109,0,0,1-10.8592-10.8592v-2.7148a10.89112,10.89112,0,0,1,10.8592-10.8592H525.94221a10.89116,10.89116,0,0,1,10.8592,10.8592Zm0-47.96146a10.8911,10.8911,0,0,1-10.8592,10.8592H337.7161a10.89109,10.89109,0,0,1-10.8592-10.8592v-2.7148a10.89111,10.89111,0,0,1,10.8592-10.8592H525.94221a10.89116,10.89116,0,0,1,10.8592,10.8592Z" transform="translate(-171.93898 -113)" fill="#fff"/><circle cx="169.84933" cy="213.56423" r="6.33453" fill="#fff"/><circle cx="190.66279" cy="213.56423" r="6.33453" fill="#fff"/><circle cx="211.47625" cy="213.56423" r="6.33453" fill="#fff"/><circle cx="232.28972" cy="213.56423" r="6.33453" fill="#fff"/><circle cx="300.15971" cy="261.52569" r="6.33453" fill="#fff"/><circle cx="320.97317" cy="261.52569" r="6.33453" fill="#fff"/><circle cx="341.78664" cy="261.52569" r="6.33453" fill="#fff"/><path d="M538.25762,456.6012H323.5908a19.01566,19.01566,0,0,0-19.01568,19.01563v104.59a19.01571,19.01571,0,0,0,19.01566,19.01571H538.25762a19.0157,19.0157,0,0,0,19.0157-19.01565V475.61688a19.01566,19.01566,0,0,0-19.0156-19.01568Zm-219.978,12.97163c.42392-.07665,10.47581-1.78725,18.79934,3.22117,8.323,5.00748,11.52088,14.6906,11.65264,15.1l.33649,1.04412-1.0801.19161a28.669,28.669,0,0,1-4.65836.34214,27.73763,27.73763,0,0,1-14.14144-3.56421c-8.323-5.00653-11.52041-14.6897-11.65221-15.09912l-.33651-1.04411Zm46.59851,97.10524H326.59051a10.52909,10.52909,0,0,1,0-21.05818h38.28762a10.52909,10.52909,0,0,1,0,21.05818Zm174.2086-1.91436A11.5201,11.5201,0,0,1,527.60041,576.25H498.88473a11.5201,11.5201,0,0,1-11.48627-11.48627V547.53425A11.52,11.52,0,0,1,498.88473,536.048h28.71568a11.52,11.52,0,0,1,11.48627,11.48627Z" transform="translate(-171.93898 -113)" fill="#f59e0b"/><path d="M508.14328,561.21324H496.5975a3.10848,3.10848,0,0,0,0,6.217h11.54578a3.10849,3.10849,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M529.45864,561.21324H517.91281a3.10848,3.10848,0,0,0,0,6.217H529.4586a3.10849,3.10849,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M508.14155,552.43841H496.59576a3.10848,3.10848,0,0,0,0,6.217h11.54579a3.10848,3.10848,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M529.45691,552.43841H517.91107a3.10848,3.10848,0,0,0,0,6.217h11.54579a3.10848,3.10848,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M508.14155,543.84123H496.59576a3.10848,3.10848,0,0,0,0,6.217h11.54579a3.10848,3.10848,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M529.45691,543.84123H517.91107a3.10848,3.10848,0,0,0,0,6.217h11.54579a3.10848,3.10848,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><rect x="487" y="383.00001" width="28" height="27.99999" fill="#e6e6e6"/><path d="M625.939,513h46v46h-46Zm44,2h-42v42h42Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><rect y="152.00001" width="28" height="28" fill="#e6e6e6"/><path d="M232.939,276h-46V230h46Zm-44-2h42V232h-42Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><polygon points="653.077 661.417 640.817 661.417 634.985 614.129 653.079 614.129 653.077 661.417" fill="#ffb8b8"/><path d="M632.06,657.91362H655.7039a0,0,0,0,1,0,0v14.88687a0,0,0,0,1,0,0H617.17317a0,0,0,0,1,0,0v0A14.88686,14.88686,0,0,1,632.06,657.91362Z" fill="#2f2e41"/><polygon points="714.077 661.417 701.817 661.417 695.985 614.129 714.079 614.129 714.077 661.417" fill="#ffb8b8"/><path d="M693.06,657.91362H716.7039a0,0,0,0,1,0,0v14.88687a0,0,0,0,1,0,0H678.17317a0,0,0,0,1,0,0v0A14.88686,14.88686,0,0,1,693.06,657.91362Z" fill="#2f2e41"/><path d="M763.51493,605.30342a10.74267,10.74267,0,0,1,4.51052-15.84306l41.67577-114.86668,20.5071,11.19135L782.62359,595.55579a10.80091,10.80091,0,0,1-19.10866,9.74763Z" transform="translate(-171.93898 -113)" fill="#ffb8b8"/><path d="M879.75379,626.88737a10.74271,10.74271,0,0,1-2.89305-16.21659L863.95,489.16137l23.33776,1.06622L892.65342,609.748a10.80091,10.80091,0,0,1-12.89963,17.13934Z" transform="translate(-171.93898 -113)" fill="#ffb8b8"/><circle cx="670.5842" cy="315.75634" r="24.56103" fill="#ffb8b8"/><path d="M879.59694,599.25244H805.55006l.08911-.57617c.13306-.86133,13.19678-86.439,3.56177-114.436a11.813,11.813,0,0,1,6.06934-14.58349h.00024c13.77173-6.48535,40.20752-14.47119,62.52,4.90918a28.23446,28.23446,0,0,1,9.45947,23.396Z" transform="translate(-171.93898 -113)" fill="#ccc"/><path d="M819.77174,524.88428l-33.33667-6.76319,15.62622-37.02978a13.99723,13.99723,0,0,1,27.10571,6.99756Z" transform="translate(-171.93898 -113)" fill="#ccc"/><path d="M862.46778,537.44189l-2.00415-45.9414c-1.51977-8.63623,3.42408-16.80029,11.02735-18.13477,7.60547-1.32959,15.03174,4.66016,16.55835,13.35987l7.533,42.92773Z" transform="translate(-171.93898 -113)" fill="#ccc"/><path d="M877.13341,593.75241c11.91455,45.37671,13.21436,103.06939,10,166l-16-2-29-120-16,122-18-1c-5.37744-66.02973-10.61328-122.71527-2-160Z" transform="translate(-171.93898 -113)" fill="#2f2e41"/><path d="M858.70645,447.73782c-4.582,4.88078-13.09131,2.26066-13.68835-4.40717a8.05477,8.05477,0,0,1,.01014-1.5557c.30826-2.95357,2.01461-5.635,1.60587-8.7536a4.59042,4.59042,0,0,0-.84011-2.14891c-3.65124-4.88934-12.22227,2.18687-15.6682-2.2393-2.113-2.714.3708-6.98712-1.25065-10.02051-2.14006-4.00357-8.47881-2.0286-12.45388-4.22115-4.42275-2.43949-4.15821-9.22525-1.24686-13.35269,3.55052-5.0336,9.77572-7.71952,15.92336-8.10661s12.25292,1.27475,17.99229,3.51145c6.52109,2.54134,12.98768,6.05351,17.00067,11.78752,4.88021,6.97317,5.34986,16.34794,2.90917,24.50175C867.5152,437.69294,862.44812,443.75214,858.70645,447.73782Z" transform="translate(-171.93898 -113)" fill="#2f2e41"/><path d="M1027.061,787h-381a1,1,0,0,1,0-2h381a1,1,0,0,1,0,2Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/></svg>
+                    <h3 class="font-bold text-lg mb-1">Recarga tu wallet</h3>
+                    <p class="leading-tight">
+                        Introduce tu método de pago preferido, solo tendrás que hacerlo la primera vez.<br/>
+                        Guardaremos tus datos de pago sólo para tu comodidad.
+                    </p>
+
+
+<!--                    <i>TabacON es 100% seguro, su instalación no pone en riesgo tu dispositivo.</i>-->
+
+                </div>
+
+
                 <div class="col-start-5 col-end-6 mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
                         <div class="h-full w-1 bg-palette-complementary-dark pointer-events-none"></div>
@@ -1220,10 +1492,9 @@
                 <div class="step-scroll-revealing col-start-7 col-end-10 bg-yellow-50 border-l-4 rounded-r-xl border-yellow-500 text-yellow-700 p-4"
                      role="alert">
 
-                    <small class="font-bold">¿Por qué no puedes encontrarnos en Play Store?</small><br/>
+                    <small class="font-bold"> No utilizaremos estos datos para otros fines ni venderemos los mismos a terceros.</small><br/>
                     <small>
-                        Las políticas de Play Store prohiben hacer referencia al tabaco o sus derivados, por ello
-                        nos vemos obligados a ofrecerte nuestra app fuera del ecosistema de Google.
+                        Utilizamos la plataforma de pagos seguros <a href="https://www.paycomet.com" class="text-palette-complementary" target="_blank"> Paycomet</a> <small>del Banco Sabadell</small>.
                     </small>
                 </div>
 
@@ -1348,7 +1619,7 @@
                         <rect style="fill:#ffffff;fill-opacity:0.94117647" id="rect4597" width="216.24261"
                               height="48.654587" x="261.03571" y="16.673605"/>
                     </svg>
-                    <h3 class="font-bold text-lg mb-1">Instala TabacON</h3>
+                    <h3 class="font-bold text-lg mb-1">Acercate a tu máquina TabacON más cercana</h3>
                     <p class="leading-tight ">Experimenta el futuro en la compra de tabaco.</p>
                 </div>
                 <div class="col-start-5 col-end-6 mx-auto relative">
@@ -1363,6 +1634,8 @@
         </div>
         <div class="flex flex-col justify-center items-center mt-4 mb-8 text-center">
             <h4 class="text-gray">DESCARGA GRATIS TABACON</h4>
+            <a href="https://play.google.com/store/apps/details?id=com.sevisl.tb" target="_blank">
+
             <button class="main-cta bg-palette-secondary h-18 mt-6 px-8 py-4 font-bold py-2 rounded-lg px-4 rounded-full text-white inline-flex items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                      x="0px" y="0px" viewBox="0 0 512 512" style="height: 2rem; color: #fff" fill="#fff"
@@ -1380,12 +1653,13 @@
                 </svg>
                 <h3 class="ml-4">Descargar</h3>
             </button>
+            </a>
         </div>
     </div>
     <!-- STEPPER INSTALACIÓN MOBILE-->
     <div class="container sm:hidden px-4" id="install-stepper-mobile">
         <h1 class="text-4xl sectionTitle md:text-6xl font-bold text-palette-complementary-dark text-center font-helvetica pt-8 pb-12">
-            Instalación
+            Primeros pasos
         </h1>
 
         <div class="grid grid-cols-9 mx-auto p-2 text-blue-50">
@@ -1622,7 +1896,7 @@
                               stroke="#3f3d56" stroke-miterlimit="10" id="line163"/>
                     </svg>
                     <h3 class="font-bold text-lg mb-1">Descarga la APK</h3>
-                    <p class="leading-tight ">Descarga nuestra App directamente desde aquí, es 100% seguro y solo te
+                    <p class="leading-tight ">Descarga nuestra App desde Playstore, es 100% seguro y solo te
                         llevará unos segundos.</p>
                 </div>
 
@@ -1639,172 +1913,173 @@
                     </div>
                 </div>
                 <div class=" step-scroll-revealing bg-palette-primary col-start-3 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md animate transform transition-transform hover:translate-x-2 cursor-default">
-                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
-                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                         xmlns="http://www.w3.org/2000/svg"
-                         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                         id="b08b9267-8725-41d4-9fd9-d16b8c1f0d2f" data-name="Layer 1"
-                         viewBox="0 0 974 729.15132" version="1.1"
-                         sodipodi:docname="origen_desconocido_illustration.svg"
-                         inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-                        <metadata id="metadata76">
-                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
-                                    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml
-                                    </dc:format>
-                                    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                             rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-                                    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
-                                </cc:Work>
-                            </rdf:RDF>
-                        </metadata>
-                        <defs id="defs74">
-                            <linearGradient id="a7d70b19-b507-4394-a133-55f51a2376ed" x1="323.00662"
-                                            y1="814.32904" x2="323.00662" y2="813.88037"
-                                            gradientTransform="matrix(-1,0,0,1,579.52555,-122.71755)"
-                                            gradientUnits="userSpaceOnUse">
-                                <stop offset="0" stop-color="gray" stop-opacity="0.25" id="stop2"/>
-                                <stop offset="0.53514" stop-color="gray" stop-opacity="0.12" id="stop4"/>
-                                <stop offset="1" stop-color="gray" stop-opacity="0.1" id="stop6"/>
-                            </linearGradient>
-                        </defs>
-                        <sodipodi:namedview xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            pagecolor="#ffffff" bordercolor="#666666" borderopacity="1"
-                                            objecttolerance="10" gridtolerance="10" guidetolerance="10"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            inkscape:pageopacity="0" inkscape:pageshadow="2"
-                                            inkscape:window-width="1920" inkscape:window-height="1001"
-                                            id="namedview72" showgrid="false" inkscape:zoom="0.91545993"
-                                            inkscape:cx="278.87814" inkscape:cy="335.35369"
-                                            inkscape:window-x="-9" inkscape:window-y="-9"
-                                            inkscape:window-maximized="1"
-                                            inkscape:current-layer="b08b9267-8725-41d4-9fd9-d16b8c1f0d2f"/>
-                        <path d="m 529.30449,179.19823 h -3.85282 V 72.612482 A 61.087789,61.688943 0 0 0 464.36393,10.923471 H 240.74802 A 61.087789,61.688943 0 0 0 179.66009,72.612259 V 657.35023 a 61.087808,61.688963 0 0 0 61.08773,61.689 h 223.61583 a 61.087779,61.688934 0 0 0 61.08792,-61.68876 V 255.0678 h 3.85283 z"
-                              id="path2" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#e6e6e6;stroke-width:0.96823072"/>
-                        <path d="M 512.44939,73.042901 V 656.92037 a 45.622491,46.071454 0 0 1 -45.6218,46.07075 H 242.13903 a 45.622616,46.071581 0 0 1 -45.6218,-46.07075 V 73.042901 a 45.622655,46.071619 0 0 1 45.6218,-46.070754 h 27.25746 a 21.685153,21.898553 0 0 0 20.06974,30.152749 h 128.10716 a 21.685278,21.898679 0 0 0 20.06974,-30.152749 h 29.18446 a 45.622636,46.0716 0 0 1 45.6218,46.070754 z"
-                              id="path4" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>
-                        <path d="m 254.11608,81.125317 a 30.832049,31.135462 0 0 0 -2.3e-4,62.270913 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.270913 z"
-                              id="path34" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="M 477.97462,138.53149 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 1 1 0,15.56773 z"
-                              id="path36" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="m 367.17194,105.45007 h -51.06558 a 7.7080133,7.7838665 0 1 1 0,-15.56773 h 51.06558 a 7.7080133,7.7838665 0 0 1 0,15.56773 z"
-                              id="path38" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="m 254.11608,211.50506 a 30.832049,31.135462 0 0 0 -2.3e-4,62.27092 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.27092 z"
-                              id="path40" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="M 477.97462,268.91124 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"
-                              id="path42" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="m 367.17194,235.82981 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"
-                              id="path44" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="m 254.11608,472.26455 a 30.832049,31.135462 0 0 0 -2.3e-4,62.27092 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.27092 z"
-                              id="path46" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="M 477.97462,529.67073 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"
-                              id="path48" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="m 367.17194,496.5893 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"
-                              id="path50" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="m 254.11608,602.64429 a 30.832052,31.135465 0 0 0 -2.3e-4,62.27093 h 2.3e-4 a 30.832052,31.135465 0 0 0 0,-62.27093 z"
-                              id="path52" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="M 477.97462,660.05048 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"
-                              id="path54" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="m 367.17194,626.96905 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"
-                              id="path56" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>
-                        <path d="M 540.43912,447.94014 H 168.52752 A 15.915754,16.072378 0 0 1 152.62975,431.88592 V 311.23601 a 15.915764,16.072388 0 0 1 15.89777,-16.05423 h 371.9116 a 15.915773,16.072398 0 0 1 15.89777,16.05423 v 120.64991 a 15.915764,16.072388 0 0 1 -15.89777,16.05422 z"
-                              id="path58" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>
-                        <path d="m 254.11608,340.4255 a 30.832052,31.135465 0 0 0 -2.3e-4,62.27093 h 2.3e-4 a 30.832052,31.135465 0 0 0 0,-62.27093 z"
-                              id="path60" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0"
-                              style="fill:#f59e0b;fill-opacity:1;stroke-width:0.96823072"/>
-                        <path d="M 477.97462,397.83169 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"
-                              id="path62" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#cccccc;stroke-width:0.96823072"/>
-                        <path d="m 367.17194,364.75027 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"
-                              id="path64" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#cccccc;stroke-width:0.96823072"/>
-                        <path d="M 540.43912,447.94014 H 168.52752 A 15.915754,16.072378 0 0 1 152.62975,431.88592 V 311.23601 a 15.915764,16.072388 0 0 1 15.89777,-16.05423 h 371.9116 a 15.915773,16.072398 0 0 1 15.89777,16.05423 v 120.64991 a 15.915764,16.072388 0 0 1 -15.89777,16.05422 z M 168.52752,296.15477 a 14.951164,15.098296 0 0 0 -14.93427,15.08124 v 120.64991 a 14.951154,15.098286 0 0 0 14.93427,15.08124 h 371.9116 a 14.951154,15.098286 0 0 0 14.93427,-15.08124 V 311.23601 a 14.951164,15.098296 0 0 0 -14.93427,-15.08124 z"
-                              id="path66" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#3f3d56;stroke-width:0.96823072"/>
-                        <path id="a4f85a93-5584-48fc-9a4d-d7e2ab78dfd5" data-name="Path 395"
-                              d="m 251.19058,384.49173 a 3.7418064,3.7786288 0 0 1 -2.25111,-0.75551 l -0.0403,-0.0305 -8.47881,-6.54987 a 3.7679365,3.8050161 0 0 1 4.58497,-6.03943 l 5.49196,4.25291 12.97767,-17.09743 a 3.7663275,3.8033912 0 0 1 5.28059,-0.70436 l 9.6e-4,8.2e-4 -0.0805,0.11294 0.0827,-0.11294 a 3.7708945,3.8080032 0 0 1 0.69668,5.33364 l -15.26466,20.10132 a 3.7686206,3.8057069 0 0 1 -2.99699,1.48388 z"
-                              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>
-                        <path d="M1086,814.57566H114a1,1,0,0,1,0-2h972a1,1,0,0,1,0,2Z"
-                              transform="translate(-113 -85.42434)" fill="#ccc" id="path69"/>
-                        <polygon transform="translate(87.776613,246.31942)" style="fill:#a0616a"
-                                 points="588.798,461.528 582.965,414.24 601.06,414.241 601.057,461.529 "
-                                 id="polygon1042"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#2f2e41"
-                              d="m 667.81705,704.34472 h 23.6438 v 14.8869 h -38.5307 v 0 a 14.88686,14.88686 0 0 1 14.8869,-14.8869 z"
-                              id="path1044"/>
-                        <polygon transform="translate(87.776613,246.31942)" style="fill:#a0616a"
-                                 points="681.753,435.888 645.573,404.885 658.941,392.69 690.811,427.625 "
-                                 id="polygon1046"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#2f2e41"
-                              d="m 760.69975,685.52122 17.4675,-15.9349 10.033,10.998 -28.4654,25.9679 v 0 a 14.88685,14.88685 0 0 1 0.9649,-21.031 z"
-                              id="path1048"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#ff9e47;fill-opacity:1"
-                              d="m 676.77845,697.03382 a 4.47341,4.47341 0 0 1 -4.4443,-3.856 l -10.6829,-73.88969 a 42.89891,42.89891 0 0 1 -0.1506,-11.12061 l 10.4118,-88.97509 66.4981,5.58349 -10.0364,84.30567 37.9661,47.33983 a 4.48912,4.48912 0 0 1 -0.5552,6.209 l -9.5588,8.3252 a 4.49953,4.49953 0 0 1 -6.3765,-0.4697 l -35.9744,-42.09768 a 56.53874,56.53874 0 0 1 -11.7192,-22.562 l -5.1358,-20.0293 a 1.4999,1.4999 0 0 0 -2.8703,-0.11768 l -6.793,19.62354 4.2976,86.43112 a 4.50989,4.50989 0 0 1 -4.2446,4.7163 l -10.3726,0.5762 q -0.1303,0.01 -0.259,0.01 z"
-                              id="path1050"/>
-                        <circle style="fill:#a0616a" cx="713.7309" cy="374.40012" r="24.561029"
-                                id="circle1052"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#a0616a"
-                              d="m 571.07365,402.95577 a 10.05579,10.05579 0 0 0 14.8021,4.31892 l 32.2033,19.50956 -2.5029,-16.49956 -27.2577,-17.6152 a 10.11027,10.11027 0 0 0 -17.2448,10.28628 z"
-                              id="path1054"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#cccccc"
-                              d="m 712.58995,536.17542 v 0 c -13.0449,4.9e-4 -26.6198,-4.04639 -40.3479,-12.0293 a 4.99126,4.99126 0 0 1 -2.1709,-6.06494 l 12.769,-34.40674 -2.9043,-40.54053 c -0.9878,-13.79052 5.8872,-26.88086 17.5152,-33.34912 a 31.59424,31.59424 0 0 1 27.5616,-1.63187 33.97516,33.97516 0 0 1 19.5756,22.31 l 4.0989,14.26075 a 87.49009,87.49009 0 0 1 -1.6374,53.10156 l -11.875,33.34131 -0.3081,0.18408 c -0.081,0.0489 -8.2298,4.8238 -22.2767,4.8248 z"
-                              id="path1056"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#cccccc"
-                              d="m 588.12125,414.40142 a 4.99665,4.99665 0 0 1 0.053,-5.61343 l 6.2231,-8.98822 a 5.008,5.008 0 0 1 6.4173,-1.58971 l 46.1507,24.00065 50.9208,-5.10461 a 14.23294,14.23294 0 0 1 14.8537,9.68 14.14226,14.14226 0 0 1 -13.2997,18.53332 l -47.4846,0.48187 a 29.20591,29.20591 0 0 1 -14.3096,-3.58864 l -47.7652,-26.19435 a 5.01944,5.01944 0 0 1 -1.7598,-1.61688 z"
-                              id="path1058"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#a0616a"
-                              d="m 734.89675,558.15785 a 10.05576,10.05576 0 0 0 0.4629,-15.41238 l 11.9934,-33.01467 -16.5393,3.51025 -10.2047,30.80817 a 10.11027,10.11027 0 0 0 14.2877,14.10863 z"
-                              id="path1060"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#cccccc"
-                              d="m 739.29875,538.95565 a 4.96759,4.96759 0 0 1 -1.7178,-0.30566 l -10.2632,-3.76612 a 5.00811,5.00811 0 0 1 -3.1506,-5.8125 l 11.6404,-50.69922 -17.7295,-48.00634 a 14.22708,14.22708 0 0 1 5.6389,-16.8086 14.14225,14.14225 0 0 1 21.2795,8.21875 l 12.3924,45.84131 a 29.207,29.207 0 0 1 0.1203,14.752 l -13.3581,52.813 a 4.99762,4.99762 0 0 1 -4.8477,3.77344 v 0 z"
-                              id="path1062"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0"
-                              d="m 715.35305,391.7308 c 1.2454,-5.168 1.8609,-8.0697 3.0946,-13.24056 0.8264,-3.46317 -1.667,-7.00916 -4.7954,-8.62753 -3.1285,-1.61837 -6.7549,-1.80418 -10.2502,-2.14678 -3.4952,-0.3426 -7.162,-0.95358 -9.8862,-3.202 -3.6574,-3.01872 -4.7032,-8.64152 -2.9046,-13.0636 a 14.85471,14.85471 0 0 1 10.6762,-8.53664 21.20272,21.20272 0 0 1 13.7268,2.11338 c 1.6487,-3.87357 6.4263,-5.55773 10.5308,-4.882 4.1045,0.67573 7.6691,3.16729 11.0053,5.68586 6.2039,4.68352 12.5697,10.36122 13.9466,18.08221 1.3296,7.45634 -2.4525,14.98109 -7.5113,20.55483 a 45.48369,45.48369 0 0 1 -26.2824,14.26285 9.30922,9.30922 0 0 1 -1.3502,-7.00002 z"
-                              id="path1064"/>
-                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                              inkscape:connector-curvature="0" style="fill:#cccccc"
-                              d="m 809.77665,720.31942 h -192 a 1,1 0 0 1 0,-2 h 192 a 1,1 0 0 1 0,2 z"
-                              id="path1066"/>
-                        <rect style="fill:#ffffff;fill-opacity:0.94117647" id="rect1707" width="197.71483"
-                              height="39.324497" x="255.60922" y="26.956812"/>
-                    </svg>
-                    <h3 class="font-bold text-lg mb-1">Activa «Orígenes Desconocidos»</h3>
+<!--                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"-->
+<!--                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"-->
+<!--                         xmlns="http://www.w3.org/2000/svg"-->
+<!--                         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"-->
+<!--                         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                         id="b08b9267-8725-41d4-9fd9-d16b8c1f0d2f" data-name="Layer 1"-->
+<!--                         viewBox="0 0 974 729.15132" version="1.1"-->
+<!--                         sodipodi:docname="origen_desconocido_illustration.svg"-->
+<!--                         inkscape:version="0.92.4 (5da689c313, 2019-01-14)">-->
+<!--                        <metadata id="metadata76">-->
+<!--                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">-->
+<!--                                <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">-->
+<!--                                    <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml-->
+<!--                                    </dc:format>-->
+<!--                                    <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/"-->
+<!--                                             rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>-->
+<!--                                    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>-->
+<!--                                </cc:Work>-->
+<!--                            </rdf:RDF>-->
+<!--                        </metadata>-->
+<!--                        <defs id="defs74">-->
+<!--                            <linearGradient id="a7d70b19-b507-4394-a133-55f51a2376ed" x1="323.00662"-->
+<!--                                            y1="814.32904" x2="323.00662" y2="813.88037"-->
+<!--                                            gradientTransform="matrix(-1,0,0,1,579.52555,-122.71755)"-->
+<!--                                            gradientUnits="userSpaceOnUse">-->
+<!--                                <stop offset="0" stop-color="gray" stop-opacity="0.25" id="stop2"/>-->
+<!--                                <stop offset="0.53514" stop-color="gray" stop-opacity="0.12" id="stop4"/>-->
+<!--                                <stop offset="1" stop-color="gray" stop-opacity="0.1" id="stop6"/>-->
+<!--                            </linearGradient>-->
+<!--                        </defs>-->
+<!--                        <sodipodi:namedview xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"-->
+<!--                                            pagecolor="#ffffff" bordercolor="#666666" borderopacity="1"-->
+<!--                                            objecttolerance="10" gridtolerance="10" guidetolerance="10"-->
+<!--                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                                            inkscape:pageopacity="0" inkscape:pageshadow="2"-->
+<!--                                            inkscape:window-width="1920" inkscape:window-height="1001"-->
+<!--                                            id="namedview72" showgrid="false" inkscape:zoom="0.91545993"-->
+<!--                                            inkscape:cx="278.87814" inkscape:cy="335.35369"-->
+<!--                                            inkscape:window-x="-9" inkscape:window-y="-9"-->
+<!--                                            inkscape:window-maximized="1"-->
+<!--                                            inkscape:current-layer="b08b9267-8725-41d4-9fd9-d16b8c1f0d2f"/>-->
+<!--                        <path d="m 529.30449,179.19823 h -3.85282 V 72.612482 A 61.087789,61.688943 0 0 0 464.36393,10.923471 H 240.74802 A 61.087789,61.688943 0 0 0 179.66009,72.612259 V 657.35023 a 61.087808,61.688963 0 0 0 61.08773,61.689 h 223.61583 a 61.087779,61.688934 0 0 0 61.08792,-61.68876 V 255.0678 h 3.85283 z"-->
+<!--                              id="path2" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#e6e6e6;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 512.44939,73.042901 V 656.92037 a 45.622491,46.071454 0 0 1 -45.6218,46.07075 H 242.13903 a 45.622616,46.071581 0 0 1 -45.6218,-46.07075 V 73.042901 a 45.622655,46.071619 0 0 1 45.6218,-46.070754 h 27.25746 a 21.685153,21.898553 0 0 0 20.06974,30.152749 h 128.10716 a 21.685278,21.898679 0 0 0 20.06974,-30.152749 h 29.18446 a 45.622636,46.0716 0 0 1 45.6218,46.070754 z"-->
+<!--                              id="path4" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,81.125317 a 30.832049,31.135462 0 0 0 -2.3e-4,62.270913 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.270913 z"-->
+<!--                              id="path34" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,138.53149 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 1 1 0,15.56773 z"-->
+<!--                              id="path36" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,105.45007 h -51.06558 a 7.7080133,7.7838665 0 1 1 0,-15.56773 h 51.06558 a 7.7080133,7.7838665 0 0 1 0,15.56773 z"-->
+<!--                              id="path38" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,211.50506 a 30.832049,31.135462 0 0 0 -2.3e-4,62.27092 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.27092 z"-->
+<!--                              id="path40" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,268.91124 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path42" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,235.82981 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path44" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,472.26455 a 30.832049,31.135462 0 0 0 -2.3e-4,62.27092 h 2.3e-4 a 30.832049,31.135462 0 0 0 0,-62.27092 z"-->
+<!--                              id="path46" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,529.67073 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path48" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,496.5893 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path50" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,602.64429 a 30.832052,31.135465 0 0 0 -2.3e-4,62.27093 h 2.3e-4 a 30.832052,31.135465 0 0 0 0,-62.27093 z"-->
+<!--                              id="path52" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,660.05048 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path54" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,626.96905 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path56" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#f2f2f2;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 540.43912,447.94014 H 168.52752 A 15.915754,16.072378 0 0 1 152.62975,431.88592 V 311.23601 a 15.915764,16.072388 0 0 1 15.89777,-16.05423 h 371.9116 a 15.915773,16.072398 0 0 1 15.89777,16.05423 v 120.64991 a 15.915764,16.072388 0 0 1 -15.89777,16.05422 z"-->
+<!--                              id="path58" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 254.11608,340.4255 a 30.832052,31.135465 0 0 0 -2.3e-4,62.27093 h 2.3e-4 a 30.832052,31.135465 0 0 0 0,-62.27093 z"-->
+<!--                              id="path60" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0"-->
+<!--                              style="fill:#f59e0b;fill-opacity:1;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 477.97462,397.83169 H 316.10636 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 161.86826 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path62" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc;stroke-width:0.96823072"/>-->
+<!--                        <path d="m 367.17194,364.75027 h -51.06558 a 7.7080122,7.7838654 0 1 1 0,-15.56773 h 51.06558 a 7.7080122,7.7838654 0 0 1 0,15.56773 z"-->
+<!--                              id="path64" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc;stroke-width:0.96823072"/>-->
+<!--                        <path d="M 540.43912,447.94014 H 168.52752 A 15.915754,16.072378 0 0 1 152.62975,431.88592 V 311.23601 a 15.915764,16.072388 0 0 1 15.89777,-16.05423 h 371.9116 a 15.915773,16.072398 0 0 1 15.89777,16.05423 v 120.64991 a 15.915764,16.072388 0 0 1 -15.89777,16.05422 z M 168.52752,296.15477 a 14.951164,15.098296 0 0 0 -14.93427,15.08124 v 120.64991 a 14.951154,15.098286 0 0 0 14.93427,15.08124 h 371.9116 a 14.951154,15.098286 0 0 0 14.93427,-15.08124 V 311.23601 a 14.951164,15.098296 0 0 0 -14.93427,-15.08124 z"-->
+<!--                              id="path66" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#3f3d56;stroke-width:0.96823072"/>-->
+<!--                        <path id="a4f85a93-5584-48fc-9a4d-d7e2ab78dfd5" data-name="Path 395"-->
+<!--                              d="m 251.19058,384.49173 a 3.7418064,3.7786288 0 0 1 -2.25111,-0.75551 l -0.0403,-0.0305 -8.47881,-6.54987 a 3.7679365,3.8050161 0 0 1 4.58497,-6.03943 l 5.49196,4.25291 12.97767,-17.09743 a 3.7663275,3.8033912 0 0 1 5.28059,-0.70436 l 9.6e-4,8.2e-4 -0.0805,0.11294 0.0827,-0.11294 a 3.7708945,3.8080032 0 0 1 0.69668,5.33364 l -15.26466,20.10132 a 3.7686206,3.8057069 0 0 1 -2.99699,1.48388 z"-->
+<!--                              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#ffffff;stroke-width:0.96823072"/>-->
+<!--                        <path d="M1086,814.57566H114a1,1,0,0,1,0-2h972a1,1,0,0,1,0,2Z"-->
+<!--                              transform="translate(-113 -85.42434)" fill="#ccc" id="path69"/>-->
+<!--                        <polygon transform="translate(87.776613,246.31942)" style="fill:#a0616a"-->
+<!--                                 points="588.798,461.528 582.965,414.24 601.06,414.241 601.057,461.529 "-->
+<!--                                 id="polygon1042"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#2f2e41"-->
+<!--                              d="m 667.81705,704.34472 h 23.6438 v 14.8869 h -38.5307 v 0 a 14.88686,14.88686 0 0 1 14.8869,-14.8869 z"-->
+<!--                              id="path1044"/>-->
+<!--                        <polygon transform="translate(87.776613,246.31942)" style="fill:#a0616a"-->
+<!--                                 points="681.753,435.888 645.573,404.885 658.941,392.69 690.811,427.625 "-->
+<!--                                 id="polygon1046"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#2f2e41"-->
+<!--                              d="m 760.69975,685.52122 17.4675,-15.9349 10.033,10.998 -28.4654,25.9679 v 0 a 14.88685,14.88685 0 0 1 0.9649,-21.031 z"-->
+<!--                              id="path1048"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#ff9e47;fill-opacity:1"-->
+<!--                              d="m 676.77845,697.03382 a 4.47341,4.47341 0 0 1 -4.4443,-3.856 l -10.6829,-73.88969 a 42.89891,42.89891 0 0 1 -0.1506,-11.12061 l 10.4118,-88.97509 66.4981,5.58349 -10.0364,84.30567 37.9661,47.33983 a 4.48912,4.48912 0 0 1 -0.5552,6.209 l -9.5588,8.3252 a 4.49953,4.49953 0 0 1 -6.3765,-0.4697 l -35.9744,-42.09768 a 56.53874,56.53874 0 0 1 -11.7192,-22.562 l -5.1358,-20.0293 a 1.4999,1.4999 0 0 0 -2.8703,-0.11768 l -6.793,19.62354 4.2976,86.43112 a 4.50989,4.50989 0 0 1 -4.2446,4.7163 l -10.3726,0.5762 q -0.1303,0.01 -0.259,0.01 z"-->
+<!--                              id="path1050"/>-->
+<!--                        <circle style="fill:#a0616a" cx="713.7309" cy="374.40012" r="24.561029"-->
+<!--                                id="circle1052"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#a0616a"-->
+<!--                              d="m 571.07365,402.95577 a 10.05579,10.05579 0 0 0 14.8021,4.31892 l 32.2033,19.50956 -2.5029,-16.49956 -27.2577,-17.6152 a 10.11027,10.11027 0 0 0 -17.2448,10.28628 z"-->
+<!--                              id="path1054"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc"-->
+<!--                              d="m 712.58995,536.17542 v 0 c -13.0449,4.9e-4 -26.6198,-4.04639 -40.3479,-12.0293 a 4.99126,4.99126 0 0 1 -2.1709,-6.06494 l 12.769,-34.40674 -2.9043,-40.54053 c -0.9878,-13.79052 5.8872,-26.88086 17.5152,-33.34912 a 31.59424,31.59424 0 0 1 27.5616,-1.63187 33.97516,33.97516 0 0 1 19.5756,22.31 l 4.0989,14.26075 a 87.49009,87.49009 0 0 1 -1.6374,53.10156 l -11.875,33.34131 -0.3081,0.18408 c -0.081,0.0489 -8.2298,4.8238 -22.2767,4.8248 z"-->
+<!--                              id="path1056"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc"-->
+<!--                              d="m 588.12125,414.40142 a 4.99665,4.99665 0 0 1 0.053,-5.61343 l 6.2231,-8.98822 a 5.008,5.008 0 0 1 6.4173,-1.58971 l 46.1507,24.00065 50.9208,-5.10461 a 14.23294,14.23294 0 0 1 14.8537,9.68 14.14226,14.14226 0 0 1 -13.2997,18.53332 l -47.4846,0.48187 a 29.20591,29.20591 0 0 1 -14.3096,-3.58864 l -47.7652,-26.19435 a 5.01944,5.01944 0 0 1 -1.7598,-1.61688 z"-->
+<!--                              id="path1058"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#a0616a"-->
+<!--                              d="m 734.89675,558.15785 a 10.05576,10.05576 0 0 0 0.4629,-15.41238 l 11.9934,-33.01467 -16.5393,3.51025 -10.2047,30.80817 a 10.11027,10.11027 0 0 0 14.2877,14.10863 z"-->
+<!--                              id="path1060"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc"-->
+<!--                              d="m 739.29875,538.95565 a 4.96759,4.96759 0 0 1 -1.7178,-0.30566 l -10.2632,-3.76612 a 5.00811,5.00811 0 0 1 -3.1506,-5.8125 l 11.6404,-50.69922 -17.7295,-48.00634 a 14.22708,14.22708 0 0 1 5.6389,-16.8086 14.14225,14.14225 0 0 1 21.2795,8.21875 l 12.3924,45.84131 a 29.207,29.207 0 0 1 0.1203,14.752 l -13.3581,52.813 a 4.99762,4.99762 0 0 1 -4.8477,3.77344 v 0 z"-->
+<!--                              id="path1062"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0"-->
+<!--                              d="m 715.35305,391.7308 c 1.2454,-5.168 1.8609,-8.0697 3.0946,-13.24056 0.8264,-3.46317 -1.667,-7.00916 -4.7954,-8.62753 -3.1285,-1.61837 -6.7549,-1.80418 -10.2502,-2.14678 -3.4952,-0.3426 -7.162,-0.95358 -9.8862,-3.202 -3.6574,-3.01872 -4.7032,-8.64152 -2.9046,-13.0636 a 14.85471,14.85471 0 0 1 10.6762,-8.53664 21.20272,21.20272 0 0 1 13.7268,2.11338 c 1.6487,-3.87357 6.4263,-5.55773 10.5308,-4.882 4.1045,0.67573 7.6691,3.16729 11.0053,5.68586 6.2039,4.68352 12.5697,10.36122 13.9466,18.08221 1.3296,7.45634 -2.4525,14.98109 -7.5113,20.55483 a 45.48369,45.48369 0 0 1 -26.2824,14.26285 9.30922,9.30922 0 0 1 -1.3502,-7.00002 z"-->
+<!--                              id="path1064"/>-->
+<!--                        <path xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"-->
+<!--                              inkscape:connector-curvature="0" style="fill:#cccccc"-->
+<!--                              d="m 809.77665,720.31942 h -192 a 1,1 0 0 1 0,-2 h 192 a 1,1 0 0 1 0,2 z"-->
+<!--                              id="path1066"/>-->
+<!--                        <rect style="fill:#ffffff;fill-opacity:0.94117647" id="rect1707" width="197.71483"-->
+<!--                              height="39.324497" x="255.60922" y="26.956812"/>-->
+<!--                    </svg>-->
+                    <svg xmlns="http://www.w3.org/2000/svg"  data-name="Layer 1Mobile"  viewBox="0 0 856.12205 674"><path d="M593.26357,266.136h-3.54069V169.13919A56.13918,56.13918,0,0,0,533.58377,113H328.0828a56.13913,56.13913,0,0,0-56.13933,56.13893v532.1324a56.13909,56.13909,0,0,0,56.13905,56.13917h205.501a56.13914,56.13914,0,0,0,56.13933-56.13895V335.18h3.54069Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M535.426,128.93322H508.60134A19.918,19.918,0,0,1,490.16,156.37379H372.4311a19.91806,19.91806,0,0,1-18.44139-27.44057H328.93542a41.92409,41.92409,0,0,0-41.92413,41.924V702.20874a41.92407,41.92407,0,0,0,41.92408,41.92408H535.426a41.92411,41.92411,0,0,0,41.92414-41.924V170.8573a41.92407,41.92407,0,0,0-41.92408-41.92408Zm-4.50666,246.49737a10.8911,10.8911,0,0,1-10.8592,10.8592H467.574a10.89109,10.89109,0,0,1-10.8592-10.8592v-2.7148a10.89111,10.89111,0,0,1,10.8592-10.8592h52.48612a10.89115,10.89115,0,0,1,10.8592,10.8592Zm5.88207-47.96146a10.89111,10.89111,0,0,1-10.8592,10.8592H337.7161a10.89109,10.89109,0,0,1-10.8592-10.8592v-2.7148a10.89112,10.89112,0,0,1,10.8592-10.8592H525.94221a10.89116,10.89116,0,0,1,10.8592,10.8592Zm0-47.96146a10.89111,10.89111,0,0,1-10.8592,10.8592H337.7161a10.89109,10.89109,0,0,1-10.8592-10.8592v-2.7148a10.89112,10.89112,0,0,1,10.8592-10.8592H525.94221a10.89116,10.89116,0,0,1,10.8592,10.8592Zm0-47.96146a10.8911,10.8911,0,0,1-10.8592,10.8592H337.7161a10.89109,10.89109,0,0,1-10.8592-10.8592v-2.7148a10.89111,10.89111,0,0,1,10.8592-10.8592H525.94221a10.89116,10.89116,0,0,1,10.8592,10.8592Z" transform="translate(-171.93898 -113)" fill="#fff"/><circle cx="169.84933" cy="213.56423" r="6.33453" fill="#fff"/><circle cx="190.66279" cy="213.56423" r="6.33453" fill="#fff"/><circle cx="211.47625" cy="213.56423" r="6.33453" fill="#fff"/><circle cx="232.28972" cy="213.56423" r="6.33453" fill="#fff"/><circle cx="300.15971" cy="261.52569" r="6.33453" fill="#fff"/><circle cx="320.97317" cy="261.52569" r="6.33453" fill="#fff"/><circle cx="341.78664" cy="261.52569" r="6.33453" fill="#fff"/><path d="M538.25762,456.6012H323.5908a19.01566,19.01566,0,0,0-19.01568,19.01563v104.59a19.01571,19.01571,0,0,0,19.01566,19.01571H538.25762a19.0157,19.0157,0,0,0,19.0157-19.01565V475.61688a19.01566,19.01566,0,0,0-19.0156-19.01568Zm-219.978,12.97163c.42392-.07665,10.47581-1.78725,18.79934,3.22117,8.323,5.00748,11.52088,14.6906,11.65264,15.1l.33649,1.04412-1.0801.19161a28.669,28.669,0,0,1-4.65836.34214,27.73763,27.73763,0,0,1-14.14144-3.56421c-8.323-5.00653-11.52041-14.6897-11.65221-15.09912l-.33651-1.04411Zm46.59851,97.10524H326.59051a10.52909,10.52909,0,0,1,0-21.05818h38.28762a10.52909,10.52909,0,0,1,0,21.05818Zm174.2086-1.91436A11.5201,11.5201,0,0,1,527.60041,576.25H498.88473a11.5201,11.5201,0,0,1-11.48627-11.48627V547.53425A11.52,11.52,0,0,1,498.88473,536.048h28.71568a11.52,11.52,0,0,1,11.48627,11.48627Z" transform="translate(-171.93898 -113)" fill="#f59e0b"/><path d="M508.14328,561.21324H496.5975a3.10848,3.10848,0,0,0,0,6.217h11.54578a3.10849,3.10849,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M529.45864,561.21324H517.91281a3.10848,3.10848,0,0,0,0,6.217H529.4586a3.10849,3.10849,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M508.14155,552.43841H496.59576a3.10848,3.10848,0,0,0,0,6.217h11.54579a3.10848,3.10848,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M529.45691,552.43841H517.91107a3.10848,3.10848,0,0,0,0,6.217h11.54579a3.10848,3.10848,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M508.14155,543.84123H496.59576a3.10848,3.10848,0,0,0,0,6.217h11.54579a3.10848,3.10848,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><path d="M529.45691,543.84123H517.91107a3.10848,3.10848,0,0,0,0,6.217h11.54579a3.10848,3.10848,0,0,0,0-6.217Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><rect x="487" y="383.00001" width="28" height="27.99999" fill="#e6e6e6"/><path d="M625.939,513h46v46h-46Zm44,2h-42v42h42Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><rect y="152.00001" width="28" height="28" fill="#e6e6e6"/><path d="M232.939,276h-46V230h46Zm-44-2h42V232h-42Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/><polygon points="653.077 661.417 640.817 661.417 634.985 614.129 653.079 614.129 653.077 661.417" fill="#ffb8b8"/><path d="M632.06,657.91362H655.7039a0,0,0,0,1,0,0v14.88687a0,0,0,0,1,0,0H617.17317a0,0,0,0,1,0,0v0A14.88686,14.88686,0,0,1,632.06,657.91362Z" fill="#2f2e41"/><polygon points="714.077 661.417 701.817 661.417 695.985 614.129 714.079 614.129 714.077 661.417" fill="#ffb8b8"/><path d="M693.06,657.91362H716.7039a0,0,0,0,1,0,0v14.88687a0,0,0,0,1,0,0H678.17317a0,0,0,0,1,0,0v0A14.88686,14.88686,0,0,1,693.06,657.91362Z" fill="#2f2e41"/><path d="M763.51493,605.30342a10.74267,10.74267,0,0,1,4.51052-15.84306l41.67577-114.86668,20.5071,11.19135L782.62359,595.55579a10.80091,10.80091,0,0,1-19.10866,9.74763Z" transform="translate(-171.93898 -113)" fill="#ffb8b8"/><path d="M879.75379,626.88737a10.74271,10.74271,0,0,1-2.89305-16.21659L863.95,489.16137l23.33776,1.06622L892.65342,609.748a10.80091,10.80091,0,0,1-12.89963,17.13934Z" transform="translate(-171.93898 -113)" fill="#ffb8b8"/><circle cx="670.5842" cy="315.75634" r="24.56103" fill="#ffb8b8"/><path d="M879.59694,599.25244H805.55006l.08911-.57617c.13306-.86133,13.19678-86.439,3.56177-114.436a11.813,11.813,0,0,1,6.06934-14.58349h.00024c13.77173-6.48535,40.20752-14.47119,62.52,4.90918a28.23446,28.23446,0,0,1,9.45947,23.396Z" transform="translate(-171.93898 -113)" fill="#ccc"/><path d="M819.77174,524.88428l-33.33667-6.76319,15.62622-37.02978a13.99723,13.99723,0,0,1,27.10571,6.99756Z" transform="translate(-171.93898 -113)" fill="#ccc"/><path d="M862.46778,537.44189l-2.00415-45.9414c-1.51977-8.63623,3.42408-16.80029,11.02735-18.13477,7.60547-1.32959,15.03174,4.66016,16.55835,13.35987l7.533,42.92773Z" transform="translate(-171.93898 -113)" fill="#ccc"/><path d="M877.13341,593.75241c11.91455,45.37671,13.21436,103.06939,10,166l-16-2-29-120-16,122-18-1c-5.37744-66.02973-10.61328-122.71527-2-160Z" transform="translate(-171.93898 -113)" fill="#2f2e41"/><path d="M858.70645,447.73782c-4.582,4.88078-13.09131,2.26066-13.68835-4.40717a8.05477,8.05477,0,0,1,.01014-1.5557c.30826-2.95357,2.01461-5.635,1.60587-8.7536a4.59042,4.59042,0,0,0-.84011-2.14891c-3.65124-4.88934-12.22227,2.18687-15.6682-2.2393-2.113-2.714.3708-6.98712-1.25065-10.02051-2.14006-4.00357-8.47881-2.0286-12.45388-4.22115-4.42275-2.43949-4.15821-9.22525-1.24686-13.35269,3.55052-5.0336,9.77572-7.71952,15.92336-8.10661s12.25292,1.27475,17.99229,3.51145c6.52109,2.54134,12.98768,6.05351,17.00067,11.78752,4.88021,6.97317,5.34986,16.34794,2.90917,24.50175C867.5152,437.69294,862.44812,443.75214,858.70645,447.73782Z" transform="translate(-171.93898 -113)" fill="#2f2e41"/><path d="M1027.061,787h-381a1,1,0,0,1,0-2h381a1,1,0,0,1,0,2Z" transform="translate(-171.93898 -113)" fill="#3f3d56"/></svg>
+                    <h3 class="font-bold text-lg mb-1">Recarga tu wallet</h3>
                     <p class="leading-tight">
-                        Activa este ajuste en tu dispositivo para poder instalar nuestra app fuera de
-                        Play Store.<br/>
-                        Puedes hacerlo en Ajustes > Seguridad.
+                        Introduce tu método de pago preferido, solo tendrás que hacerlo la primera vez.
+                        <br/>
+                        Guardaremos tus datos de pago sólo para tu comodidad.
                     </p>
                     <br/>
-                    <i>
-                        TabacON es 100% seguro, su instalación no pone en riesgo tu dispositivo.
-                    </i>
+<!--                    <i>-->
+<!--                        TabacON es 100% seguro, su instalación no pone en riesgo tu dispositivo.-->
+<!--                    </i>-->
                 </div>
                 <div class="col-start-1 col-end-2 mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
@@ -1821,10 +2096,14 @@
                                           d="M496.158,248.085c0-137.022-111.069-248.082-248.075-248.082C111.07,0.003,0,111.063,0,248.085  c0,137.001,111.07,248.07,248.083,248.07C385.089,496.155,496.158,385.086,496.158,248.085z"/>
                         <path style="fill:#FFFFFF;"
                               d="M138.216,173.592c0-13.915,4.467-28.015,13.403-42.297c8.933-14.282,21.973-26.11,39.111-35.486  c17.139-9.373,37.134-14.062,59.985-14.062c21.238,0,39.99,3.921,56.25,11.755c16.26,7.838,28.818,18.495,37.683,31.97  c8.861,13.479,13.293,28.125,13.293,43.945c0,12.452-2.527,23.367-7.581,32.739c-5.054,9.376-11.062,17.469-18.018,24.279  c-6.959,6.812-19.446,18.275-37.463,34.388c-4.981,4.542-8.975,8.535-11.975,11.976c-3.004,3.443-5.239,6.592-6.702,9.447  c-1.466,2.857-2.603,5.713-3.406,8.57c-0.807,2.855-2.015,7.875-3.625,15.051c-2.784,15.236-11.501,22.852-26.147,22.852  c-7.618,0-14.028-2.489-19.226-7.471c-5.201-4.979-7.8-12.377-7.8-22.192c0-12.305,1.902-22.962,5.713-31.97  c3.808-9.01,8.861-16.92,15.161-23.73c6.296-6.812,14.794-14.904,25.488-24.28c9.373-8.202,16.15-14.392,20.325-18.567  c4.175-4.175,7.69-8.823,10.547-13.953c2.856-5.126,4.285-10.691,4.285-16.699c0-11.718-4.36-21.605-13.074-29.663  c-8.717-8.054-19.961-12.085-33.728-12.085c-16.116,0-27.981,4.065-35.596,12.195c-7.618,8.13-14.062,20.105-19.336,35.925  c-4.981,16.555-14.43,24.829-28.345,24.829c-8.206,0-15.127-2.891-20.764-8.679C141.035,186.593,138.216,180.331,138.216,173.592z   M245.442,414.412c-8.937,0-16.737-2.895-23.401-8.68c-6.667-5.784-9.998-13.877-9.998-24.279c0-9.229,3.22-16.991,9.668-23.291  c6.444-6.297,14.354-9.448,23.73-9.448c9.229,0,16.991,3.151,23.291,9.448c6.296,6.3,9.448,14.062,9.448,23.291  c0,10.255-3.296,18.312-9.888,24.17C261.7,411.481,254.084,414.412,245.442,414.412z"/></svg>
-                    <small class="font-bold">¿Por qué no puedes encontrarnos en PlayStore?</small><br/>
+<!--                    <small class="font-bold">¿Por qué no puedes encontrarnos en PlayStore?</small><br/>-->
+<!--                    <small>-->
+<!--                        Las políticas de PlayStore prohiben hacer referencia al tabaco o sus derivados, por ello-->
+<!--                        nos vemos obligados a ofrecerte nuestra app fuera del ecosistema de Google.-->
+<!--                    </small>-->
+                    <small class="font-bold"> No utilizaremos estos datos para otros fines ni venderemos los mismos a terceros.</small><br/>
                     <small>
-                        Las políticas de PlayStore prohiben hacer referencia al tabaco o sus derivados, por ello
-                        nos vemos obligados a ofrecerte nuestra app fuera del ecosistema de Google.
+                        Utilizamos la plataforma de pagos seguros <a href="https://www.paycomet.com" class="text-palette-complementary" target="_blank"> Paycomet</a> <small>del Banco Sabadell</small>.
                     </small>
                 </div>
                 <div class="col-start-3 col-end-10 mx-auto relative">
@@ -1960,7 +2239,7 @@
                         <rect style="fill:#ffffff;fill-opacity:0.94117647" id="rect4597" width="216.24261"
                               height="48.654587" x="261.03571" y="16.673605"/>
                     </svg>
-                    <h3 class="font-bold text-lg mb-1">Instala TabacON</h3>
+                    <h3 class="font-bold text-lg mb-1">Acercate a tu máquina TabacON más cercana</h3>
                     <p class="leading-tight ">Experimenta el futuro en la compra de tabaco.</p>
                 </div>
                 <div class="col-start-3 col-end-10 w-full mx-auto relative">
@@ -1973,6 +2252,8 @@
         </div>
         <div class="flex flex-col justify-center items-center mt-12 mb-8 text-center">
             <h4 class="text-gray">DESCARGA GRATIS TABACON</h4>
+            <a href="https://play.google.com/store/apps/details?id=com.sevisl.tb" target="_blank">
+
             <button class="main-cta-mobile bg-palette-secondary h-18 mt-6 px-8 py-4 font-bold py-2 rounded-lg px-4 rounded-full text-white inline-flex items-center shadow-xl transition duration-50 ease-in transform hover:-translate-y-1 hover:-scale-105 hover:shadow-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                      x="0px" y="0px" viewBox="0 0 512 512" style="height: 2rem; color: #fff" fill="#fff"
@@ -1990,6 +2271,7 @@
                 </svg>
                 <h3 class="ml-4">Descargar</h3>
             </button>
+            </a>
         </div>
     </div>
 </section>
@@ -2528,6 +2810,11 @@
                            type="text" placeholder="" name="name" id="name" required>
                 </div>
                 <div class="mt-4">
+                    <span class="uppercase text-sm text-gray-600 font-bold">Teléfono</span>
+                    <input class="w-full bg-white text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                           type="tel" placeholder="" name="phone" id="phone" required>
+                </div>
+                <div class="mt-4">
                     <span class="uppercase text-sm text-gray-600 font-bold">Correo</span>
                     <input class="w-full bg-white text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                            type="email" name="email" id="email" required>
@@ -2542,10 +2829,23 @@
                             class="w-full h-32 bg-white text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
                 </div>
                 <div class="mt-4">
-                    <button type="submit" value="Send" id="sendMessageButton"
+                    <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="field_terms"
+                            onchange="document.getElementById('sendMessageButton').disabled = !this.checked;"
+                            required
+                            class="  bg-white text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"><span
+                        class="pl-4">Acepto la <a
+                        href="/legal#privacy"
+                        target="_blank"><span><u>Política de privacidad</u></span> </a>  </span></input>
+                </div>
+                <div class="mt-4">
+                    <button type="submit" value="Send" id="sendMessageButton" disabled
                             class="flex disabled justify-center items-center uppercase text-sm  font-bold tracking-wide bg-yellow-500 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline transition duration-50 ease-in transform hover:-translate-y-1 text-white ">
                         Enviar mensaje
-                        <svg id="contact-button-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        <svg id="contact-button-icon" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
                              x="0px" y="0px" viewBox="0 0 488.721 488.721" xml:space="preserve">
                                 <g>
                                     <g>
@@ -2553,7 +2853,12 @@
                                     </g>
                                 </g>
                             </svg>
-                        <div id="contact-spinner" class="custom-hidden"><div></div><div></div><div></div><div></div></div>
+                        <div id="contact-spinner" class="custom-hidden">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </button>
                 </div>
             </form>
@@ -2566,17 +2871,19 @@
     <div class="container mx-auto ">
         <div class="mt-8 flex flex-col items-center">
             <div id="legal-links-footer">
-                <a rel="noopener noreferrer"  href="/legal/#privacy" target="_blank">Política de privacidad</a> | <a rel="noopener noreferrer"  href="/legal/#legal"
-                                                                                         target="_blank">Aviso Legal</a>
-                | <a rel="noopener noreferrer"  href="/legal/#conditions" target="_blank">Condiciones generales</a>
+                <a href="/legal/#privacy" target="_blank">Política de privacidad</a> | <a href="/legal/#legal"
+                                                                                          target="_blank">Aviso
+                Legal</a>
+                | <a href="/legal/#conditions" target="_blank">Condiciones generales</a>
             </div>
             <div class="sm:w-2/3 text-center my-6">
                 <img class="mx-auto mb-4" style="height: 1rem" src="img/TabacOn color.png" alt="tabacon logo"/>
-                <a rel="noopener noreferrer"  href="https://sevisl.com" target="_blank">
+                <a href="https://sevisl.com" target="_blank">
                     <p class="text-sm text-yellow-500 font-bold">
                         © 2021 by SEVI Systems
                     </p>
                 </a>
+                <div>Icons from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
             </div>
         </div>
     </div>
