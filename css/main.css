@@ -497,15 +497,13 @@ html {
 }
 
 .placa {
-    animation: hw 4s infinite;
+    /*animation: hw 4s infinite;*/
     animation-direction: normal;
-
 }
 
 @keyframes hw {
     0% {
         transform: rotate3d(0, 0, 0, 0deg) translateY(0);
-
     }
     50% {
         transform: rotate3d(20, 40, 0, 40deg) translateY(-10px);
